@@ -188,7 +188,7 @@ export const useSettingStore = defineStore('setting', {
           }
           resolve(null)
         } catch (e) {
-          console.error('读取本地设置数据失败', e)
+          console.error('Failed to read local setting data', e)
           resolve(null)
         }
       })

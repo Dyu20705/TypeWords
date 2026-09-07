@@ -8,7 +8,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "lint:i18n": "node --strip-types scripts/lint-i18n.ts",
-    "test": ""
+    "test:db": "node --strip-types scripts/test-db-migration.ts",
+    "test:zh": "node --strip-types scripts/check-hardcoded-zh.ts",
+    "test": "node --strip-types scripts/lint-i18n.ts && node --strip-types scripts/test-db-migration.ts && node --strip-types scripts/check-hardcoded-zh.ts"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.7.4",

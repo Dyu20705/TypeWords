@@ -1,27 +1,50 @@
 <script setup lang="ts">
 import { BaseButton } from '@/base'
 import type { Resource } from '@/core/types'
+import { useI18n } from 'vue-i18n'
 
 defineProps<{
   resource: Resource
 }>()
 
 const emit = defineEmits(['openLink'])
+const { t: $t } = useI18n()
+
+const difficultyKeyMap: Record<string, string> = {
+  '入门': 'difficulty_beginner',
+  '基础': 'difficulty_elementary',
+  '中级': 'difficulty_intermediate',
+  '进阶': 'difficulty_upper_intermediate',
+  '高级': 'difficulty_advanced',
+  '全级别': 'difficulty_all_levels',
+  'Beginner': 'difficulty_beginner',
+  'Elementary': 'difficulty_elementary',
+  'Intermediate': 'difficulty_intermediate',
+  'Upper-Intermediate': 'difficulty_upper_intermediate',
+  'Advanced': 'difficulty_advanced',
+  'All Levels': 'difficulty_all_levels',
+}
+
+const formatDifficulty = (difficulty: string) => {
+  const key = difficultyKeyMap[difficulty]
+  return key ? $t(key) : difficulty
+}
 
 // 根据难度获取对应的样式类
 const getDifficultyClass = (difficulty: string) => {
-  switch (difficulty) {
-    case '入门':
+  const key = difficultyKeyMap[difficulty] || difficulty
+  switch (key) {
+    case 'difficulty_beginner':
       return 'bg-green-500'
-    case '基础':
+    case 'difficulty_elementary':
       return 'bg-blue-500'
-    case '中级':
+    case 'difficulty_intermediate':
       return 'bg-purple-500'
-    case '进阶':
+    case 'difficulty_upper_intermediate':
       return 'bg-amber-500'
-    case '高级':
+    case 'difficulty_advanced':
       return 'bg-red-500'
-    case '全级别':
+    case 'difficulty_all_levels':
       return 'bg-gray-500'
     default:
       return 'bg-blue-500'
@@ -56,7 +79,7 @@ const getDifficultyClass = (difficulty: string) => {
           class="inline-block px-3 py-1 rounded-full text-xs font-medium text-white"
           :class="getDifficultyClass(resource.difficulty)"
         >
-          {{ resource.difficulty }}
+          {{ formatDifficulty(resource.difficulty) }}
         </span>
       </div>
     </div>
@@ -87,7 +110,7 @@ const getDifficultyClass = (difficulty: string) => {
           class="inline-block px-3 py-1 rounded-full text-xs font-medium text-white"
           :class="getDifficultyClass(item.difficulty)"
         >
-          {{ item.difficulty }}
+          {{ formatDifficulty(item.difficulty) }}
         </span>
       </div>
     </div>

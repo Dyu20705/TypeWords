@@ -23,16 +23,16 @@ export default defineNuxtPlugin(nuxtApp => {
 
   // 4. vue错误
   nuxtApp.vueApp.config.errorHandler = (err, instance, info) => {
-    console.log('Vue错误:', err, info)
+    console.log('Vue error:', err, info)
     reportError({ type: 'vue', vueErr: err, vueInfo: info })
   }
 })
 
 function reportError(data) {
-  console.log('统一上报:', data)
+  console.log('Error report:', data)
   try {
     window?.umami?.track('global-error', { data })
   } catch (e) {
-    console.error('上报失败:', e)
+    console.error('Report failed:', e)
   }
 }

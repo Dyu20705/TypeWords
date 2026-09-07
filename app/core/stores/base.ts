@@ -197,7 +197,7 @@ export const useBaseStore = defineStore('base', {
           }
           resolve(null)
         } catch (e) {
-          console.error('读取本地dict数据失败', e)
+          console.error('Failed to read local dict data', e)
           resolve(null)
         }
       })

@@ -179,7 +179,7 @@ async function checkRemotePracticeUpdate(): Promise<boolean> {
     if (error instanceof UnsupportedPracticeCacheVersionError) {
       Toast.error($t('cache_higher_version_error'))
     } else {
-      console.error('[practice] 检查远端练习进度失败', error)
+      console.error('[practice] Failed to check remote practice progress', error)
     }
     return false
   } finally {
@@ -221,7 +221,7 @@ async function reloadRemotePracticeSession(): Promise<boolean> {
     if (error instanceof UnsupportedPracticeCacheVersionError) {
       Toast.error($t('cache_higher_version_error'))
     } else {
-      console.error('[practice] 加载远端练习进度失败', error)
+      console.error('[practice] Failed to load remote practice progress', error)
       Toast.error($t('remote_progress_load_failed'))
     }
     return false
@@ -344,7 +344,7 @@ function resetSameWordAfterViewUpdate(previousWord: Word) {
 async function complete() {
   if (!isComplete) {
     let start = Date.now()
-    console.log('全完学完了')
+    console.log('Session completed')
     statStore.wrong = data.allWrongWords.length
     isComplete = true
     settling = true
@@ -362,7 +362,7 @@ async function complete() {
       try {
         await dataSync.saveDictState(store.$state, { pullWhenRemoteNewer: false })
       } catch (error) {
-        console.error('[practice] 远端结算同步失败', error)
+        console.error('[practice] Remote settlement sync failed', error)
         Toast.error($t('local_settle_success_remote_failed'))
       }
 
@@ -381,7 +381,7 @@ async function complete() {
       trackData.str = `name:${trackData.name},per:${trackData.per},spend:${trackData.spend},index:${trackData.index},funSpend:${trackData.funSpend}`
       window.umami?.track('endStudyWord', trackData)
     } catch (error) {
-      console.error('[practice] 本地结算失败', error)
+      console.error('[practice] Local settlement failed', error)
       Toast.error($t('settle_failed_retry'))
     } finally {
       settling = false
@@ -423,7 +423,7 @@ async function savePracticeDataIns() {
       })
       knownCacheUpdatedAt = Math.max(knownCacheUpdatedAt, Date.now())
     } catch (error) {
-      console.error('[practice] 保存练习缓存失败', error)
+      console.error('[practice] Failed to save practice cache', error)
       Toast.error($t('save_practice_failed'))
     } finally {
       runtimeStore.globalLoading = false
@@ -458,7 +458,7 @@ function toggleConciseMode() {
 
 async function repeat() {
   const previousWord = word
-  console.log('重学一遍')
+  console.log('Repeat study session')
   wordPersistence.clear()
   await initData(session.createRepeatTask())
   resetSameWordAfterViewUpdate(previousWord)
@@ -480,14 +480,14 @@ async function jumpToGroup(group: number) {
   const previousWord = word
   window?.umami?.track('jumpToGroup')
   wordPersistence.clear()
-  console.log('没学完，强行跳过', group)
+  console.log('Incomplete, forcing skip', group)
   await initData(session.createTaskFromGroup(group))
   resetSameWordAfterViewUpdate(previousWord)
 }
 
 function randomWrite() {
   window?.umami?.track('randomWrite')
-  console.log('随机默写')
+  console.log('Random dictation')
   session.randomWrite()
 }
 

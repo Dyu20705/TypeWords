@@ -348,7 +348,7 @@ async function nextSentence() {
     sentenceIndex = 0
     sectionIndex++
     if (!props.article.sections[sectionIndex]) {
-      console.log('打完了')
+      console.log('Typing completed')
       runtimeStore.globalLoading = true
       await articlePersistence.clear()
       runtimeStore.globalLoading = false
@@ -779,12 +779,12 @@ const currentPractice = inject('currentPractice', [])
 
       <div class="mt-2 text-2xl" v-if="props.article?.question?.text">
         <div class="inline-flex items-center gap-1 flex-wrap">
-          <span>Question:</span>
+          <span>{{ $t('question') }}:</span>
           <ClickableEnglishText :text="props.article?.question?.text" word="" :dictation="false" :high-light="false" />
           <VolumeIcon :simple="true" :title="$t('play')" :cb="playArticleQuestionAudio" />
         </div>
         <div class="text-xl color-translate-second" v-if="settingStore.translate">
-          问题: {{ props.article?.question?.translate }}
+          {{ $t('question') }}: {{ props.article?.question?.translate }}
         </div>
       </div>
     </header>

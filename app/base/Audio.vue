@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { computed, ref, useAttrs, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t: $t } = useI18n()
 
 interface IProps {
   src?: string
@@ -75,8 +78,8 @@ const togglePlay = async () => {
       await audioRef.value.play()
     }
   } catch (err) {
-    console.error('播放失败:', err)
-    error.value = '播放失败'
+    console.error('Play failed:', err)
+    error.value = $t('playback_failed')
   }
 }
 
@@ -138,7 +141,7 @@ const handleEnded = () => {
 }
 
 const handleError = () => {
-  error.value = '音频加载失败'
+  error.value = $t('audio_load_failed')
   isLoading.value = false
 }
 
@@ -433,7 +436,7 @@ defineExpose({ audioRef })
         :class="{ loading: isLoading }"
         @click="togglePlay"
         :disabled="disabled"
-        :aria-label="isPlaying ? '暂停' : '播放'"
+        :aria-label="isPlaying ? $t('pause') : $t('play')"
       >
         <div v-if="isLoading" class="loading-spinner"></div>
         <svg v-else-if="isPlaying" class="icon" viewBox="0 0 24 24" fill="currentColor">
@@ -464,7 +467,7 @@ defineExpose({ audioRef })
           tabindex="-1"
           @click="toggleMute"
           :disabled="disabled"
-          :aria-label="volume > 0 ? '静音' : '取消静音'"
+          :aria-label="volume > 0 ? $t('mute') : $t('unmute')"
         >
           <IconBxVolumeMute v-if="volume === 0" class="icon"></IconBxVolumeMute>
           <IconBxVolumeLow v-else-if="volume < 0.5" class="icon"></IconBxVolumeLow>
@@ -489,7 +492,7 @@ defineExpose({ audioRef })
         class="speed-button"
         @click="changePlaybackRate"
         :disabled="disabled"
-        :aria-label="`播放速度: ${playbackRate}x`"
+        :aria-label="`${$t('playback_speed')}: ${playbackRate}x`"
       >
         {{ playbackRate }}x
       </button>

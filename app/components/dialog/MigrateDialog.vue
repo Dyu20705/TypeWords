@@ -70,13 +70,13 @@ async function transfer() {
   try {
     await migrateFromOldSite()
     localStorage.setItem('__migrated_from_2study_top__', '1')
-    console.log('迁移完成')
+    console.log('Migration completed')
     Toast.success($t('migration_completed'))
     model.value = false
     emit('ok')
   } catch (e) {
     Toast.error($t('migration_failed') + ': ' + e)
-    console.error('迁移失败', e)
+    console.error('Migration failed', e)
   }
 }
 </script>

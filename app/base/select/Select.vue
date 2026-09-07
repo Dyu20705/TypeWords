@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, provide, ref, useSlots, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import type { VNode } from 'vue'
+
+const { t: $t } = useI18n()
 
 interface Option {
   label: string
@@ -26,7 +29,7 @@ const dropdownRef = ref<HTMLDivElement | null>(null)
 const slots = useSlots()
 
 const displayValue = computed(() => {
-  return selectedOption.value ? selectedOption.value.label : props.placeholder || '请选择'
+  return selectedOption.value ? selectedOption.value.label : props.placeholder || $t('select_placeholder')
 })
 
 const updateDropdownPosition = async () => {

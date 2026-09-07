@@ -279,7 +279,7 @@ export function createPracticeWordNavigator(deps: NavigatorDeps) {
       const nextStep = config.nodes[nextCursor.nodeIndex].steps[nextCursor.stepIndex]
 
       if (list.length === 0) {
-        console.log(`[Nav] cursor ${nextCursor.nodeIndex}:${nextCursor.stepIndex} 无单词，跳过`)
+        console.log(`[Nav] cursor ${nextCursor.nodeIndex}:${nextCursor.stepIndex} has no words, skipping`)
         activeCursor.value = nextCursor
         data.words = []
         data.index = 0
@@ -300,7 +300,7 @@ export function createPracticeWordNavigator(deps: NavigatorDeps) {
     const data = deps.getPracticeData()
     // 实际 practiceType 由 resolvePhaseByCtxCursor 从 action.templateId 派生，无需在此设置
     deps.notify?.('info', deps.translate ? deps.translate('review_wrong_words_hint') : 'Keep reinforcing incorrect words!')
-    console.log(`[Nav] 还有错词，进入错词清空（templateId=${action.templateId}）`)
+    console.log(`[Nav] has wrong words, entering wrong word retry (templateId=${action.templateId})`)
     data.words = shuffle(cloneDeep(data.wrongWords))
     data.index = 0
     data.wrongWords = []
@@ -309,10 +309,10 @@ export function createPracticeWordNavigator(deps: NavigatorDeps) {
   // ─── 即时型 action 执行 ───────────────────────────────────────────────────────
   function executeInstantAction(action: PracticeEndAction): void {
     if (action.type === 'collectWrongWords') {
-      console.log(`[Nav] 收藏错词 → ${action.target}`)
+      console.log(`[Nav] collect wrong words -> ${action.target}`)
       // TODO: 实际收藏逻辑（Phase 3+）
     } else if (action.type === 'generateReport') {
-      console.log(`[Nav] 生成报告 → ${action.reportType}`)
+      console.log(`[Nav] generate report -> ${action.reportType}`)
       // TODO: 实际报告逻辑（Phase 3+）
     }
   }

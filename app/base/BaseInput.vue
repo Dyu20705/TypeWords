@@ -148,7 +148,7 @@ const vFocus = {
       v-if="searchable && !disabled"
       class="search-toggle"
       :class="{ 'is-loading': searchLoading }"
-      title="搜索"
+      :title="$t('search')"
       @click="onSearch"
     />
     <!-- Password visibility toggle -->
@@ -156,7 +156,7 @@ const vFocus = {
       v-if="type === 'password' && !disabled"
       class="password-toggle"
       @click="togglePasswordVisibility"
-      :title="passwordVisible ? '隐藏密码' : '显示密码'"
+      :title="passwordVisible ? $t('hide_password') : $t('show_password')"
     >
       <IconFluentEye16Regular v-if="!passwordVisible" />
       <IconFluentEyeOff16Regular v-else />

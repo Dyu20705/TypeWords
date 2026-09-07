@@ -86,7 +86,7 @@ export async function checkAndUpgradeSaveDict(val: any) {
         return migrateSaveDict(defaultState)
       } else {
         // 版本不匹配时，尽量保留数据而不是直接返回默认状态
-        console.warn(`数据版本不匹配: 当前版本 ${version}, 期望版本 ${SAVE_DICT_KEY.version}，尝试保留数据`)
+        console.warn(`Data version mismatch: current version ${version}, expected version ${SAVE_DICT_KEY.version}, attempting to preserve data`)
         try {
           checkRiskKey(defaultState, state)
           return migrateSaveDict(defaultState)

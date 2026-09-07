@@ -37,8 +37,11 @@
 
 <script setup lang="ts">
 import { ref, useTemplateRef } from 'vue'
+import { useI18n } from 'vue-i18n'
 import QuestionItem from './QuestionItem.vue'
 import { Toast } from '@/base'
+
+const { t: $t } = useI18n()
 
 interface IProps {
   questions: Array
@@ -61,10 +64,10 @@ let timer = null
 
 const startExam = () => {
   started.value = true
-  timeLeft.value = props.duration || 300
   timer = setInterval(() => {
-    timeLeft.value--
-    if (timeLeft.value <= 0) {
+    if (timeLeft.value > 0) {
+      timeLeft.value--
+    } else {
       clearInterval(timer)
       submitAll()
     }
@@ -83,8 +86,8 @@ const submitAll = () => {
   const correctCount = results.filter(r => r.isCorrect).length
   const wrongCount = results.length - correctCount
 
-  console.log('最终结果：', results)
-  Toast.success(`共 ${results.length} 题，答对 ${correctCount}，答错 ${wrongCount}`)
+  console.log('Results:', results)
+  Toast.success($t('question_result_toast', { total: results.length, correct: correctCount, wrong: wrongCount }))
 }
 </script>
 

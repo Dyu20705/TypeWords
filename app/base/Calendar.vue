@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import BaseButton from './BaseButton.vue'
+
+const { t: $t, locale } = useI18n()
 
 const props = withDefaults(
   defineProps<{
@@ -44,7 +47,12 @@ const highlightSet = computed(() => new Set(props.highlightedDates))
 
 const todayKey = computed(() => toDateKey(new Date()))
 
-const weekdayLabels = ['一', '二', '三', '四', '五', '六', '日']
+const weekdayLabels = computed(() => {
+  if (locale.value === 'vi') {
+    return ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN']
+  }
+  return ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+})
 
 type Cell = {
   dateKey: string
@@ -102,7 +110,12 @@ const cells = computed((): Cell[] => {
   return out
 })
 
-const monthTitle = computed(() => `${viewYear.value}年${pad2(viewMonth.value + 1)}月`)
+const monthTitle = computed(() => {
+  if (locale.value === 'vi') {
+    return `Tháng ${pad2(viewMonth.value + 1)}/${viewYear.value}`
+  }
+  return `${pad2(viewMonth.value + 1)}/${viewYear.value}`
+})
 
 const displayCells = computed(() => (viewMode.value === 'week' ? weekCells.value : cells.value))
 
@@ -150,7 +163,7 @@ function onSelectCell(cell: Cell) {
 <template>
   <div class="study-calendar">
     <div class="cal-header">
-      <BaseButton v-if="viewMode === 'month'" type="info" size="small" @click="prevMonth" aria-label="上月">
+      <BaseButton v-if="viewMode === 'month'" type="info" size="small" @click="prevMonth" :aria-label="$t('prev_month')">
         ‹
       </BaseButton>
       <div v-else class="cal-header-lead" aria-hidden="true" />
@@ -167,12 +180,12 @@ function onSelectCell(cell: Cell) {
           type="info"
           size="small"
           class="cal-toggle"
-          :title="viewMode === 'week' ? '展开月视图' : '回到周视图'"
+          :title="viewMode === 'week' ? $t('calendar_month_view') : $t('calendar_week_view')"
           @click="toggleViewMode"
         >
-          {{ viewMode === 'week' ? '月' : '周' }}
+          {{ viewMode === 'week' ? $t('month') : $t('week') }}
         </BaseButton>
-        <BaseButton v-if="viewMode === 'month'" type="info" size="small" @click="nextMonth" aria-label="下月">
+        <BaseButton v-if="viewMode === 'month'" type="info" size="small" @click="nextMonth" :aria-label="$t('next_month')">
           ›
         </BaseButton>
       </div>
