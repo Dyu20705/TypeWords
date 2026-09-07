@@ -14,6 +14,7 @@ import {
   _nextTick,
   ensureCustomDictCopy,
   findOfficialSourceDict,
+  getBookName,
   msToHourMinute,
   resourceWrap,
   total,
@@ -341,7 +342,7 @@ function play(sentence: Sentence, onEnd: () => void) {
         <div class="dict-header flex justify-between items-center relative">
           <div class="flex gap-space">
             <BackIcon class="dict-back z-2" />
-            <div class="dict-title text-2xl text-align-center">{{ runtimeStore.editDict.name }}</div>
+            <div class="dict-title text-2xl text-align-center">{{ getBookName(runtimeStore.editDict, $t) }}</div>
           </div>
           <div class="dict-actions flex">
             <BaseButton v-if="runtimeStore.editDict.custom && runtimeStore.editDict.url" type="info" @click="reset">

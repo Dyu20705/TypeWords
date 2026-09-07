@@ -824,6 +824,7 @@
 	"books.wordCollect": "Favorites",
 	"books.wordWrong": "Wrong Words",
 	"books.wordKnown": "Mastered",
+	"books.wordKnown_desc": "Mastered words will not appear in practice",
 	"books.articleCollect": "Favorites",
 	"sound_mechanical": "Mechanical keyboard",
 	"sound_mechanical_1": "Mechanical keyboard 1",

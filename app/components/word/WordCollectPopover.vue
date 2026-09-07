@@ -6,6 +6,7 @@ import { useWordOptions } from '@/core/hooks/dict.ts'
 import { closeWordCollectPicker, wordCollectPickerState } from '@/core/hooks/useWordCollectPicker.ts'
 import type { Dict } from '@/core/types'
 import { useDisableEventListener } from '@/core/hooks/event'
+import { getBookName } from '@/core/utils'
 
 const { t: $t } = useI18n()
 const { getCollectibleDicts, addWordToDict, createCustomDict } = useWordOptions()
@@ -154,7 +155,7 @@ useDisableEventListener(() => wordCollectPickerState.visible)
 
         <div v-if="dictList.length" class="dict-list">
           <div v-for="(dict, index) in dictList" :key="dict.id" class="dict-item" @click="selectDict(dict)">
-            <span class="dict-name">{{ dict.name }}</span>
+            <span class="dict-name">{{ getBookName(dict, $t) }}</span>
             <span v-if="index < 9" class="dict-shortcut">{{ $t('shortcut') }} {{ index + 1 }}</span>
           </div>
         </div>

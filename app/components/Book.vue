@@ -2,6 +2,7 @@
 import type { Dict } from '@/core/types'
 import { Checkbox, Progress } from '@/base'
 import { withAppBaseURL } from '@/core/utils/base-url'
+import { getBookName } from '@/core/utils'
 
 interface IProps {
   item?: Partial<Dict>
@@ -54,7 +55,7 @@ function handleClick(e: MouseEvent) {
       :class="[showCheckbox && 'book-selectable', (selected || checked) && 'book-selected']"
     >
       <img class="absolute top-0 left-0 w-full object-cover" v-if="item?.cover" :src="coverSrc" alt="" />
-      <div class="text-base mt-1" v-else>{{ item?.name }}</div>
+      <div class="text-base mt-1" v-else>{{ getBookName(item, $t) }}</div>
       <div class="absolute bottom-4 right-3 z-1" v-if="!item?.cover">
         <div>{{ studyProgress }}{{ item?.length }}{{ quantifier }}</div>
       </div>
@@ -73,12 +74,12 @@ function handleClick(e: MouseEvent) {
         class="absolute left-2 bottom-3 z-3"
       />
       <div class="custom z-1" v-if="item.custom">{{ $t('custom') }}</div>
-      <div class="system z-1" v-else-if="item.system">内置</div>
+      <div class="system z-1" v-else-if="item.system">{{ $t('built_in') }}</div>
       <!--      <div class="custom bg-red! color-white z-1" v-else-if="item.update">更新中</div>-->
       <!--      <div class="sync bg-red! color-white z-1" v-if="!item.sync && isUser && !showCheckbox">未同步</div>-->
     </div>
     <div class="flex justify-between text-base mt-1" v-if="item?.cover">
-      <div class="w-6/10 truncate">{{ item?.name }}</div>
+      <div class="w-6/10 truncate">{{ getBookName(item, $t) }}</div>
       <div>{{ studyProgress }}{{ item?.length }}{{ quantifier }}</div>
     </div>
   </div>

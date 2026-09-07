@@ -824,6 +824,7 @@
 	"books.wordCollect": "Yêu thích",
 	"books.wordWrong": "Từ hay sai",
 	"books.wordKnown": "Đã thành thạo",
+	"books.wordKnown_desc": "Các từ đã thành thạo sẽ không xuất hiện trong bài luyện tập",
 	"books.articleCollect": "Yêu thích",
 	"sound_mechanical": "Bàn phím cơ",
 	"sound_mechanical_1": "Bàn phím cơ 1",

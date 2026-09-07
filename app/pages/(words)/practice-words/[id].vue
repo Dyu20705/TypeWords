@@ -7,7 +7,7 @@ import { useRuntimeStore } from '@/core/stores/runtime.ts'
 import type { Dict, TaskWords, Word } from '@/core/types/types.ts'
 import { useStartKeyboardEventListener } from '@/core/hooks/event.ts'
 import useTheme from '@/core/hooks/theme.ts'
-import { _getDictDataByUrl, resourceWrap, shuffle, throttle } from '@/core/utils'
+import { _getDictDataByUrl, getBookName, resourceWrap, shuffle, throttle } from '@/core/utils'
 import { useRoute, useRouter } from 'vue-router'
 import Footer from '@/components/word/Footer.vue'
 import Panel from '@/components/Panel.vue'
@@ -587,7 +587,7 @@ useEvents([
       <Panel>
         <template v-slot:title>
           <div class="center gap-1">
-            <span>{{ store.sdict.name }}</span>
+            <span>{{ getBookName(store.sdict, $t) }}</span>
 
             <GroupList
               @click="jumpToGroup"

@@ -31,6 +31,8 @@ import {
   _nextTick,
   convertToWord,
   ensureCustomDictCopy,
+  getBookDescription,
+  getBookName,
   isMobile,
   loadJsLib,
   resourceWrap,
@@ -565,7 +567,7 @@ defineRender(() => {
         <div className="card mb-0 dict-detail-card flex flex-col">
           <div class="dict-header flex justify-between items-center relative">
             <BackIcon class="dict-back z-2" />
-            <div class="dict-title absolute page-title text-align-center w-full">{runtimeStore.editDict.name}</div>
+            <div class="dict-title absolute page-title text-align-center w-full">{getBookName(runtimeStore.editDict, $t)}</div>
             <div class="dict-actions flex">
               {runtimeStore.editDict.custom ? (
                 <BaseButton loading={studyLoading || loading} type="info" onClick={() => (isEdit = true)}>
@@ -584,10 +586,10 @@ defineRender(() => {
               </BaseButton>
             </div>
           </div>
-          {dict.description && (
+          {getBookDescription(dict, $t) && (
             <>
               <div class="text-lg  mt-2">
-                {$t('introduction')}：{dict.description}
+                {$t('introduction')}：{getBookDescription(dict, $t)}
               </div>
               <div class="line my-3"></div>
             </>

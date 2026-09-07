@@ -20,6 +20,7 @@ import {
   _getDictDataByUrl,
   _nextTick,
   debounce,
+  getBookName,
   getShufflePracticeWords,
   isMobile,
   loadJsLib,
@@ -573,7 +574,7 @@ onUnmounted(() => {
             <IconFluentBookNumber20Filled class="text-xl color-link" />
           </div>
           <div @click="goDictDetail(store.sdict)" class="text-2xl font-bold cursor-pointer">
-            {{ store.sdict.name || $t('no_dict_selected') }}
+            {{ getBookName(store.sdict, $t) || $t('no_dict_selected') }}
           </div>
         </div>
 
