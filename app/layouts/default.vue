@@ -12,7 +12,6 @@ import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import { useInit } from '@/core/composables/useInit.ts'
 import { useI18n } from 'vue-i18n'
 import { Supabase } from '@/core/utils/supabase.ts'
-import MiniProgram from '@/components/MiniProgram.vue'
 import WordCollectPopover from '@/components/word/WordCollectPopover.vue'
 
 const router = useRouter()
@@ -47,7 +46,7 @@ const { locales, setLocale } = useI18n()
 const route = useRoute()
 
 const showIcon = $computed(() => {
-  return ['/words', '/articles', '/setting', '/help', '/doc', '/feedback'].includes(route.path)
+  return ['/words', '/articles', '/setting', '/help', '/feedback'].includes(route.path)
 })
 
 onMounted(() => {
@@ -94,10 +93,6 @@ function onMouseLeave() {
         <NuxtLink to="/feedback" class="row">
           <IconFluentCommentEdit20Regular />
           <span>{{ $t('feedback') }}</span>
-        </NuxtLink>
-        <NuxtLink to="/doc" class="row">
-          <IconFluentDocument20Regular />
-          <span>{{ $t('document') }}</span>
         </NuxtLink>
         <NuxtLink to="/help" class="row">
           <IconFluentQuestionCircle20Regular />
@@ -164,8 +159,6 @@ function onMouseLeave() {
       <router-view></router-view>
 
       <div class="absolute right-4 top-4 flex z-1 gap-2" v-if="showIcon">
-        <MiniProgram v-if="settingStore.load && !settingStore.first" />
-
         <div class="relative group">
           <BaseIcon>
             <IconPhTranslate />

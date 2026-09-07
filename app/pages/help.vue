@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { BasePage, Collapse } from '@/base'
-import WeChat from '@/components/channel-icons/WeChat.vue'
 import { APP_NAME, GITHUB, Origin } from '@/core/config/env.ts'
 import ConflictNoticeText from '@/components/dialog/ConflictNoticeText.vue'
+import { useI18n } from 'vue-i18n'
 
-let title = APP_NAME + ' 常见问题解答'
+const { t } = useI18n()
+let title = `${APP_NAME} - ${t('help')}`
 let route = useRoute()
 useSeoMeta({
   title: title,
@@ -92,16 +93,12 @@ useSeoMeta({
           <div class="line"></div>
 
           <Collapse :q="$t('qa13_a')" :a="[$t('qa13_q1'), $t('qa13_q2'), $t('qa13_q3'), $t('qa13_q4')]">
-            <div class="flex items-center">
-              {{ $t('wechat_group') }}：
-              <WeChat />
-            </div>
             <p>
               {{ $t('github_address') }}： <a :href="GITHUB" target="_blank">{{ GITHUB }}</a>
             </p>
-            <div class="">
+            <div>
               {{ $t('about_ticket_feedback')
-              }}<a :href="`https://v.wjx.cn/vm/ev0W7fv.aspx#`" target="_blank">https://v.wjx.cn/vm/ev0W7fv.aspx#</a>
+              }}<a :href="`${GITHUB}/issues`" target="_blank">{{ GITHUB }}/issues</a>
             </div>
           </Collapse>
         </div>

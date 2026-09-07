@@ -9,7 +9,7 @@ onMounted(() => {
   startTypingAnimation()
 })
 
-const { t } = useI18n()
+const { t, locales, setLocale } = useI18n()
 
 const typingWords = ['abandon', 'persevere', 'eloquent', 'diligent', 'profound', 'innovation']
 let typingCursor = $ref(true)
@@ -185,7 +185,25 @@ useSeoMeta({
           >
         </nav>
         <!-- Actions -->
-        <div class="ml-auto flex items-center gap-2 text-[var(--hw-text-2)]">
+        <div class="ml-auto flex items-center gap-3 text-[var(--hw-text-2)]">
+          <!-- Language Selector -->
+          <div class="relative group">
+            <button class="flex items-center gap-1 bg-transparent border-none text-[var(--hw-text-2)] hover:text-[var(--hw-text)] cursor-pointer p-1 rounded-md transition-colors" :title="$t('change_language')">
+              <BaseIcon noBg>
+                <IconPhTranslate />
+              </BaseIcon>
+            </button>
+            <div
+              class="space-y-2 pt-2 absolute z-50 right-0 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-150 pointer-events-none group-hover:pointer-events-auto"
+            >
+              <div class="card mb-2 py-3 px-5 space-y-2.5 bg-[var(--hw-bg-card)] border border-[var(--hw-border)] shadow-lg rounded-xl">
+                <div v-for="locale in locales" :key="locale.code" @click="setLocale(locale.code)" class="w-full cp break-keep cursor-pointer hover:text-[#7c3aed] text-sm">
+                  {{ locale.name }}
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- GitHub -->
           <a
             class="flex center gap-1 text-[var(--hw-text-2)] no-underline"
@@ -196,7 +214,7 @@ useSeoMeta({
             <BaseIcon title="Github" noBg>
               <IconSimpleIconsGithub />
             </BaseIcon>
-            <span class="text-xl">9k</span>
+            <span class="text-base font-medium">9k</span>
           </a>
           <!-- Mobile menu button -->
           <button
@@ -302,17 +320,6 @@ useSeoMeta({
               </div>
             </div>
 
-            <div class="mini-qr-card w-full box-border mb-3 flex sm:hidden">
-              <NuxtImg
-                src="/imgs/mini.png"
-                :alt="$t('mini_program')"
-                class="w-24 h-24 rounded-xl shrink-0 border border-[var(--hw-border)]"
-              />
-              <div class="flex flex-col gap-0.5 flex-1 min-w-0">
-                <div class="text-lg font-semibold text-[var(--hw-text)]">{{ $t('mini_program') }}</div>
-                <div class="text-sm text-[var(--hw-text-3)] leading-[1.5]">{{ $t('mini_program_desc') }}</div>
-              </div>
-            </div>
 
             <!-- CTA buttons -->
             <div
@@ -504,18 +511,6 @@ useSeoMeta({
               </div>
             </div>
 
-            <!-- ── 小程序码 — 独立卡片（不再混入 CTA 按钮旁） ── -->
-            <div class="mini-qr-card w-full box-border flex">
-              <NuxtImg
-                src="/imgs/mini.png"
-                :alt="$t('mini_program')"
-                class="w-24 h-24 rounded-xl shrink-0 border border-[var(--hw-border)]"
-              />
-              <div class="flex flex-col gap-0.5 flex-1 min-w-0">
-                <div class="text-lg font-semibold text-[var(--hw-text)]">{{ $t('mini_program') }}</div>
-                <div class="text-sm text-[var(--hw-text-3)] leading-[1.5]">{{ $t('mini_program_desc') }}</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -661,10 +656,5 @@ useSeoMeta({
     transform: translateY(5px);
     opacity: 1;
   }
-}
-
-/* 小程序码卡片 */
-.mini-qr-card {
-  @apply items-center gap-3 bg-[var(--hw-bg-card)] border border-[var(--hw-border)] rounded-xl px-4 py-3 shadow-[var(--hw-shadow-sm)] hover:border-[rgba(124,58,237,.4)] hover:shadow-[var(--hw-shadow-md)] transition-all duration-200;
 }
 </style>

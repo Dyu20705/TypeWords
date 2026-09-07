@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { jump2Feedback } from '@/core/utils'
-import WeChat from '@/components/channel-icons/WeChat.vue'
 
 withDefaults(
   defineProps<{
@@ -30,7 +29,7 @@ withDefaults(
             <li>
               {{ $t('incognito_not_working')
               }}<span class="color-link mx-1 cp" @click="jump2Feedback">{{ $t('click_here') }}</span
-              >{{ $t('feedback_or_wechat') }}<WeChat />
+              >{{ $t('feedback_or_wechat') }}
             </li>
             <li>{{ $t('incognito_working') }}</li>
             <li>{{ $t('disable_plugin_or_exclude') }}</li>
