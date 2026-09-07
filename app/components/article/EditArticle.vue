@@ -14,7 +14,7 @@ import {
 } from '@/base'
 import EditAbleText from '@/components/EditAbleText.vue'
 import { getNetworkTranslate, getSentenceAllText, getSentenceAllTranslateText } from '@/core/hooks/translate.ts'
-import { genArticleSectionData, splitCNArticle2, splitEnArticle2, usePlaySentenceAudio } from '@/core/hooks/article.ts'
+import { genArticleSectionData, splitArticleTranslation, splitEnArticle2, usePlaySentenceAudio } from '@/core/hooks/article.ts'
 import { _nextTick, _parseLRC, cloneDeep, last } from '@/core/utils'
 import { defineAsyncComponent, watch } from 'vue'
 import Empty from '@/components/Empty.vue'
@@ -29,7 +29,7 @@ import { TranslateEngine } from '@/core/types'
 import { useI18n } from 'vue-i18n'
 
 const Dialog = defineAsyncComponent(() => import('@/base/dialog/Dialog.vue'))
-const { t: $t } = useI18n()
+const { t: $t, locale } = useI18n()
 
 interface IProps {
   article?: Article
@@ -52,7 +52,7 @@ let failCount = $ref(0)
 let resultRef = $ref<HTMLDivElement>()
 const TranslateEngineOptions = [
   // {value: 'youdao', label: '有道'},
-  { value: 'baidu', label: '百度' },
+  { value: 'baidu', label: 'Baidu' },
 ]
 
 let editArticle = $ref<Article>(getDefaultArticle())
@@ -100,7 +100,7 @@ function splitText() {
 
 //分句翻译
 function splitTranslateText() {
-  editArticle.textTranslate = splitCNArticle2(editArticle.textTranslate.trim())
+  editArticle.textTranslate = splitArticleTranslation(editArticle.textTranslate.trim(), locale.value)
 }
 
 //TODO
@@ -117,10 +117,17 @@ async function startNetworkTranslate() {
   //注意！！！
   //这里需要用异步，因为watch了article.networkTranslate，改变networkTranslate了之后，会重新设置article.sections
   //导致getNetworkTranslate里面拿到的article.sections是废弃的值
+  const targetLang = (locale.value === 'en' ? 'en' : 'vi') as 'vi' | 'en'
   setTimeout(async () => {
-    await getNetworkTranslate(editArticle, TranslateEngine.Baidu, false, (v: number) => {
-      progress = v
-    })
+    await getNetworkTranslate(
+      editArticle,
+      TranslateEngine.Baidu,
+      false,
+      (v: number) => {
+        progress = v
+      },
+      targetLang
+    )
     failCount = 0
   })
 }

@@ -301,44 +301,34 @@ export function splitEnArticle2(text: string): string {
   return formattedParagraphs.filter(p => p).join('\n\n')
 }
 
-export function splitCNArticle2(text: string): string {
-  if (!text && false) {
-    // text = "飞机误点了，侦探们在机场等了整整一上午。他们正期待从南非来的一个装着钻石的贵重包裹。数小时以前，有人向警方报告，说有人企图偷走这些钻石。当飞机到达时，一些侦探等候在主楼内，另一些侦探则守候在停机坪上。有两个人把包裹拿下飞机，进了海关。这时两个侦探把住门口，另外两个侦探打开了包裹。令他们吃惊的是，那珍贵的包裹里面装的全是石头和沙子！"
-    //     text = `那是个星期天，而在星期天我是从来不早起的，有时我要一直躺到吃午饭的时候。上个星期天，我起得很晚。我望望窗外，外面一片昏暗。“鬼天气！”我想，“又下雨了。”正在这时，电话铃响了。是我姑母露西打来的。“我刚下火车，”她说，“我这就来看你。”
-    // “但我还在吃早饭，”我说。
-    // “你在干什么？”她问道。
-    // “我正在吃早饭，”我又说了一遍。
-    // “天啊，”她说，“你总是起得这么晚吗？现在已经1点钟了！”`
-    //     text = `上星期我去看戏。我的座位很好，戏很有意思，但我却无法欣赏。一青年男子与一青年女子坐在我的身后，大声地说着话。我非常生气，因为我听不见演员在说什么。我回过头去怒视着那一男一女，他们却毫不理会。最后，我忍不住了，又一次回过头去，生气地说：“我一个字也听不见了！”
-    // “不关你的事，”那男的毫不客气地说，“这是私人间的谈话！”`
-  }
-  const segmenterJa = new Intl.Segmenter('zh-CN', { granularity: 'sentence' })
+export function splitArticleTranslation(text: string, locale: string = 'vi'): string {
+  if (!text) return ''
+  const lang = locale === 'en' ? 'en' : (locale === 'vi' ? 'vi' : 'zh-CN')
+  const segmenter = new Intl.Segmenter(lang, { granularity: 'sentence' })
 
-  let sectionTextList = text.replaceAll('\n\n', '`^`').replaceAll('\n', '').split('`^`')
+  let sectionTextList = text.replaceAll('\r\n', '\n').replaceAll('\n\n', '`^`').split('`^`')
 
-  let s = sectionTextList
-    .filter(v => v)
-    .map((rowSection, i) => {
-      const segments = segmenterJa.segment(rowSection)
-      let ss = ''
-      Array.from(segments).map(sentenceRow => {
-        let row = sentenceRow.segment
-        if (row) {
-          //这个库总是会把反引号给断句到上一行末尾
-          //而 sentence-splitter 这个库总是会把反引号给断句到下一行开头
-          if (row[row.length - 1] === '“') {
-            row = row.substring(0, row.length - 1)
-            ss += row + '\n' + '“'
-          } else {
-            ss += row + '\n'
-          }
+  let formattedParagraphs = sectionTextList
+    .map(p => p.trim())
+    .filter(Boolean)
+    .map(paragraph => {
+      const cleanParagraph = paragraph.replace(/\n+/g, ' ')
+      const segments = segmenter.segment(cleanParagraph)
+      const sentences: string[] = []
+      for (const seg of segments) {
+        let s = seg.segment.trim()
+        if (s) {
+          sentences.push(s)
         }
-      })
-      return ss
+      }
+      return sentences.join('\n')
     })
-    .join('\n')
-    .trim()
-  return s
+
+  return formattedParagraphs.join('\n\n')
+}
+
+export function splitCNArticle2(text: string, locale: string = 'vi'): string {
+  return splitArticleTranslation(text, locale)
 }
 
 export function usePlaySentenceAudio() {

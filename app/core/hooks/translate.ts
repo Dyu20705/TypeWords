@@ -37,7 +37,8 @@ export async function getNetworkTranslate(
   article: Article,
   translateEngine: TranslateEngine,
   allShow: boolean = false,
-  progressCb?: (val: number) => void
+  progressCb?: (val: number) => void,
+  targetLang: 'vi' | 'en' = 'vi'
 ) {
   let translator: Translator
   if (translateEngine === TranslateEngine.Baidu) {
@@ -50,8 +51,9 @@ export async function getNetworkTranslate(
   }
 
   if (translator) {
+    const toLang = targetLang === 'en' ? 'en' : 'vi'
     if (!article.titleTranslate) {
-      translator.translate(article.title, 'en', 'zh-CN').then(r => {
+      translator.translate(article.title, 'en', toLang).then(r => {
         article.titleTranslate = r.trans.paragraphs[0]
       })
     }
@@ -62,7 +64,7 @@ export async function getNetworkTranslate(
 
     const translate = async (sentence: Sentence) => {
       try {
-        let r = await translator.translate(sentence.text, 'en', 'zh-CN')
+        let r = await translator.translate(sentence.text, 'en', toLang)
         console.log(r)
 
         if (r) {
