@@ -196,7 +196,7 @@ export function usePlayWordAudio() {
       const count = activeWordPlayCountMap.get(key) ?? 0
       if (count % 3 !== 0) {
         playbackRate = playbackRate * 0.75
-        Toast.success('0.75倍速播放')
+        Toast.success('0.75x')
       } else {
         Toast.closeAll()
       }

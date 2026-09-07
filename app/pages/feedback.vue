@@ -2,9 +2,11 @@
 import { BasePage } from '@/base'
 import About from '@/components/About.vue'
 import { APP_NAME, Origin } from '@/core/config/env.ts'
+import { useI18n } from 'vue-i18n'
 
+const { t } = useI18n()
 let route = useRoute()
-let title = APP_NAME + ' 反馈'
+let title = `${APP_NAME} - ${t('feedback')}`
 useSeoMeta({
   title: title,
   description: title,

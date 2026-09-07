@@ -57,7 +57,7 @@ function handleClick(e: MouseEvent) {
       <img class="absolute top-0 left-0 w-full object-cover" v-if="item?.cover" :src="coverSrc" alt="" />
       <div class="text-base mt-1" v-else>{{ getBookName(item, $t) }}</div>
       <div class="absolute bottom-4 right-3 z-1" v-if="!item?.cover">
-        <div>{{ studyProgress }}{{ item?.length }}{{ quantifier }}</div>
+        <div>{{ studyProgress }}{{ item?.length }}{{ quantifier ? ' ' + quantifier : '' }}</div>
       </div>
       <div class="absolute bottom-2 left-3 right-3">
         <Progress
@@ -80,7 +80,7 @@ function handleClick(e: MouseEvent) {
     </div>
     <div class="flex justify-between text-base mt-1" v-if="item?.cover">
       <div class="w-6/10 truncate">{{ getBookName(item, $t) }}</div>
-      <div>{{ studyProgress }}{{ item?.length }}{{ quantifier }}</div>
+      <div>{{ studyProgress }}{{ item?.length }}{{ quantifier ? ' ' + quantifier : '' }}</div>
     </div>
   </div>
   <div v-else class="book" id="no-book" @click="handleClick">

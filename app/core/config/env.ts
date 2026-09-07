@@ -44,11 +44,11 @@ export const DICT_LIST = {
 }
 
 export const SoundFileOptions = [
-  { value: '机械键盘', label: '机械键盘' },
-  { value: '机械键盘1', label: '机械键盘1' },
-  { value: '机械键盘2', label: '机械键盘2' },
-  { value: '老式机械键盘', label: '老式机械键盘' },
-  { value: '笔记本键盘', label: '笔记本键盘' },
+  { value: '机械键盘', label: 'sound_mechanical' },
+  { value: '机械键盘1', label: 'sound_mechanical_1' },
+  { value: '机械键盘2', label: 'sound_mechanical_2' },
+  { value: '老式机械键盘', label: 'sound_vintage' },
+  { value: '笔记本键盘', label: 'sound_laptop' },
 ]
 export const APP_VERSION = {
   key: 'type-words-app-version',
@@ -178,28 +178,28 @@ export const WordPracticeModeStageMap: Record<WordPracticeMode, WordPracticeStag
   [WordPracticeMode.ReviewWordsTest]: null,
 }
 export const WordPracticeStageNameMap: Record<WordPracticeStage, string> = {
-  [WordPracticeStage.FollowWriteNewWord]: '跟写新词',
-  [WordPracticeStage.IdentifyNewWord]: '自测新词',
-  [WordPracticeStage.ListenNewWord]: '听写新词',
-  [WordPracticeStage.DictationNewWord]: '默写新词',
-  [WordPracticeStage.FollowWriteReview]: '跟写旧词',
-  [WordPracticeStage.IdentifyReview]: '自测旧词',
-  [WordPracticeStage.ListenReview]: '听写旧词',
-  [WordPracticeStage.DictationReview]: '默写旧词',
-  [WordPracticeStage.Complete]: '完成学习',
-  [WordPracticeStage.Shuffle]: '随机复习',
+  [WordPracticeStage.FollowWriteNewWord]: 'stage_follow_new',
+  [WordPracticeStage.IdentifyNewWord]: 'stage_identify_new',
+  [WordPracticeStage.ListenNewWord]: 'stage_listen_new',
+  [WordPracticeStage.DictationNewWord]: 'stage_dictation_new',
+  [WordPracticeStage.FollowWriteReview]: 'stage_follow_review',
+  [WordPracticeStage.IdentifyReview]: 'stage_identify_review',
+  [WordPracticeStage.ListenReview]: 'stage_listen_review',
+  [WordPracticeStage.DictationReview]: 'stage_dictation_review',
+  [WordPracticeStage.Complete]: 'stage_complete',
+  [WordPracticeStage.Shuffle]: 'stage_shuffle',
 }
 export const WordPracticeModeNameMap: Record<WordPracticeMode, string> = {
-  [WordPracticeMode.System]: '学习',
-  [WordPracticeMode.Free]: '自由练习',
-  [WordPracticeMode.IdentifyOnly]: '自测',
-  [WordPracticeMode.DictationOnly]: '默写',
-  [WordPracticeMode.ListenOnly]: '听写',
-  [WordPracticeMode.Shuffle]: '随机复习',
-  [WordPracticeMode.Review]: '复习',
-  [WordPracticeMode.ShuffleWordsTest]: '随机单词测试',
-  [WordPracticeMode.ReviewWordsTest]: '单词测试',
-  [WordPracticeMode.Custom]: '自定义',
+  [WordPracticeMode.System]: 'mode_system',
+  [WordPracticeMode.Free]: 'mode_free',
+  [WordPracticeMode.IdentifyOnly]: 'mode_identify',
+  [WordPracticeMode.DictationOnly]: 'mode_dictation',
+  [WordPracticeMode.ListenOnly]: 'mode_listen',
+  [WordPracticeMode.Shuffle]: 'mode_shuffle',
+  [WordPracticeMode.Review]: 'mode_review',
+  [WordPracticeMode.ShuffleWordsTest]: 'mode_shuffle_test',
+  [WordPracticeMode.ReviewWordsTest]: 'mode_test',
+  [WordPracticeMode.Custom]: 'mode_custom',
 }
 export const WordPracticeModeUrlMap: Record<WordPracticeMode, string> = {
   [WordPracticeMode.System]: '/practice-words',

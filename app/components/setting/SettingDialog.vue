@@ -53,7 +53,7 @@ defineExpose({ openSoundTab })
             </div>
             <div class="tab" :class="tabIndex === 3 && 'active'" @click="tabIndex = 3">
               <IconClarityVolumeUpLine width="20" />
-              <span>音效设置</span>
+              <span>{{ $t('sound_settings') }}</span>
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ import { watchOnce } from '@vueuse/core'
 import CollectNotice from '@/components/dialog/CollectNotice.vue'
 import ConflictNotice2 from '@/components/dialog/ConflictNotice2.vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useSettingStore } from '@/core/stores/setting.ts'
 import { LIB_JS_URL, TourConfig } from '@/core/config/env.ts'
 import { _nextTick, isMobile, loadJsLib, sleep } from '@/core/utils'
@@ -48,6 +49,8 @@ if (!route.query.guide) {
   }, 10000)
 }
 
+const { t } = useI18n()
+
 // Tour 引导初始化
 watchOnce(
   () => props.ready,
@@ -63,11 +66,11 @@ watchOnce(
         })
         tour.addStep({
           id: 'step5',
-          text: '这里可以练习拼写单词，只需要按下键盘上对应的按键即可，没有输入框！',
+          text: t('tour_step_5_text'),
           attachTo: { element: '#word', on: 'bottom' },
           buttons: [
             {
-              text: '关闭',
+              text: t('close'),
               action() {
                 settingStore.first = false
                 tour.next()

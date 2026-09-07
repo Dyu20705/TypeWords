@@ -44,9 +44,7 @@ watch(
   <transition name="right">
     <div class="CollectNotice card" :class="{ mobile }" v-if="show">
       <div class="notice">
-        坚持练习，提高外语能力。将
-        <span class="active font-bold">「{{ APP_NAME }}」</span>
-        保存为书签，永不迷失！
+        {{ $t('bookmark_notice_title', { app: APP_NAME }) }}
       </div>
       <div class="collect">
         <div class="href-wrapper">
@@ -57,19 +55,17 @@ watch(
           <div class="right">
             👈
             <IconMdiStar />
-            点亮它!
+            {{ $t('bookmark_star_it') }}
           </div>
         </div>
       </div>
       <div class="text-base">
-        Ctrl/Command + D 快速收藏
+        {{ $t('bookmark_shortcut_hint') }}
       </div>
-      <BaseButton size="large" @click="toggleNotice" v-if="!showNotice">我已收藏</BaseButton>
+      <BaseButton size="large" @click="toggleNotice" v-if="!showNotice">{{ $t('bookmark_already_saved') }}</BaseButton>
       <div class="close-wrapper">
-        <span v-show="showNotice"
-          ><span class="active">{{ num }}s</span> 后自动关闭</span
-        >
-        <Close @click="close" title="关闭" />
+        <span v-show="showNotice">{{ $t('auto_close_in', { seconds: num }) }}</span>
+        <Close @click="close" :title="$t('close')" />
       </div>
     </div>
   </transition>

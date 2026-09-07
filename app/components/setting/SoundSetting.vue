@@ -180,9 +180,9 @@ function previewTtsVoice(voiceName: string) {
     </SettingItem>
     <SettingItem :title="$t('keyboard_sound_effect')">
       <Select v-model="settingStore.keyboardSoundFile" :placeholder="$t('please_select')" class="w-50!">
-        <Option v-for="item in SoundFileOptions" :key="item.value" :label="item.label" :value="item.value">
+        <Option v-for="item in SoundFileOptions" :key="item.value" :label="$t(item.label)" :value="item.value">
           <div class="flex justify-between items-center w-full">
-            <span>{{ item.label }}</span>
+            <span>{{ $t(item.label) }}</span>
             <VolumeIcon :time="100" @click="usePlayAudio(ENV.RESOURCE_URL + getAudioFileUrl(item.value)[0])" />
           </div>
         </Option>

@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { BaseButton, InputNumber, Slider, Toast } from '@/base'
 import { computed, defineAsyncComponent, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useBaseStore } from '@/core/stores/base.ts'
 import { WordPracticeModeNameMap } from '@/core/config/env'
 import { useSettingStore } from '@/core/stores/setting.ts'
-import { getShufflePracticeWords, toShufflePracticeRange, type ShufflePracticeSetting } from '@/core/utils'
+import { getBookName, getShufflePracticeWords, toShufflePracticeRange, type ShufflePracticeSetting } from '@/core/utils'
 const Dialog = defineAsyncComponent(() => import('@/base/dialog/Dialog.vue'))
+
+const { t: $t } = useI18n()
 
 const MIN_RANGE_WORD_COUNT = 5
 const MIN_RANGE_GAP = MIN_RANGE_WORD_COUNT - 1
@@ -15,7 +18,7 @@ const props = defineProps<{
   onConfirm?: (setting: ShufflePracticeSetting) => Promise<void | boolean>
 }>()
 
-let wordPracticeMode = $computed(() => WordPracticeModeNameMap[props.wordPracticeMode])
+let wordPracticeMode = $computed(() => $t(WordPracticeModeNameMap[props.wordPracticeMode]))
 
 const store = useBaseStore()
 const settingStore = useSettingStore()
@@ -158,17 +161,17 @@ async function submit(setting: ShufflePracticeSetting) {
 async function confirm() {
   syncTotalWithRange()
   if (rangeWordCount < MIN_RANGE_WORD_COUNT) {
-    Toast.warning('随机区间至少需要5个单词')
+    Toast.warning($t('range_min_limit'))
     return false
   }
   if (!num) {
-    Toast.warning('请设置随机数量')
+    Toast.warning($t('please_set_random_amount'))
     return false
   }
 
   const result = getSelection()
   if (!result.available) {
-    Toast.warning('当前区间筛选后没有可用单词，请调整区间或忽略规则')
+    Toast.warning($t('no_words_in_range'))
     return false
   }
 
@@ -204,18 +207,18 @@ watch(
 </script>
 
 <template>
-  <Dialog v-model="model" :title="wordPracticeMode + '设置'" :footer="true" :padding="true" :onConfirm="confirm">
+  <Dialog v-model="model" :title="$t('practice_mode_setting_title', { mode: wordPracticeMode })" :footer="true" :padding="true" :onConfirm="confirm">
     <div class="w-120 color-main">
-      <div class="center items-end mb-4">
-        从<span class="font-bold mx-2">{{ store.sdict.name }}</span
-        >的 <span class="font-bold mx-2">[{{ startNo }} - {{ endNo }}]</span>中<span>{{ wordPracticeMode }}</span>
-        <span class="target-number mx-2">{{ num }}</span
-        >个单词
+      <div class="center items-end mb-4 flex-wrap text-center">
+        <span class="font-bold mx-2">{{ getBookName(store.sdict, $t) }}</span>
+        <span>[{{ startNo }} - {{ endNo }}] · {{ wordPracticeMode }}:</span>
+        <span class="target-number mx-2">{{ num }}</span>
+        <span>{{ $t('unit_words') }}</span>
       </div>
 
       <div class="space-y-4">
         <div class="flex items-start gap-space">
-          <span class="shrink-0 w-20">随机数量：</span>
+          <span class="shrink-0 w-28">{{ $t('random_quantity') }}</span>
           <Slider
             v-model="num"
             show-input
@@ -228,7 +231,7 @@ watch(
         </div>
 
         <div class="flex items-start gap-space">
-          <span class="shrink-0 w-20">随机范围：</span>
+          <span class="shrink-0 w-28">{{ $t('random_range') }}</span>
           <div class="flex-1">
             <Slider
               v-model="rangeModel"
@@ -241,35 +244,33 @@ watch(
               :min-gap="sliderMinGap"
             />
             <div class="text-sm mt-1" :class="rangeWordCount < MIN_RANGE_WORD_COUNT ? 'text-red-500' : 'text-gray-500'">
-              第 {{ displayRange.start || 0 }} 到 {{ displayRange.end || 0 }} 个，当前区间 {{ rangeWordCount }} 个单词
+              {{ $t('range_word_count_desc', { start: displayRange.start || 0, end: displayRange.end || 0, count: rangeWordCount }) }}
             </div>
           </div>
-          <BaseButton type="info" @click="showRangeInput = !showRangeInput">输入</BaseButton>
+          <BaseButton type="info" @click="showRangeInput = !showRangeInput">{{ $t('input_range') }}</BaseButton>
         </div>
 
-        <div class="flex items-center gap-space pl-24" v-if="showRangeInput">
-          <span>第</span>
+        <div class="flex items-center gap-space pl-28" v-if="showRangeInput">
           <InputNumber
             :min="wordCount ? 1 : 0"
             :max="wordCount"
             :model-value="startNo"
             @update:model-value="value => setRange(Number(value), endNo, 'start')"
           />
-          <span>到</span>
+          <span>-</span>
           <InputNumber
             :min="wordCount ? 1 : 0"
             :max="wordCount"
             :model-value="endNo"
             @update:model-value="value => setRange(startNo, Number(value), 'end')"
           />
-          <span>个</span>
         </div>
 
         <div class="flex items-center gap-space">
-          <span class="shrink-0 w-20">快捷选择：</span>
-          <BaseButton type="info" @click="applyRecentRange(500)">最近500个</BaseButton>
-          <BaseButton type="info" @click="applyRecentRange(300)">最近300个</BaseButton>
-          <BaseButton type="info" @click="applyRecentRange(100)">最近100个</BaseButton>
+          <span class="shrink-0 w-28">{{ $t('quick_select') }}</span>
+          <BaseButton type="info" @click="applyRecentRange(500)">{{ $t('recent_words_count', { count: 500 }) }}</BaseButton>
+          <BaseButton type="info" @click="applyRecentRange(300)">{{ $t('recent_words_count', { count: 300 }) }}</BaseButton>
+          <BaseButton type="info" @click="applyRecentRange(100)">{{ $t('recent_words_count', { count: 100 }) }}</BaseButton>
         </div>
       </div>
     </div>
@@ -277,19 +278,15 @@ watch(
 
   <Dialog
     v-model="showInsufficientDialog"
-    title="可用单词不足"
+    :title="$t('words_insufficient')"
     :footer="true"
     :padding="true"
-    confirm-button-text="继续"
-    cancel-button-text="取消"
+    :confirm-button-text="$t('confirm_continue')"
+    :cancel-button-text="$t('cancel')"
     :onConfirm="continueWithAvailable"
   >
     <div class="w-90 color-main py-2">
-      当前范围筛选后只有
-      <span class="font-bold target-number">{{ availableCount }}</span>
-      个可用单词，少于你设置的
-      <span class="font-bold target-number">{{ requestedCount }}</span>
-      个。继续后将以当前可用数量开始，取消后可重新修改。
+      {{ $t('words_insufficient_msg', { actual: availableCount, target: requestedCount }) }}
     </div>
   </Dialog>
 </template>

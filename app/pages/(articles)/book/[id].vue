@@ -69,7 +69,7 @@ function handleCheckedChange(val) {
 async function startPractice() {
   let sbook = runtimeStore.editDict
   if (!sbook.articles.length) {
-    return Toast.warning('没有文章可学习！')
+    return Toast.warning(t('no_articles_to_learn'))
   }
 
   studyLoading = true
@@ -108,7 +108,7 @@ const { loading } = useGetDict()
 function createCopy() {
   // 生成副本数据，不写入 store。经由 initialData 传给 EditBook，确认后才写入
   const copy = ensureCustomDictCopy(runtimeStore.editDict)
-  copy.name = runtimeStore.editDict.name + ' (副本)'
+  copy.name = getBookName(runtimeStore.editDict, t) + ' (' + t('copy') + ')'
   _copyData = copy
   isAdd = true
 }
@@ -159,8 +159,8 @@ const { data: book_list } = useFetch(resourceWrap(DICT_LIST.ARTICLE.ALL)).json()
 
 function reset() {
   MessageBox.confirm(
-    '继续此操作会重置所有文章，并从官方书籍获取最新文章列表，学习记录不会被重置。确认恢复默认吗？',
-    '恢复默认',
+    t('confirm_restore_default_articles'),
+    t('restore_defaults'),
     async () => {
       let dict = findOfficialSourceDict(book_list.value ?? [], runtimeStore.editDict) as Dict
       if (dict && dict.id) {
@@ -182,11 +182,11 @@ function reset() {
             item.lastLearnIndex = Math.max(item.articles.length - 1, 0)
           }
           runtimeStore.editDict = item
-          Toast.success('恢复成功')
+          Toast.success(t('restore_success_short'))
           return
         }
       }
-      Toast.error('恢复失败')
+      Toast.error(t('restore_failed_short'))
     },
     null,
     null,
@@ -222,7 +222,7 @@ function next() {
 const list = $computed(() => {
   return [
     getDefaultArticle({
-      title: '介绍',
+      title: t('introduction'),
       id: -1,
     }),
   ].concat(runtimeStore.editDict.articles)
@@ -524,7 +524,7 @@ function play(sentence: Sentence, onEnd: () => void) {
                           <div class="line my-10"></div>
                           <div class="text-xl line-height-normal space-y-5">
                             <div class="mt-2" v-if="selectArticle?.question?.translate">
-                              问题: {{ selectArticle?.question?.translate }}
+                              {{ $t('question_label') }}: {{ selectArticle?.question?.translate }}
                             </div>
                             <div class="trans-row" v-for="t in selectArticle.textTranslate.split('\n\n')">{{ t }}</div>
                             <div class="trans-row text-right italic">{{ selectArticle?.quote?.translate }}</div>

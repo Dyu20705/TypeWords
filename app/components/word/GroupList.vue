@@ -87,14 +87,14 @@ const emit = defineEmits<{
               v-for="value in store.groupLength"
               :key="value"
             >
-              <Radio :value="value" :label="`第${value}组`" />
-              <span class="text-sm ml-2">{{ getGroupWordCount(value) }}词</span>
+              <Radio :value="value" :label="$t('group_num', { num: value })" />
+              <span class="text-sm ml-2">{{ getGroupWordCount(value) }} {{ $t('unit_words') }}</span>
             </div>
           </div>
         </div>
       </RadioGroup>
     </div>
-    <div class="target">第{{ store.currentGroup }}组</div>
+    <div class="target">{{ $t('group_num', { num: store.currentGroup }) }}</div>
   </div>
 </template>
 

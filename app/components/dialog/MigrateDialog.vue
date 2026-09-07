@@ -3,7 +3,9 @@ import { Toast } from '@/base'
 import { Origin } from '@/core/config/env.ts'
 import { set } from 'idb-keyval'
 import { defineAsyncComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
 
+const { t: $t } = useI18n()
 const Dialog = defineAsyncComponent(() => import('@/base/dialog/Dialog.vue'))
 
 const model = defineModel()
@@ -20,7 +22,7 @@ async function migrateFromOldSite() {
     var LS_KEYS = ['PracticeSaveWord', 'PracticeSaveArticle']
     const migrateWin = window.open(`${OLD_ORIGIN}/migrate.html`, '_blank', 'width=400,height=400')
 
-    if (!migrateWin) return reject('弹窗被阻止，请在网址输入栏最右边，点击允许弹窗')
+    if (!migrateWin) return reject($t('popup_blocked_hint'))
 
     async function onMessage(event) {
       if (event.origin !== OLD_ORIGIN) return
@@ -52,7 +54,7 @@ async function migrateFromOldSite() {
     const timer = setInterval(() => {
       if (!migrateWin || migrateWin.closed) {
         clearInterval(timer)
-        reject('迁移窗口已关闭')
+        reject($t('migration_window_closed'))
       } else {
         try {
           migrateWin.postMessage({ type: 'REQUEST_MIGRATION_DATA' }, OLD_ORIGIN)
@@ -69,11 +71,11 @@ async function transfer() {
     await migrateFromOldSite()
     localStorage.setItem('__migrated_from_2study_top__', '1')
     console.log('迁移完成')
-    Toast.success('迁移完成')
+    Toast.success($t('migration_completed'))
     model.value = false
     emit('ok')
   } catch (e) {
-    Toast.error('迁移失败：' + e)
+    Toast.error($t('migration_failed') + ': ' + e)
     console.error('迁移失败', e)
   }
 }
@@ -94,7 +96,7 @@ async function transfer() {
       <h3>
         {{ $t('migrate_old_domain_notice') }}
       </h3>
-      <div>如果您不想此时迁移，关闭弹窗后，您可随时在“设置” -> “数据管理” 里面再次进行</div>
+      <div>{{ $t('migrate_later_notice') }}</div>
     </div>
   </Dialog>
 </template>

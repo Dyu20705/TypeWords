@@ -85,11 +85,11 @@ function playTtsWithGuide(text: string, onEnd?: () => void) {
     if (!hasVoice) {
       ttsVoiceHintShown = true
       const ins = Toast.warning(
-        '例句默认使用浏览器内置 TTS 发音，若无声请前往「设置 → 音效设置 → TTS 声色」选择可用声色',
+        $t('tts_voice_guide'),
         {
           duration: 10000,
           action: {
-            text: '设置',
+            text: $t('settings'),
             onClick: () => {
               router.push('/setting?index=4')
               ins.close()
@@ -193,7 +193,7 @@ defineExpose({ startPracticeSentence, playSentence })
             <div class="flex items-center gap-4" v-for="(item, index) in word.phrases" :key="index">
               <div class="flex gap-space items-center">
                 <ClickableEnglishText class="en" :text="item.c" :word="word.word" :dictation="effective.isWordMasked" />
-                <VolumeIcon :simple="false" title="发音" @click.stop="() => playTtsWithGuide(item.c)" />
+                <VolumeIcon :simple="false" :title="$t('word_pronunciation')" @click.stop="() => playTtsWithGuide(item.c)" />
               </div>
               <div class="anim" v-opacity="showTranslation">
                 {{ item.cn }}

@@ -32,6 +32,7 @@ export interface PracticeWordSessionOptions {
   complete: () => void
   scheduleSave: () => void
   notify?: PracticeNotifier
+  translate?: (key: string, params?: Record<string, any>) => string
   /** 平台可按运行能力提供有效模式，不会回写用户的持久设置。 */
   getPracticeMode?: () => WordPracticeMode
 }
@@ -81,6 +82,7 @@ export function usePracticeWordSession(options: PracticeWordSessionOptions) {
     },
     complete: options.complete,
     notify: options.notify,
+    translate: options.translate,
   })
 
   const { activeFlowConfig, activeCursor, currentPhase, currentPracticeType, currentPhaseKey } = nav
@@ -183,7 +185,7 @@ export function usePracticeWordSession(options: PracticeWordSessionOptions) {
     const word = currentWord.value
     const wrongIndex = data.wrongWords.findIndex(item => item.word === word.word)
     if (wrongIndex >= 0) {
-      options.notify?.('info', `${word.word} 已从错词列表移除，原因：用户已认识`)
+      options.notify?.('info', options.translate ? options.translate('word_removed_from_wrong_list', { word: word.word }) : `${word.word} removed from wrong words list`)
       data.wrongWords.splice(wrongIndex, 1)
     }
     data.allWrongWords = data.allWrongWords.filter(key => key !== word.word)

@@ -25,12 +25,12 @@ useSeoMeta({
         <div class="font-bold text-2xl mb-6">{{ $t('faq') }}</div>
         <div class="list">
           <Collapse
-            q="数据丢失/被清空/不在了"
+            :q="$t('qa_data_lost_q')"
             :a="[
-              '360的垃圾清理功能，清垃圾的时候会自动清理浏览器数据，网站的数据也会被清除，其他软件的同类功能也可能导致数据被清掉',
-              'C盘如果被占满了，是无法保存数据的',
-              '无痕模式无法保存数据，关闭浏览器之后数据就没了',
-              '开户了“自动清除历史记录”选项也无法保存数据，关闭浏览器之后数据就没了',
+              $t('qa_data_lost_a1'),
+              $t('qa_data_lost_a2'),
+              $t('qa_data_lost_a3'),
+              $t('qa_data_lost_a4'),
             ]"
           >
           </Collapse>
@@ -42,7 +42,7 @@ useSeoMeta({
 
           <div class="line"></div>
 
-          <Collapse q="按删除键却返回了上一页">
+          <Collapse :q="$t('qa_backspace_back_q')">
             <ConflictNoticeText type="del" />
           </Collapse>
 

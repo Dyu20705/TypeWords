@@ -301,8 +301,8 @@ let logList = [
     <div class="log-item" v-for="item in logList" :key="item.date">
       <div class="mb-2">
         <div>
-          <div>日期：{{ item.date }}</div>
-          <div>内容：{{ item.content }}</div>
+          <div>{{ $t('date') }}：{{ item.date }}</div>
+          <div>{{ $t('content') }}：{{ item.content }}</div>
         </div>
       </div>
     </div>

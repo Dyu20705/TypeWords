@@ -9,10 +9,13 @@ import DictGroup from '@/components/list/DictGroup.vue'
 import { useBaseStore } from '@/core/stores/base.ts'
 import { useRouter } from 'vue-router'
 import { computed, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { getDefaultDict } from '@/core/types/func.ts'
 import { useFetch } from '@vueuse/core'
 import { DICT_LIST, LIB_JS_URL, TourConfig } from '@/core/config/env.ts'
 import { useSettingStore } from '@/core/stores/setting.ts'
+
+const { t } = useI18n()
 
 const { nav } = useNav()
 const runtimeStore = useRuntimeStore()
@@ -68,7 +71,7 @@ const searchList = computed<any[]>(() => {
         item.enName.toLowerCase().includes(s) ||
         item.name.toLowerCase().includes(s) ||
         item.category.toLowerCase().includes(s) ||
-        item.tags.join('').replace('所有', '').toLowerCase().includes(s) ||
+        item.tags.join('').replace(/^(所有|All|Tất cả)/i, '').toLowerCase().includes(s) ||
         item?.url?.toLowerCase?.().includes?.(s)
       )
     })
@@ -88,11 +91,11 @@ watch(dict_list, val => {
     })
     tour.addStep({
       id: 'step2',
-      text: '选一本自己准备学习的词典',
+      text: t('tour_step_2_text'),
       attachTo: { element: '#dict-1', on: 'bottom' },
       buttons: [
         {
-          text: `下一步（2/${TourConfig.total}）`,
+          text: t('tour_next_step', { step: 2, total: TourConfig.total }),
           action() {
             tour.next()
             selectDict({ dict: cet4 })
@@ -115,7 +118,7 @@ watch(dict_list, val => {
       <div class="flex items-center relative gap-2 header-section">
         <BackIcon class="z-2" @click="router.back" />
         <div class="flex flex-1 gap-4" v-if="showSearchInput">
-          <BaseInput clearable placeholder="请输入词典名称/缩写/类别" v-model="searchKey" class="flex-1" autofocus />
+          <BaseInput clearable :placeholder="$t('dict_search_placeholder')" v-model="searchKey" class="flex-1" autofocus />
           <BaseButton @click="((showSearchInput = false), (searchKey = ''))">{{ $t('cancel') }}</BaseButton>
         </div>
         <div class="py-1 flex flex-1 justify-end" v-else>
@@ -130,17 +133,17 @@ watch(dict_list, val => {
           v-if="searchList.length"
           @selectDict="selectDict"
           :list="searchList"
-          quantifier="词"
+          :quantifier="$t('unit_words')"
           :select-id="'-1'"
         />
-        <Empty v-else text="没有相关词典" />
+        <Empty v-else :text="$t('no_matching_dicts')" />
       </div>
       <div class="w-full" v-else>
         <DictGroup
           v-for="item in groupedByCategoryAndTag"
           :select-id="store.sdict.id"
           @selectDict="selectDict"
-          quantifier="词"
+          :quantifier="$t('unit_words')"
           :groupByTag="item[1]"
           :category="item[0]"
         />

@@ -85,12 +85,12 @@ useEventsByWatch(
 
 const text = $computed(() => {
   if (!completeSelect) {
-    return '请选择 或 直接拼写'
+    return $t('identify_prompt_select_or_spell')
   } else {
     if (isCorrect) {
-      return '按空格键继续'
+      return $t('press_space_to_continue')
     } else {
-      return '请输入单词'
+      return $t('enter_word_prompt')
     }
   }
 })
@@ -115,22 +115,22 @@ const text = $computed(() => {
       <template #reference>
         <div class="p-1">
           <ul class="pl-4 my-0">
-            <li>直接拼写：直接输入单词；开始输入后，该词会自动标记为 <span class="font-bold">“不认识”</span></li>
+            <li>{{ $t('mark_guide_spell') }} <span class="font-bold">“{{ $t('i_dont_know') }}”</span></li>
             <li>
-              快速标记：{{
+              {{ $t('mark_guide_quick') }} {{
                 `${$t('shortcut')}(${settingStore.shortcutKeyMap[ShortcutKey.KnowWord]}/${settingStore.shortcutKeyMap[ShortcutKey.UnknownWord]}/${settingStore.shortcutKeyMap[ShortcutKey.MasteredWord]})`
               }}
-              分别标记为“我认识 / 不认识 / 已掌握
+              {{ $t('mark_guide_quick_desc') }}
             </li>
             <li>
-              选择答案：按{{
+              {{ $t('mark_guide_choice') }} {{
                 `${$t('shortcut')}(${settingStore.shortcutKeyMap[ShortcutKey.SelfTestingChooseA]}/${settingStore.shortcutKeyMap[ShortcutKey.SelfTestingChooseB]}/${settingStore.shortcutKeyMap[ShortcutKey.SelfTestingChooseC]}/${settingStore.shortcutKeyMap[ShortcutKey.SelfTestingChooseD]})`
-              }}，或点击 A～D
+              }}, {{ $t('mark_guide_choice_desc') }}
             </li>
-            <li>批量标记：点击右侧按钮，可一次标记多个单词</li>
+            <li>{{ $t('mark_guide_batch') }}</li>
           </ul>
           <div class="opacity-50 flex items-center">
-            <span>提示：快捷键可在设置中修改</span>
+            <span>{{ $t('mark_shortcut_hint') }}</span>
           </div>
         </div>
       </template>
@@ -152,14 +152,14 @@ const text = $computed(() => {
       :keyboard="`${$t('shortcut')}(${settingStore.shortcutKeyMap[ShortcutKey.MasteredWord]})`"
       size="large"
       @click="mastered"
-      >已掌握
+      >{{ $t('mastered') }}
     </BaseButton>
 
     <div class="flex gap-2 center absolute! right-0">
-      <Tooltip :title="`${settingStore.showWordQuestion ? '关闭' : '开启'}答案选项`">
+      <Tooltip :title="$t('toggle_choice_options', { action: settingStore.showWordQuestion ? $t('close') : $t('open') })">
         <Switch type="info" v-model="settingStore.showWordQuestion" />
       </Tooltip>
-      <BaseButton type="text" keyboard="批量标记" class="" @click="emit('quickMark')">
+      <BaseButton type="text" :keyboard="$t('batch_mark')" class="" @click="emit('quickMark')">
         <IconFluentMultiselectRtl20Regular />
       </BaseButton>
     </div>

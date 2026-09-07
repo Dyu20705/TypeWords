@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import type { Word } from '@/core/types'
 import { BackIcon, BaseButton, Checkbox, Toast } from '@/base'
-import { reactive, ref, watch } from 'vue'
+import { computed, reactive, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import Header from '@/components/Header.vue'
+
+const { t: $t } = useI18n()
 
 type PaintMode = 'know' | 'unknown' | 'mastered'
 
@@ -26,11 +29,11 @@ const marks = reactive<Record<number, PaintMode>>({})
 const chooseAllIndexes = ref<number[]>([])
 const chooseAllMode = ref<PaintMode | null>(null)
 
-const modeLabels: Record<PaintMode, string> = {
-  know: '我认识',
-  unknown: '不认识',
-  mastered: '已掌握',
-}
+const modeLabels = computed<Record<PaintMode, string>>(() => ({
+  know: $t('i_know'),
+  unknown: $t('i_dont_know'),
+  mastered: $t('mastered'),
+}))
 
 /** 与当前顶部模式同色则取消标记，否则设为当前模式。 */
 function onWordClick(index: number) {
@@ -100,7 +103,7 @@ function chooseAll() {
     selectedIndexes.push(index)
   })
   if (!selectedIndexes.length) {
-    Toast.info('所有单词均已标记')
+    Toast.info($t('all_words_marked'))
     return
   }
   chooseAllIndexes.value = selectedIndexes
@@ -112,14 +115,14 @@ watch(paintMode, resetChooseAll)
 
 <template>
   <div class="word-mark-pick-list text-xl flex flex-col gap-3 w-full pt-10">
-    <Header title="批量标记" @click="emit('back')"></Header>
+    <Header :title="$t('batch_mark')" @click="emit('back')"></Header>
     <div>
-      操作说明：先选择分类，再点击单词进行标记。再次点击相同分类可取消，切换分类后点击可直接改标。
-      <div class="font-bold">未标记和标为“不认识”的单词将进入后续练习。</div>
+      {{ $t('batch_mark_instruction') }}
+      <div class="font-bold">{{ $t('batch_mark_unmarked_tip') }}</div>
     </div>
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <div>当前标记:</div>
+        <div>{{ $t('current_mark') }}</div>
         <button
           v-for="mode in ['know', 'unknown', 'mastered'] as const"
           :key="mode"
@@ -131,13 +134,13 @@ watch(paintMode, resetChooseAll)
           {{ modeLabels[mode] }}
         </button>
       </div>
-      <BaseButton type="info" @click="chooseAll">{{ chooseAllMode ? '取消全选' : '全选' }}</BaseButton>
+      <BaseButton type="info" @click="chooseAll">{{ chooseAllMode ? $t('deselect_all') : $t('select_all') }}</BaseButton>
     </div>
     <div class="text-sm color-[var(--color-font-3)]">
-      省时技巧：先标记数量较少的一类，再切换到多数类别点击“全选”，即可补齐未标记单词；再次点击可撤销本次全选，已有标记不会被覆盖。
+      {{ $t('batch_mark_timesave_tip') }}
     </div>
 
-    <div class="word-grid" role="list" aria-label="单词列表">
+    <div class="word-grid" role="list" :aria-label="$t('word_list')">
       <div
         v-for="(item, index) in words"
         :key="index"
@@ -151,7 +154,7 @@ watch(paintMode, resetChooseAll)
     </div>
 
     <div class="center pt-1">
-      <BaseButton type="primary" size="large" @click="onComplete">完成标记</BaseButton>
+      <BaseButton type="primary" size="large" @click="onComplete">{{ $t('complete_mark') }}</BaseButton>
     </div>
   </div>
 </template>

@@ -42,7 +42,7 @@ const searchList = computed<any[]>(() => {
         item.enName.toLowerCase().includes(s) ||
         item.name.toLowerCase().includes(s) ||
         item.category.toLowerCase().includes(s) ||
-        item.tags.join('').replace('所有', '').toLowerCase().includes(s) ||
+        item.tags.join('').replace(/^(所有|All|Tất cả)/i, '').toLowerCase().includes(s) ||
         item?.url?.toLowerCase?.().includes?.(s)
       )
     })
@@ -59,7 +59,7 @@ const searchList = computed<any[]>(() => {
         <div class="flex flex-1 gap-4" v-if="showSearchInput">
           <BaseInput
             prefix-icon
-            placeholder="请输入书籍名称/缩写/类别"
+            :placeholder="$t('book_search_placeholder')"
             v-model="searchKey"
             class="flex-1"
             autofocus
@@ -79,13 +79,13 @@ const searchList = computed<any[]>(() => {
           v-if="searchList.length"
           @selectDict="selectDict"
           :list="searchList"
-          quantifier="篇"
+          :quantifier="$t('unit_articles')"
           :select-id="'-1'"
         />
-        <Empty v-else text="没有相关书籍" />
+        <Empty v-else :text="$t('no_matching_books')" />
       </div>
       <div class="w-full mt-2" v-else>
-        <DictList v-if="list?.length" @selectDict="selectDict" :list="list" quantifier="篇" :select-id="'-1'" />
+        <DictList v-if="list?.length" @selectDict="selectDict" :list="list" :quantifier="$t('unit_articles')" :select-id="'-1'" />
       </div>
     </div>
   </BasePage>

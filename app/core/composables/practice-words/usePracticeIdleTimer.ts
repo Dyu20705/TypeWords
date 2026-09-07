@@ -105,6 +105,7 @@ export function usePracticeIdleTimer(options: {
   /** 空闲超时，默认 3 分钟 */
   IDLE_MS?: number
   notify?: PracticeNotifier
+  translate?: (key: string) => string
 }) {
   const { isFocus, statStore } = options
   const IDLE_MS = options.IDLE_MS ?? 3 * 60 * 1000
@@ -122,7 +123,7 @@ export function usePracticeIdleTimer(options: {
     if (!isFocus.value) return
     if (statStore.timerPaused) {
       statStore.resumeTimer()
-      options.notify?.('success', '已恢复计时')
+      options.notify?.('success', options.translate ? options.translate('timer_resumed') : 'Timer resumed')
     }
     bumpActivity()
   }

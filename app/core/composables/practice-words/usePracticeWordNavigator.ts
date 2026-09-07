@@ -39,6 +39,7 @@ export type NavigatorDeps = {
   checkWordIsNeedNext: (word: Word) => boolean
   complete: () => void
   notify?: PracticeNotifier
+  translate?: (key: string) => string
 }
 
 // ─── 词源解析 ──────────────────────────────────────────────────────────────────
@@ -298,7 +299,7 @@ export function createPracticeWordNavigator(deps: NavigatorDeps) {
   function runWrongWordRetry(action: PracticeWrongWordClearAction) {
     const data = deps.getPracticeData()
     // 实际 practiceType 由 resolvePhaseByCtxCursor 从 action.templateId 派生，无需在此设置
-    deps.notify?.('info', '还有错词，继续巩固一下吧')
+    deps.notify?.('info', deps.translate ? deps.translate('review_wrong_words_hint') : 'Keep reinforcing incorrect words!')
     console.log(`[Nav] 还有错词，进入错词清空（templateId=${action.templateId}）`)
     data.words = shuffle(cloneDeep(data.wrongWords))
     data.index = 0
@@ -479,7 +480,7 @@ export function createPracticeWordNavigator(deps: NavigatorDeps) {
   function prev() {
     const data = deps.getPracticeData()
     if (data.index === 0) {
-      deps.notify?.('warning', '已经是第一个了~')
+      deps.notify?.('warning', deps.translate ? deps.translate('first_word_already') : 'Already at the first word~')
     } else {
       data.index--
     }

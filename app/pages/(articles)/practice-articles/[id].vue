@@ -34,8 +34,10 @@ import { usePracticeArticlePersistence } from '@/core/composables/usePracticePer
 import { emitter, EventKey, useEvents } from '@/core/utils/eventBus'
 import { computed, onMounted, onUnmounted, provide, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { DictType, PracticeArticleWordType, ShortcutKey } from '@/core/types/enum.ts'
 
+const { t: $t } = useI18n()
 const store = useBaseStore()
 const runtimeStore = useRuntimeStore()
 const settingStore = useSettingStore()
@@ -76,7 +78,7 @@ function repeat() {
 function prev() {
   // console.log('next')
   if (store.sbook.lastLearnIndex === 0) {
-    Toast.warning('已经在第一章了~')
+    Toast.warning($t('first_chapter_already'))
   } else {
     store.sbook.lastLearnIndex--
     getCurrentPractice()
@@ -123,7 +125,7 @@ async function init() {
       if (!dict.custom) dict = await _getDictDataByUrl(dict, DictType.article)
       if (!dict.articles.length) {
         router.push('/articles')
-        return Toast.warning('没有文章可学习！')
+        return Toast.warning($t('no_articles_to_learn'))
       }
       await store.changeBook(dict)
       articleData.list = cloneDeep(store.sbook.articles)
@@ -492,15 +494,14 @@ provide('currentPractice', currentPractice)
           <div class="flex justify-between items-center gap-2">
             <div class="stat">
               <div class="row">
-                <div class="num">{{ currentPractice.length }}次/{{ msToMinute(total(currentPractice, 'spend')) }}</div>
+                <div class="num">{{ currentPractice.length }} {{ $t('times') }} / {{ msToMinute(total(currentPractice, 'spend')) }}</div>
                 <div class="line"></div>
-                <div class="name">记录</div>
+                <div class="name">{{ $t('record') }}</div>
               </div>
               <div class="row">
-                <!--                <div class="num">{{statStore.spend }}分钟</div>-->
-                <div class="num">{{ Math.floor(statStore.spend / 1000 / 60) }}分钟</div>
+                <div class="num">{{ Math.floor(statStore.spend / 1000 / 60) }} {{ $t('minute_unit') }}</div>
                 <div class="line"></div>
-                <div class="name">时间</div>
+                <div class="name">{{ $t('time') }}</div>
               </div>
               <div class="row">
                 <div class="num center gap-1">
@@ -509,14 +510,14 @@ provide('currentPractice', currentPractice)
                     <IconFluentQuestionCircle20Regular width="18" />
                     <template #reference>
                       <div>
-                        统计词数{{ settingStore.ignoreSimpleWord ? '不包含' : '包含' }}简单词，不包含已掌握
-                        <div>简单词可在设置 -> 练习设置 -> 简单词过滤中修改</div>
+                        {{ settingStore.ignoreSimpleWord ? $t('article_word_count_tooltip_exclude') : $t('article_word_count_tooltip') }}
+                        <div>{{ $t('simple_words_setting_hint') }}</div>
                       </div>
                     </template>
                   </Tooltip>
                 </div>
                 <div class="line"></div>
-                <div class="name">单词总数</div>
+                <div class="name">{{ $t('total_words_count') }}</div>
               </div>
             </div>
             <ArticleAudio
@@ -529,39 +530,34 @@ provide('currentPractice', currentPractice)
               <div class="flex gap-2 center">
                 <SettingDialog type="article" />
 
-                <BaseIcon :title="`下一句(${settingStore.shortcutKeyMap[ShortcutKey.Next]})`" @click="skip">
+                <BaseIcon :title="`${$t('next_sentence')}(${settingStore.shortcutKeyMap[ShortcutKey.Next]})`" @click="skip">
                   <IconFluentArrowBounce20Regular class="transform-rotate-180" />
                 </BaseIcon>
                 <BaseIcon
-                  :title="`播放当前句子(${settingStore.shortcutKeyMap[ShortcutKey.PlayWordPronunciation]})`"
+                  :title="`${$t('play_current_sentence')}(${settingStore.shortcutKeyMap[ShortcutKey.PlayWordPronunciation]})`"
                   @click="play"
                 >
                   <IconFluentReplay20Regular />
                 </BaseIcon>
                 <BaseIcon
                   @click="settingStore.dictation = !settingStore.dictation"
-                  :title="`开关默写模式(${settingStore.shortcutKeyMap[ShortcutKey.ToggleDictation]})`"
+                  :title="`${$t('toggle_dictation_mode')}(${settingStore.shortcutKeyMap[ShortcutKey.ToggleDictation]})`"
                 >
                   <IconFluentEyeOff16Regular v-if="settingStore.dictation" />
                   <IconFluentEye16Regular v-else />
                 </BaseIcon>
 
                 <BaseIcon
-                  :title="`开关释义显示(${settingStore.shortcutKeyMap[ShortcutKey.ToggleShowTranslate]})`"
+                  :title="`${$t('toggle_translation')}(${settingStore.shortcutKeyMap[ShortcutKey.ToggleShowTranslate]})`"
                   @click="settingStore.translate = !settingStore.translate"
                 >
                   <IconPhTranslate v-if="settingStore.translate" />
                   <IconFluentTranslateOff16Regular v-else />
                 </BaseIcon>
 
-                <!--              <BaseIcon-->
-                <!--                  :title="`编辑(${settingStore.shortcutKeyMap[ShortcutKey.EditArticle]})`"-->
-                <!--                  icon="tabler:edit"-->
-                <!--                  @click="emitter.emit(ShortcutKey.EditArticle)"-->
-                <!--              />-->
                 <BaseIcon
                   @click="settingStore.showPanel = !settingStore.showPanel"
-                  :title="`面板(${settingStore.shortcutKeyMap[ShortcutKey.TogglePanel]})`"
+                  :title="`${$t('article_list')}(${settingStore.shortcutKeyMap[ShortcutKey.TogglePanel]})`"
                 >
                   <IconFluentTextListAbcUppercaseLtr20Regular />
                 </BaseIcon>

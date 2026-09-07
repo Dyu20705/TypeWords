@@ -57,7 +57,7 @@ type SaveLocalAndSyncOptions = {
   canSyncRemote?: boolean
 }
 
-const DICT_SYNC_BLOCK_REASON = '检测到自定义文章里面有自定义音频，无法使用同步功能'
+const DICT_SYNC_BLOCK_REASON = 'Custom articles contain local audio files; synchronization is blocked'
 
 const ALL_SYNC_TYPES: SyncDataType[] = [
   SyncDataType.dict,

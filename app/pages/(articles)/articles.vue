@@ -16,17 +16,20 @@ import { watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { DictType } from '@/core/types/enum.ts'
 import { usePracticeArticlePersistence } from '@/core/composables/usePracticePersistence.ts'
+import { useI18n } from 'vue-i18n'
+
+const { t: $t } = useI18n()
 
 dayjs.extend(isoWeek)
 dayjs.extend(isBetween)
 
 useSeoMeta({
-  title: `英语文章跟打练习｜${APP_NAME}`,
-  description: '在电脑上进行英语文章跟打、逐句精听和键盘输入练习，通过真实语境提升英语阅读、听力与拼写能力。',
-  ogTitle: `英语文章跟打练习｜${APP_NAME}`,
-  ogDescription: '使用英语文章跟打、逐句精听和键盘输入练习，在真实语境中提升英语能力。',
-  twitterTitle: `英语文章跟打练习｜${APP_NAME}`,
-  twitterDescription: '使用英语文章跟打、逐句精听和键盘输入练习，在真实语境中提升英语能力。',
+  title: `${$t('articles_meta_title')} | ${APP_NAME}`,
+  description: $t('articles_meta_desc'),
+  ogTitle: `${$t('articles_meta_title')} | ${APP_NAME}`,
+  ogDescription: $t('articles_meta_desc'),
+  twitterTitle: `${$t('articles_meta_title')} | ${APP_NAME}`,
+  twitterDescription: $t('articles_meta_desc'),
 })
 
 const { nav } = useNav()
@@ -106,7 +109,7 @@ function startStudy() {
   // return
   if (base.sbook.id) {
     if (!base.sbook.articles.length) {
-      return Toast.warning('没有文章可学习！')
+      return Toast.warning($t('no_articles_to_learn'))
     }
     window.umami?.track('startStudyArticle', {
       name: base.sbook.name,
@@ -117,7 +120,7 @@ function startStudy() {
     nav('/practice-articles/' + store.sbook.id)
   } else {
     window.umami?.track('no-book')
-    Toast.warning('请先选择一本书籍')
+    Toast.warning($t('please_select_a_book'))
   }
 }
 
@@ -138,7 +141,7 @@ function handleBatchDel() {
     }
   })
   selectIds = []
-  Toast.success('删除成功！')
+  Toast.success($t('clear_success'))
 }
 
 function toggleSelect(item) {
@@ -215,7 +218,7 @@ const { data: recommendBookList, isFetching } = useFetch(resourceWrap(DICT_LIST.
         <Book
           v-if="base.sbook.id"
           :is-add="false"
-          quantifier="篇"
+          :quantifier="$t('unit_articles')"
           :item="base.sbook"
           :show-progress="false"
           @click="goBookDetail(base.sbook)"
@@ -266,7 +269,7 @@ const { data: recommendBookList, isFetching } = useFetch(resourceWrap(DICT_LIST.
             class="w-full md:w-auto"
             size="large"
             :percentage="base.currentBookProgress"
-            :format="() => `${base.sbook?.lastLearnIndex || 0}/${base.sbook?.length || 0}篇`"
+            :format="() => `${base.sbook?.lastLearnIndex || 0}/${base.sbook?.length || 0} ${$t('unit_articles')}`"
             :show-text="true"
           ></Progress>
 
@@ -284,7 +287,7 @@ const { data: recommendBookList, isFetching } = useFetch(resourceWrap(DICT_LIST.
       <div class="flex justify-between">
         <div class="title">{{ $t('my_books') }}</div>
         <div class="flex gap-4 items-center">
-          <PopConfirm title="确认删除所有选中书籍？" @confirm="handleBatchDel" v-if="selectIds.length">
+          <PopConfirm :title="$t('confirm_delete_all_selected_books')" @confirm="handleBatchDel" v-if="selectIds.length">
             <BaseIcon class="del" :title="$t('delete')">
               <DeleteIcon />
             </BaseIcon>
@@ -311,7 +314,7 @@ const { data: recommendBookList, isFetching } = useFetch(resourceWrap(DICT_LIST.
         <Book
           :is-add="false"
           :is-user="true"
-          quantifier="篇"
+          :quantifier="$t('unit_articles')"
           :item="item"
           :checked="selectIds.includes(item.id)"
           @check="() => toggleSelect(item)"
@@ -334,7 +337,7 @@ const { data: recommendBookList, isFetching } = useFetch(resourceWrap(DICT_LIST.
       <div class="flex gap-4 flex-wrap mt-4">
         <Book
           :is-add="false"
-          quantifier="篇"
+          :quantifier="$t('unit_articles')"
           :item="item as any"
           v-for="(item, j) in recommendBookList"
           @click="goBookDetail(item as any)"

@@ -1,5 +1,6 @@
 import { ref, unref, type ComputedRef, type Ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { Toast } from '@/base'
 import type { Word } from '../types'
 import { getBrowserKey, cancelWordPracticeAudio, usePlayWordAudio, useTTsPlayAudio } from '../hooks/sound'
@@ -28,6 +29,10 @@ export function useWordPracticeAudio({ word, volumeIconRef, canSeeSentences }: W
   const router = useRouter()
   const playWordAudio = usePlayWordAudio()
   const ttsPlayAudio = useTTsPlayAudio()
+  let t: ((k: string) => string) | null = null
+  try {
+    t = useI18n().t
+  } catch {}
 
   const highlightedSentenceIndex = ref(-1)
   let ttsVoiceHintShown = false
@@ -48,11 +53,11 @@ export function useWordPracticeAudio({ word, volumeIconRef, canSeeSentences }: W
       if (!hasVoice) {
         ttsVoiceHintShown = true
         const ins = Toast.warning(
-          '例句默认使用浏览器内置 TTS 发音，若无声请前往「设置 → 音效设置 → TTS 声色」选择可用声色',
+          t ? t('tts_voice_hint') : 'Example sentences default to browser TTS. If no sound, please configure voices in Settings.',
           {
             duration: 15000000,
             action: {
-              text: '设置',
+              text: t ? t('setting') : 'Settings',
               onClick: () => {
                 router.push('/setting?index=4')
                 ins.close()
