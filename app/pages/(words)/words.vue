@@ -63,16 +63,14 @@ import {
 import dayjs from 'dayjs'
 import { getActiveCustomFlowId, getUserFlow } from '@/core/composables/practice-words/practice-flow-runtime.ts'
 import { createStudyTask } from '@/core/composables/practice-words/study-task.ts'
-import { useI18n } from 'vue-i18n'
 
-const { t: $t } = useI18n()
+const { t, t: $t } = useI18n()
 const store = useBaseStore()
 const settingStore = useSettingStore()
 const wordPersistence = usePracticeWordPersistence()
 const dataSync = useDataSyncPersistence()
 const router = useRouter()
 const { nav } = useNav()
-const { t } = useI18n()
 const runtimeStore = useRuntimeStore()
 let loading = $ref(true)
 let isSaveData = $ref(false)
