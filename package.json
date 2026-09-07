@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "i18n:write": "gulp i18nWrite",
+    "lint:i18n": "node --strip-types scripts/lint-i18n.ts",
     "test": ""
   },
   "dependencies": {

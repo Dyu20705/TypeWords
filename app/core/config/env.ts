@@ -2,7 +2,7 @@ import { offset } from '@floating-ui/dom'
 //这里合并导入，打包会报错
 import { ShortcutKey, WordPracticeMode, WordPracticeStage } from '../types/enum.ts'
 
-export const GITHUB = 'https://github.com/zyronon/TypeWords'
+export const GITHUB = 'https://github.com/Dyu20705/TypeWords'
 export const Host = 'typewords.cc'
 export const Old_Host = '2study.top'
 export const EMAIL = 'zyronon@163.com'

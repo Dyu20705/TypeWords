@@ -62,11 +62,11 @@ function excel2i18n() {
   return stream;
 }
 
-// 将翻译好的 excel 写入多个语言 JSON 文件
-function i18nWrite() {
-  return src(['../nuxt/i18n/i18n.xlsx'], { encoding: false })
-    .pipe(excel2i18n())
-    .pipe(dest('../nuxt/i18n/locales'));
+// Note: Localization is version-controlled directly via i18n/locales/vi.json and en.json.
+// External spreadsheet overwrites have been deprecated to prevent silent data loss.
+function i18nWrite(cb) {
+  console.log('Localization source of truth is i18n/locales/*.json. Excel sync is disabled.');
+  if (cb) cb();
 }
 
 export { i18nWrite };

@@ -29,13 +29,24 @@ const robotsContent = $computed(() => {
     : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
 })
 
+const head = useLocaleHead({
+  addDirAttribute: true,
+  identifierAttribute: 'id',
+  addSeoAttributes: true,
+})
+
 useHead(() => ({
+  htmlAttrs: {
+    lang: head.value.htmlAttrs?.lang || 'vi',
+    dir: head.value.htmlAttrs?.dir || 'ltr',
+  },
   link: [
     {
       key: 'canonical',
       rel: 'canonical',
       href: canonicalURL,
     },
+    ...(head.value.link || []),
   ],
   meta: [
     {
@@ -43,6 +54,7 @@ useHead(() => ({
       name: 'robots',
       content: robotsContent,
     },
+    ...(head.value.meta || []),
   ],
 }))
 </script>

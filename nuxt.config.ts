@@ -54,10 +54,7 @@ export default defineNuxtConfig({
     baseURL: appBaseURL,
     // keepalive: true,
     head: {
-      title: 'Type Words — 免费英语单词练习 | Free English Typing Practice', // default fallback title
-      htmlAttrs: {
-        lang: 'zh-CN',
-      },
+      title: 'TypeWords — Luyện gõ từ vựng tiếng Anh | English Typing Practice',
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
@@ -66,10 +63,16 @@ export default defineNuxtConfig({
     '/words': { ssr: false },
     '/articles': { ssr: false },
     '/setting': { ssr: false },
-    '/book/nce1': { prerender: true },
-    '/book/nce2': { prerender: true },
-    '/book/nce3': { prerender: true },
-    '/book/nce4': { prerender: true },
+    '/en/words': { ssr: false },
+    '/en/articles': { ssr: false },
+    '/en/setting': { ssr: false },
+    '/practice-words/**': { ssr: false },
+    '/en/practice-words/**': { ssr: false },
+    '/practice-articles/**': { ssr: false },
+    '/en/practice-articles/**': { ssr: false },
+    '/words-test/**': { ssr: false },
+    '/en/words-test/**': { ssr: false },
+    '/book/**': { prerender: true },
   },
   vite: {
     plugins: [
@@ -93,24 +96,11 @@ export default defineNuxtConfig({
   // i18n 配置
   i18n: {
     locales: [
-      { code: 'en', language: 'en-US', file: 'en.json', name: 'English' },
-      { code: 'zh', language: 'zh-CN', file: 'zh.json', name: '中文' },
-      { code: 'es', language: 'es-ES', file: 'es.json', name: 'Español' },
-      { code: 'fr', language: 'fr-FR', file: 'fr.json', name: 'Français' },
-      { code: 'pt', language: 'pt-BR', file: 'pt.json', name: 'Português' },
-      { code: 'de', language: 'de-DE', file: 'de.json', name: 'Deutsch' },
-      { code: 'ru', language: 'ru-RU', file: 'ru.json', name: 'Русский' },
-      { code: 'uk', language: 'uk-UA', file: 'uk.json', name: 'Українська' },
-      { code: 'ja', language: 'ja-JP', file: 'ja.json', name: '日本語' },
-      { code: 'ko', language: 'ko-KR', file: 'ko.json', name: '한국어' },
-      { code: 'th', language: 'th-TH', file: 'th.json', name: 'ไทย' },
       { code: 'vi', language: 'vi-VN', file: 'vi.json', name: 'Tiếng Việt' },
-      { code: 'id', language: 'id-ID', file: 'id.json', name: 'Bahasa Indonesia' },
-      { code: 'tw', language: 'zh-TW', file: 'tw.json', name: '繁體中文' },
+      { code: 'en', language: 'en-US', file: 'en.json', name: 'English' },
     ],
-    defaultLocale: 'zh',
-    // langDir:'app/i18n/',
-    strategy: 'no_prefix',
+    defaultLocale: 'vi',
+    strategy: 'prefix_and_default',
   },
   // CSS
   css: ['~/assets/css/main.scss'],
