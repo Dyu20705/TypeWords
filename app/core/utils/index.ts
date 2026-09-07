@@ -48,27 +48,7 @@ function checkRiskKey(origin: object, target: object) {
   return origin
 }
 
-function normalizeStoredDict(val: any): Dict {
-  const next = { ...(val ?? {}) }
-  // 历史数据升级：系统虚拟词典补 system: true（无论旧存档是否有此字段）
-  const systemIds = [DictId.wordCollect, DictId.wordWrong, DictId.wordKnown, DictId.articleCollect]
-  if (systemIds.includes(next.enName ?? next.id)) {
-    next.system = true
-  }
-  if (!next.enName && next.en_name) {
-    next.enName = next.en_name
-  }
-  if (!next.enName && !next.en_name) {
-    next.enName = String(next.id)
-  }
-  if (Array.isArray(next.words) && next.words.length) {
-    next.length = next.words.length
-  }
-  if (Array.isArray(next.articles) && next.articles.length) {
-    next.length = next.articles.length
-  }
-  return getDefaultDict(checkRiskKey(getDefaultDict(), next))
-}
+export * from './migration.ts'
 
 export async function checkAndUpgradeSaveDict(val: any) {
   // console.log(configStr)
@@ -103,22 +83,13 @@ export async function checkAndUpgradeSaveDict(val: any) {
       // console.log('state', state)
       if (version === SAVE_DICT_KEY.version) {
         checkRiskKey(defaultState, state)
-        defaultState.article.bookList = defaultState.article.bookList.map(v => normalizeStoredDict(v))
-        defaultState.word.bookList = defaultState.word.bookList.map(v => normalizeStoredDict(v))
-        return defaultState
+        return migrateSaveDict(defaultState)
       } else {
         // 版本不匹配时，尽量保留数据而不是直接返回默认状态
         console.warn(`数据版本不匹配: 当前版本 ${version}, 期望版本 ${SAVE_DICT_KEY.version}，尝试保留数据`)
         try {
           checkRiskKey(defaultState, state)
-          // 尝试保留 bookList 数据
-          if (state.word && state.word.bookList && Array.isArray(state.word.bookList)) {
-            defaultState.word.bookList = state.word.bookList.map((v: any) => normalizeStoredDict(v))
-          }
-          if (state.article && state.article.bookList && Array.isArray(state.article.bookList)) {
-            defaultState.article.bookList = state.article.bookList.map((v: any) => normalizeStoredDict(v))
-          }
-          return defaultState
+          return migrateSaveDict(defaultState)
         } catch (upgradeError) {
           let currentHash2 = '词典数据升级失败-自动备份'
           console.error(currentHash2, upgradeError)
