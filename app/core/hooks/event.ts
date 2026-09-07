@@ -2,7 +2,6 @@ import {onDeactivated, onMounted, onUnmounted, watch, type WatchSource} from 'vu
 import {emitter, EventKey} from '../utils/eventBus'
 import {useSettingStore} from '../stores'
 import {isMobile} from '../utils'
-import {Toast} from '@/base'
 
 const CODE_TO_CHAR: Record<string, string> = {
   ...Object.fromEntries('ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c => [`Key${c}`, c.toLowerCase()])),
@@ -174,7 +173,6 @@ export function useEventListener(type: string, listener: EventListenerOrEventLis
       const handleCompositionStart = () => {
         // console.log('handleCompositionStart',Date.now())
         isComposing = true
-        Toast.warning('请切换到英文输入')
       }
 
       const handleCompositionEnd = (event: CompositionEvent) => {
