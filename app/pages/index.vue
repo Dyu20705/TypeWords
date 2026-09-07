@@ -154,9 +154,10 @@ const playDemoCorrect = usePlayCorrect()
 
 let mobileMenuOpen = $ref(false)
 
+const runtimeConfig = useRuntimeConfig()
 useSeoMeta({
   title: () => 'TypeWords',
-  ogUrl: 'https://typewords.cc/',
+  ogUrl: () => runtimeConfig.public.origin || 'https://typewords.cc/',
 })
 </script>
 

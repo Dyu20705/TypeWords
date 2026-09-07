@@ -120,7 +120,7 @@ export default defineNuxtConfig({
   // 运行时配置
   runtimeConfig: {
     public: {
-      apiBase: process.env.API_BASE || 'http://localhost/',
+      apiBase: process.env.API_BASE || '',
       origin: process.env.ORIGIN || 'https://typewords.cc',
       host: process.env.HOST || 'typewords.cc',
       passwordRsaPublicKey: process.env.VITE_PASSWORD_RSA_PUBLIC_KEY || '',
