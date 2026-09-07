@@ -4,19 +4,7 @@
 
 <p align="center">
   <a href="/README.md">English</a> |
-  <a href="/docs/README.es.md">Español</a> |
-  <a href="/docs/README.de.md">Deutsch</a> |
-  <a href="/docs/README.fr.md">Français</a> |
-  <a href="/docs/README.pt.md">Português</a> |
-  <a href="/docs/README.ru.md">Русский</a> |
-  <a href="/docs/README.uk.md">Українська</a> |
-  <a href="/docs/README.ja.md">日本語</a> |
-  <a href="/docs/README.ko.md">한국인</a> |
-  <a href="/docs/README.th.md">ไทย</a> |
-  <a href="/docs/README.vi.md">Tiếng Việt</a> |
-  <a href="/docs/README.id.md">Bahasa Indonesia</a> |
-  <a href="/docs/README.zh-TW.md">繁體中文</a> |
-  <a href="/docs/README.zh-CN.md">简体中文</a> 
+  <a href="/docs/README.vi.md">Tiếng Việt</a>
 </p>
 
 <p align="center">
@@ -25,7 +13,7 @@
 
 ## Online Access
 
-<https://typewords.cc>
+> **Note**: This is a private Vietnamese-first fork. See [docs/CUSTOM_VI_EN_LOCALIZATION.md](/docs/CUSTOM_VI_EN_LOCALIZATION.md) for fork details.
 
 <img width="1920" height="1440" alt="practice words" src="/public/imgs/words.png" />
 <img width="1920" height="1440" alt="practice articles" src="/public/imgs/articles.png" />
@@ -75,7 +63,7 @@ Designed to meet most users' vocabulary learning needs. Community contributions 
 This project is built with `Nuxt` and requires a Node.js environment.
 
 1. Install NodeJS, refer to the [official documentation](https://nodejs.org/en/download)
-2. The project is large. It's recommended to use `git clone --depth 1 https://github.com/zyronon/TypeWords.git` to clone only the latest commit. GitHub's Download ZIP feature will not work properly.
+2. The project is large. It's recommended to use `git clone --depth 1 https://github.com/Dyu20705/TypeWords.git` to clone only the latest commit. GitHub's Download ZIP feature will not work properly.
 3. In the project root directory, open a terminal and run `pnpm install` to download dependencies.
 4. Run `pnpm run dev` to start the project. The default address is [`http://localhost:5567`](http://localhost:5567)
 5. Open [`http://localhost:5567`](http://localhost:5567) in your browser to access the project.

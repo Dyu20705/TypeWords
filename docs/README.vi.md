@@ -75,7 +75,7 @@ Từ vựng thường dùng tích hợp bao gồm CET-4, CET-6, GMAT, GRE, IELTS
 Dự án này được xây dựng với `Nuxt` và yêu cầu môi trường Node.js.
 
 1. Cài đặt NodeJS, tham khảo [tài liệu chính thức](https://nodejs.org/en/download)
-2. Dự án lớn. Khuyến nghị sử dụng `git clone --depth 1 https://github.com/zyronon/TypeWords.git` để chỉ clone commit mới nhất. Chức năng Download ZIP của GitHub sẽ không hoạt động đúng.
+2. Dự án lớn. Khuyến nghị sử dụng `git clone --depth 1 https://github.com/Dyu20705/TypeWords.git` để chỉ clone commit mới nhất. Chức năng Download ZIP của GitHub sẽ không hoạt động đúng.
 3. Trong thư mục gốc của dự án, mở terminal và chạy `pnpm install` để tải dependencies.
 4. Chạy `pnpm run dev` để khởi động dự án. Địa chỉ mặc định là [`http://localhost:5567`](http://localhost:5567)
 5. Mở [`http://localhost:5567`](http://localhost:5567) trong trình duyệt để truy cập dự án.

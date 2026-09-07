@@ -5,7 +5,7 @@ import { ShortcutKey, WordPracticeMode, WordPracticeStage } from '../types/enum.
 export const GITHUB = 'https://github.com/Dyu20705/TypeWords'
 export const Host = 'typewords.cc'
 export const Old_Host = '2study.top'
-export const EMAIL = 'zyronon@163.com'
+export const EMAIL = '' // Set to fork maintainer contact email if needed
 export const Origin = `https://${Host}`
 export const APP_NAME = 'Type Words'
 export const IS_DEV = import.meta.env.MODE === 'development'
