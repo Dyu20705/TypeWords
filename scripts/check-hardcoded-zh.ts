@@ -11,10 +11,10 @@ const viContent = fs.readFileSync(viPath, 'utf8')
 const zhRegex = /[\u4e00-\u9fa5]/
 
 if (zhRegex.test(viContent)) {
-  console.error('❌ Error: Chinese characters found in i18n/locales/vi.json!')
+  console.error('[FAIL] Error: Chinese characters found in i18n/locales/vi.json!')
   hasError = true
 } else {
-  console.log('✅ i18n/locales/vi.json contains 0 Chinese characters')
+  console.log('[OK] i18n/locales/vi.json contains 0 Chinese characters')
 }
 
 // 2. Scan app directory
@@ -102,18 +102,18 @@ files.forEach(file => {
 })
 
 if (violations.length > 0) {
-  console.error(`❌ Found ${violations.length} hardcoded Chinese character violations:`)
+  console.error(`[FAIL] Found ${violations.length} hardcoded Chinese character violations:`)
   violations.forEach(v => {
     console.error(`  ${v.file}:${v.line} -> ${v.text}`)
   })
   hasError = true
 } else {
-  console.log(`✅ Scanned ${scannedFiles} files across app/: ZERO hardcoded Chinese UI strings found!`)
+  console.log(`[OK] Scanned ${scannedFiles} files across app/: ZERO hardcoded Chinese UI strings found.`)
 }
 
 if (hasError) {
   process.exit(1)
 } else {
-  console.log('🎉 All hardcoded Chinese checks passed successfully!')
+  console.log('[SUCCESS] All hardcoded Chinese checks passed successfully.')
   process.exit(0)
 }

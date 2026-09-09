@@ -40,3 +40,8 @@ report.html
 public/vscode
 apps/TypeWordsMiniApp
 *.tsbuildinfo
+
+# Python & pipeline artifacts
+__pycache__/
+*.pyc
+.checkpoints/

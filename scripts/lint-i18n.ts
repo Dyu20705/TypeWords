@@ -98,8 +98,8 @@ if (extraLocales.length > 0) {
 }
 
 if (hasError) {
-  console.error('❌ i18n lint failed.')
+  console.error('[FAIL] i18n lint failed.')
   process.exit(1)
 } else {
-  console.log('✅ i18n lint passed with 100% key parity and zero Chinese characters in vi.json.')
+  console.log('[OK] i18n lint passed with 100% key parity and zero Chinese characters in vi.json.')
 }

@@ -1,0 +1,1562 @@
+{
+  "timestamp": "2026-09-08T13:58:31.901Z",
+  "totalDictionaries": 194,
+  "downloaded": 193,
+  "skipped": 1,
+  "failed": 0,
+  "totalWords": 277529,
+  "results": [
+    {
+      "id": 1,
+      "url": "CET4_T.json",
+      "localPath": "public/dicts/en/word/CET4_T.json",
+      "status": "skipped",
+      "fileSize": 4487640,
+      "recordCount": 2607
+    },
+    {
+      "id": 2,
+      "url": "CET6_T.json",
+      "localPath": "public/dicts/en/word/CET6_T.json",
+      "status": "success",
+      "fileSize": 4014874,
+      "recordCount": 2345
+    },
+    {
+      "id": 252,
+      "url": "CET-4-frequency.json",
+      "localPath": "public/dicts/en/word/CET-4-frequency.json",
+      "status": "success",
+      "fileSize": 4692276,
+      "recordCount": 2607
+    },
+    {
+      "id": 57,
+      "url": "IELTS_3_T.json",
+      "localPath": "public/dicts/en/word/IELTS_3_T.json",
+      "status": "success",
+      "fileSize": 5760939,
+      "recordCount": 3575
+    },
+    {
+      "id": 18,
+      "url": "Level4luan_2_T.json",
+      "localPath": "public/dicts/en/word/Level4luan_2_T.json",
+      "status": "success",
+      "fileSize": 6381245,
+      "recordCount": 4025
+    },
+    {
+      "id": 136,
+      "url": "nce-new-1.json",
+      "localPath": "public/dicts/en/word/nce-new-1.json",
+      "status": "success",
+      "fileSize": 1423443,
+      "recordCount": 867
+    },
+    {
+      "id": 132,
+      "url": "GaoKao_3500.json",
+      "localPath": "public/dicts/en/word/GaoKao_3500.json",
+      "status": "success",
+      "fileSize": 6289688,
+      "recordCount": 3875
+    },
+    {
+      "id": 7,
+      "url": "KaoYan_3_T.json",
+      "localPath": "public/dicts/en/word/KaoYan_3_T.json",
+      "status": "success",
+      "fileSize": 6381908,
+      "recordCount": 3727
+    },
+    {
+      "id": 137,
+      "url": "nce-new-2.json",
+      "localPath": "public/dicts/en/word/nce-new-2.json",
+      "status": "success",
+      "fileSize": 1413721,
+      "recordCount": 839
+    },
+    {
+      "id": 138,
+      "url": "nce-new-3.json",
+      "localPath": "public/dicts/en/word/nce-new-3.json",
+      "status": "success",
+      "fileSize": 1588954,
+      "recordCount": 1050
+    },
+    {
+      "id": 139,
+      "url": "nce-new-4.json",
+      "localPath": "public/dicts/en/word/nce-new-4.json",
+      "status": "success",
+      "fileSize": 1182438,
+      "recordCount": 784
+    },
+    {
+      "id": 3,
+      "url": "xinghuoqiaoji_4.json",
+      "localPath": "public/dicts/en/word/xinghuoqiaoji_4.json",
+      "status": "success",
+      "fileSize": 4268658,
+      "recordCount": 2522
+    },
+    {
+      "id": 113,
+      "url": "TOEFL_3_T.json",
+      "localPath": "public/dicts/en/word/TOEFL_3_T.json",
+      "status": "success",
+      "fileSize": 6866119,
+      "recordCount": 4263
+    },
+    {
+      "id": 5,
+      "url": "DanCiDeJianFa_4.json",
+      "localPath": "public/dicts/en/word/DanCiDeJianFa_4.json",
+      "status": "success",
+      "fileSize": 3407395,
+      "recordCount": 1957
+    },
+    {
+      "id": 6,
+      "url": "DanCiDeJianFa_6.json",
+      "localPath": "public/dicts/en/word/DanCiDeJianFa_6.json",
+      "status": "success",
+      "fileSize": 3067266,
+      "recordCount": 1949
+    },
+    {
+      "id": 8,
+      "url": "KaoYan_2024.json",
+      "localPath": "public/dicts/en/word/KaoYan_2024.json",
+      "status": "success",
+      "fileSize": 6010676,
+      "recordCount": 3731
+    },
+    {
+      "id": 10,
+      "url": "926.json",
+      "localPath": "public/dicts/en/word/926.json",
+      "status": "success",
+      "fileSize": 1582359,
+      "recordCount": 926
+    },
+    {
+      "id": 9,
+      "url": "KaoYanShanGuo_2023.json",
+      "localPath": "public/dicts/en/word/KaoYanShanGuo_2023.json",
+      "status": "success",
+      "fileSize": 3013045,
+      "recordCount": 1771
+    },
+    {
+      "id": 13,
+      "url": "2024HongBao_T1.json",
+      "localPath": "public/dicts/en/word/2024HongBao_T1.json",
+      "status": "success",
+      "fileSize": 1810109,
+      "recordCount": 997
+    },
+    {
+      "id": 19,
+      "url": "Level8luan_2_T.json",
+      "localPath": "public/dicts/en/word/Level8luan_2_T.json",
+      "status": "success",
+      "fileSize": 18471328,
+      "recordCount": 12197
+    },
+    {
+      "id": 11,
+      "url": "DanCiDeMimi_1.json",
+      "localPath": "public/dicts/en/word/DanCiDeMimi_1.json",
+      "status": "success",
+      "fileSize": 7004585,
+      "recordCount": 4264
+    },
+    {
+      "id": 12,
+      "url": "DanCiDeMimi_2.json",
+      "localPath": "public/dicts/en/word/DanCiDeMimi_2.json",
+      "status": "success",
+      "fileSize": 4867029,
+      "recordCount": 2854
+    },
+    {
+      "id": 14,
+      "url": "2024HongBao_T2.json",
+      "localPath": "public/dicts/en/word/2024HongBao_T2.json",
+      "status": "success",
+      "fileSize": 1581311,
+      "recordCount": 854
+    },
+    {
+      "id": 20,
+      "url": "PETS_3.json",
+      "localPath": "public/dicts/en/word/PETS_3.json",
+      "status": "success",
+      "fileSize": 3530547,
+      "recordCount": 1940
+    },
+    {
+      "id": 17,
+      "url": "kaoyanshanguo2025.json",
+      "localPath": "public/dicts/en/word/kaoyanshanguo2025.json",
+      "status": "success",
+      "fileSize": 3828825,
+      "recordCount": 2257
+    },
+    {
+      "id": 4,
+      "url": "xinghuoqiaoji_6.json",
+      "localPath": "public/dicts/en/word/xinghuoqiaoji_6.json",
+      "status": "success",
+      "fileSize": 12306518,
+      "recordCount": 7520
+    },
+    {
+      "id": 22,
+      "url": "self-study_English1.json",
+      "localPath": "public/dicts/en/word/self-study_English1.json",
+      "status": "success",
+      "fileSize": 3104028,
+      "recordCount": 1800
+    },
+    {
+      "id": 16,
+      "url": "English_II.json",
+      "localPath": "public/dicts/en/word/English_II.json",
+      "status": "success",
+      "fileSize": 6850190,
+      "recordCount": 4549
+    },
+    {
+      "id": 15,
+      "url": "hongbaoshu-2026.json",
+      "localPath": "public/dicts/en/word/hongbaoshu-2026.json",
+      "status": "success",
+      "fileSize": 8175358,
+      "recordCount": 4858
+    },
+    {
+      "id": 23,
+      "url": "self-study_English2.json",
+      "localPath": "public/dicts/en/word/self-study_English2.json",
+      "status": "success",
+      "fileSize": 3664674,
+      "recordCount": 2181
+    },
+    {
+      "id": 21,
+      "url": "PETS3-2023.json",
+      "localPath": "public/dicts/en/word/PETS3-2023.json",
+      "status": "success",
+      "fileSize": 7613708,
+      "recordCount": 4439
+    },
+    {
+      "id": 27,
+      "url": "top2000words.json",
+      "localPath": "public/dicts/en/word/top2000words.json",
+      "status": "success",
+      "fileSize": 3495317,
+      "recordCount": 1865
+    },
+    {
+      "id": 25,
+      "url": "4000_Essential_English_Words-meaning.json",
+      "localPath": "public/dicts/en/word/4000_Essential_English_Words-meaning.json",
+      "status": "success",
+      "fileSize": 5965436,
+      "recordCount": 3600
+    },
+    {
+      "id": 24,
+      "url": "self-study_English3.json",
+      "localPath": "public/dicts/en/word/self-study_English3.json",
+      "status": "success",
+      "fileSize": 6959814,
+      "recordCount": 4603
+    },
+    {
+      "id": 28,
+      "url": "Top1500NounWords.json",
+      "localPath": "public/dicts/en/word/Top1500NounWords.json",
+      "status": "success",
+      "fileSize": 2788794,
+      "recordCount": 1525
+    },
+    {
+      "id": 32,
+      "url": "Top60Pronouns.json",
+      "localPath": "public/dicts/en/word/Top60Pronouns.json",
+      "status": "success",
+      "fileSize": 72760,
+      "recordCount": 59
+    },
+    {
+      "id": 33,
+      "url": "Top50Prepositions.json",
+      "localPath": "public/dicts/en/word/Top50Prepositions.json",
+      "status": "success",
+      "fileSize": 79489,
+      "recordCount": 46
+    },
+    {
+      "id": 30,
+      "url": "Top500AdjectiveWords.json",
+      "localPath": "public/dicts/en/word/Top500AdjectiveWords.json",
+      "status": "success",
+      "fileSize": 946355,
+      "recordCount": 527
+    },
+    {
+      "id": 31,
+      "url": "Top250AdverbWords.json",
+      "localPath": "public/dicts/en/word/Top250AdverbWords.json",
+      "status": "success",
+      "fileSize": 379524,
+      "recordCount": 255
+    },
+    {
+      "id": 29,
+      "url": "Top1000VerbWords.json",
+      "localPath": "public/dicts/en/word/Top1000VerbWords.json",
+      "status": "success",
+      "fileSize": 1896002,
+      "recordCount": 1011
+    },
+    {
+      "id": 26,
+      "url": "Longman_Communication_3000.json",
+      "localPath": "public/dicts/en/word/Longman_Communication_3000.json",
+      "status": "success",
+      "fileSize": 5369882,
+      "recordCount": 3168
+    },
+    {
+      "id": 36,
+      "url": "xueshiyingyu.json",
+      "localPath": "public/dicts/en/word/xueshiyingyu.json",
+      "status": "success",
+      "fileSize": 1683012,
+      "recordCount": 896
+    },
+    {
+      "id": 39,
+      "url": "tingshuokaoshi.json",
+      "localPath": "public/dicts/en/word/tingshuokaoshi.json",
+      "status": "success",
+      "fileSize": 677104,
+      "recordCount": 539
+    },
+    {
+      "id": 38,
+      "url": "Merriam_Webster_sVocabularyBuilder.json",
+      "localPath": "public/dicts/en/word/Merriam_Webster_sVocabularyBuilder.json",
+      "status": "success",
+      "fileSize": 1579553,
+      "recordCount": 1191
+    },
+    {
+      "id": 35,
+      "url": "zhuan-cha-ben.json",
+      "localPath": "public/dicts/en/word/zhuan-cha-ben.json",
+      "status": "success",
+      "fileSize": 5677251,
+      "recordCount": 3214
+    },
+    {
+      "id": 34,
+      "url": "adult-self-study-examination.json",
+      "localPath": "public/dicts/en/word/adult-self-study-examination.json",
+      "status": "success",
+      "fileSize": 6275277,
+      "recordCount": 3692
+    },
+    {
+      "id": 43,
+      "url": "frequently_used_word01.json",
+      "localPath": "public/dicts/en/word/frequently_used_word01.json",
+      "status": "success",
+      "fileSize": 1199018,
+      "recordCount": 679
+    },
+    {
+      "id": 42,
+      "url": "3000_ClassRoom_English_Words.json",
+      "localPath": "public/dicts/en/word/3000_ClassRoom_English_Words.json",
+      "status": "success",
+      "fileSize": 5049964,
+      "recordCount": 2991
+    },
+    {
+      "id": 40,
+      "url": "TOEFL_ZhangHongYan.json",
+      "localPath": "public/dicts/en/word/TOEFL_ZhangHongYan.json",
+      "status": "success",
+      "fileSize": 6170364,
+      "recordCount": 4032
+    },
+    {
+      "id": 44,
+      "url": "frequently_used_word02.json",
+      "localPath": "public/dicts/en/word/frequently_used_word02.json",
+      "status": "success",
+      "fileSize": 1813164,
+      "recordCount": 1040
+    },
+    {
+      "id": 37,
+      "url": "Oxford5000.json",
+      "localPath": "public/dicts/en/word/Oxford5000.json",
+      "status": "success",
+      "fileSize": 8893623,
+      "recordCount": 5497
+    },
+    {
+      "id": 46,
+      "url": "pet-vacabulary-list-2024.json",
+      "localPath": "public/dicts/en/word/pet-vacabulary-list-2024.json",
+      "status": "success",
+      "fileSize": 2815384,
+      "recordCount": 1871
+    },
+    {
+      "id": 47,
+      "url": "GMAT_3_T.json",
+      "localPath": "public/dicts/en/word/GMAT_3_T.json",
+      "status": "success",
+      "fileSize": 4733465,
+      "recordCount": 3047
+    },
+    {
+      "id": 49,
+      "url": "GRE_1500.json",
+      "localPath": "public/dicts/en/word/GRE_1500.json",
+      "status": "success",
+      "fileSize": 2314288,
+      "recordCount": 1532
+    },
+    {
+      "id": 50,
+      "url": "GRE3000_3_T.json",
+      "localPath": "public/dicts/en/word/GRE3000_3_T.json",
+      "status": "success",
+      "fileSize": 4196464,
+      "recordCount": 3036
+    },
+    {
+      "id": 51,
+      "url": "GRE-computer-based-test.json",
+      "localPath": "public/dicts/en/word/GRE-computer-based-test.json",
+      "status": "success",
+      "fileSize": 1955254,
+      "recordCount": 1451
+    },
+    {
+      "id": 41,
+      "url": "2025KaoYanHongBaoShu.json",
+      "localPath": "public/dicts/en/word/2025KaoYanHongBaoShu.json",
+      "status": "success",
+      "fileSize": 10816991,
+      "recordCount": 6705
+    },
+    {
+      "id": 53,
+      "url": "GRE_equivalent.json",
+      "localPath": "public/dicts/en/word/GRE_equivalent.json",
+      "status": "success",
+      "fileSize": 1134993,
+      "recordCount": 827
+    },
+    {
+      "id": 48,
+      "url": "GRE_3_T.json",
+      "localPath": "public/dicts/en/word/GRE_3_T.json",
+      "status": "success",
+      "fileSize": 9074234,
+      "recordCount": 6514
+    },
+    {
+      "id": 45,
+      "url": "Macmillan7000.json",
+      "localPath": "public/dicts/en/word/Macmillan7000.json",
+      "status": "success",
+      "fileSize": 10288656,
+      "recordCount": 6265
+    },
+    {
+      "id": 55,
+      "url": "IELTS_tinglichangjing.json",
+      "localPath": "public/dicts/en/word/IELTS_tinglichangjing.json",
+      "status": "success",
+      "fileSize": 1532891,
+      "recordCount": 1204
+    },
+    {
+      "id": 63,
+      "url": "DuckCircle_IELTS.json",
+      "localPath": "public/dicts/en/word/DuckCircle_IELTS.json",
+      "status": "success",
+      "fileSize": 3573738,
+      "recordCount": 2644
+    },
+    {
+      "id": 52,
+      "url": "ZaiYaoNiMing_GRE3000.json",
+      "localPath": "public/dicts/en/word/ZaiYaoNiMing_GRE3000.json",
+      "status": "success",
+      "fileSize": 4017626,
+      "recordCount": 3041
+    },
+    {
+      "id": 58,
+      "url": "HeQiong_IELTS.json",
+      "localPath": "public/dicts/en/word/HeQiong_IELTS.json",
+      "status": "success",
+      "fileSize": 4169260,
+      "recordCount": 2470
+    },
+    {
+      "id": 64,
+      "url": "IELTSVocabularyBible.json",
+      "localPath": "public/dicts/en/word/IELTSVocabularyBible.json",
+      "status": "success",
+      "fileSize": 6021090,
+      "recordCount": 3673
+    },
+    {
+      "id": 66,
+      "url": "ielts-real-high.json",
+      "localPath": "public/dicts/en/word/ielts-real-high.json",
+      "status": "success",
+      "fileSize": 885480,
+      "recordCount": 524
+    },
+    {
+      "id": 56,
+      "url": "IELTS_disorder.json",
+      "localPath": "public/dicts/en/word/IELTS_disorder.json",
+      "status": "success",
+      "fileSize": 14849400,
+      "recordCount": 9387
+    },
+    {
+      "id": 72,
+      "url": "IELTSKingLu807.json",
+      "localPath": "public/dicts/en/word/IELTSKingLu807.json",
+      "status": "success",
+      "fileSize": 3059796,
+      "recordCount": 1852
+    },
+    {
+      "id": 111,
+      "url": "ket2021.json",
+      "localPath": "public/dicts/en/word/ket2021.json",
+      "status": "success",
+      "fileSize": 1444028,
+      "recordCount": 892
+    },
+    {
+      "id": 73,
+      "url": "IELTS_XDF_7000.json",
+      "localPath": "public/dicts/en/word/IELTS_XDF_7000.json",
+      "status": "success",
+      "fileSize": 7835217,
+      "recordCount": 5474
+    },
+    {
+      "id": 114,
+      "url": "BEC_2_T.json",
+      "localPath": "public/dicts/en/word/BEC_2_T.json",
+      "status": "success",
+      "fileSize": 4615712,
+      "recordCount": 2752
+    },
+    {
+      "id": 65,
+      "url": "ielts-807.json",
+      "localPath": "public/dicts/en/word/ielts-807.json",
+      "status": "success",
+      "fileSize": 5447839,
+      "recordCount": 4113
+    },
+    {
+      "id": 116,
+      "url": "PTE_junior.json",
+      "localPath": "public/dicts/en/word/PTE_junior.json",
+      "status": "success",
+      "fileSize": 4578914,
+      "recordCount": 2651
+    },
+    {
+      "id": 117,
+      "url": "PTE_senior.json",
+      "localPath": "public/dicts/en/word/PTE_senior.json",
+      "status": "success",
+      "fileSize": 5022467,
+      "recordCount": 3170
+    },
+    {
+      "id": 112,
+      "url": "SAT_3_T.json",
+      "localPath": "public/dicts/en/word/SAT_3_T.json",
+      "status": "success",
+      "fileSize": 6395519,
+      "recordCount": 4463
+    },
+    {
+      "id": 54,
+      "url": "gre-ciyileiji.json",
+      "localPath": "public/dicts/en/word/gre-ciyileiji.json",
+      "status": "success",
+      "fileSize": 11618544,
+      "recordCount": 8384
+    },
+    {
+      "id": 118,
+      "url": "PTE_FIB_R_junior.json",
+      "localPath": "public/dicts/en/word/PTE_FIB_R_junior.json",
+      "status": "success",
+      "fileSize": 1578299,
+      "recordCount": 941
+    },
+    {
+      "id": 115,
+      "url": "BEC_3_T.json",
+      "localPath": "public/dicts/en/word/BEC_3_T.json",
+      "status": "success",
+      "fileSize": 4681072,
+      "recordCount": 2824
+    },
+    {
+      "id": 119,
+      "url": "PTE_FIB_R_senior.json",
+      "localPath": "public/dicts/en/word/PTE_FIB_R_senior.json",
+      "status": "success",
+      "fileSize": 1807756,
+      "recordCount": 1272
+    },
+    {
+      "id": 124,
+      "url": "PTE_Read_apeuni.json",
+      "localPath": "public/dicts/en/word/PTE_Read_apeuni.json",
+      "status": "success",
+      "fileSize": 893455,
+      "recordCount": 630
+    },
+    {
+      "id": 123,
+      "url": "PTE_Advanced_apeuni.json",
+      "localPath": "public/dicts/en/word/PTE_Advanced_apeuni.json",
+      "status": "success",
+      "fileSize": 4821153,
+      "recordCount": 3169
+    },
+    {
+      "id": 121,
+      "url": "PTE_FIB_L.json",
+      "localPath": "public/dicts/en/word/PTE_FIB_L.json",
+      "status": "success",
+      "fileSize": 1067238,
+      "recordCount": 646
+    },
+    {
+      "id": 120,
+      "url": "PTE_WFD.json",
+      "localPath": "public/dicts/en/word/PTE_WFD.json",
+      "status": "success",
+      "fileSize": 1990362,
+      "recordCount": 1212
+    },
+    {
+      "id": 122,
+      "url": "PTE_Basic_apeuni.json",
+      "localPath": "public/dicts/en/word/PTE_Basic_apeuni.json",
+      "status": "success",
+      "fileSize": 4418718,
+      "recordCount": 2652
+    },
+    {
+      "id": 127,
+      "url": "Duolingo_Vocabulary_B1.json",
+      "localPath": "public/dicts/en/word/Duolingo_Vocabulary_B1.json",
+      "status": "success",
+      "fileSize": 1358539,
+      "recordCount": 801
+    },
+    {
+      "id": 125,
+      "url": "PTE_Listening_apeuni.json",
+      "localPath": "public/dicts/en/word/PTE_Listening_apeuni.json",
+      "status": "success",
+      "fileSize": 1112148,
+      "recordCount": 674
+    },
+    {
+      "id": 129,
+      "url": "Duolingo_Vocabulary_C1.json",
+      "localPath": "public/dicts/en/word/Duolingo_Vocabulary_C1.json",
+      "status": "success",
+      "fileSize": 2100728,
+      "recordCount": 1314
+    },
+    {
+      "id": 128,
+      "url": "Duolingo_Vocabulary_B2.json",
+      "localPath": "public/dicts/en/word/Duolingo_Vocabulary_B2.json",
+      "status": "success",
+      "fileSize": 2349641,
+      "recordCount": 1423
+    },
+    {
+      "id": 126,
+      "url": "TOEIC.json",
+      "localPath": "public/dicts/en/word/TOEIC.json",
+      "status": "success",
+      "fileSize": 2692904,
+      "recordCount": 1694
+    },
+    {
+      "id": 133,
+      "url": "GaoKaoZhenTiHeXinGaoPin.json",
+      "localPath": "public/dicts/en/word/GaoKaoZhenTiHeXinGaoPin.json",
+      "status": "success",
+      "fileSize": 1415325,
+      "recordCount": 799
+    },
+    {
+      "id": 131,
+      "url": "voa.json",
+      "localPath": "public/dicts/en/word/voa.json",
+      "status": "success",
+      "fileSize": 2805331,
+      "recordCount": 1503
+    },
+    {
+      "id": 130,
+      "url": "Oxford3000.json",
+      "localPath": "public/dicts/en/word/Oxford3000.json",
+      "status": "success",
+      "fileSize": 2256488,
+      "recordCount": 1339
+    },
+    {
+      "id": 134,
+      "url": "gaokao-yuedu-gaopin.json",
+      "localPath": "public/dicts/en/word/gaokao-yuedu-gaopin.json",
+      "status": "success",
+      "fileSize": 1172017,
+      "recordCount": 688
+    },
+    {
+      "id": 141,
+      "url": "PEPXiaoXue3_1_T.json",
+      "localPath": "public/dicts/en/word/PEPXiaoXue3_1_T.json",
+      "status": "success",
+      "fileSize": 106296,
+      "recordCount": 64
+    },
+    {
+      "id": 143,
+      "url": "PEPXiaoXue4_1_T.json",
+      "localPath": "public/dicts/en/word/PEPXiaoXue4_1_T.json",
+      "status": "success",
+      "fileSize": 116383,
+      "recordCount": 84
+    },
+    {
+      "id": 135,
+      "url": "ZhongKaoHeXin.json",
+      "localPath": "public/dicts/en/word/ZhongKaoHeXin.json",
+      "status": "success",
+      "fileSize": 3609965,
+      "recordCount": 2135
+    },
+    {
+      "id": 142,
+      "url": "PEPXiaoXue3_2_T.json",
+      "localPath": "public/dicts/en/word/PEPXiaoXue3_2_T.json",
+      "status": "success",
+      "fileSize": 107056,
+      "recordCount": 72
+    },
+    {
+      "id": 147,
+      "url": "PEPXiaoXue6_1_T.json",
+      "localPath": "public/dicts/en/word/PEPXiaoXue6_1_T.json",
+      "status": "success",
+      "fileSize": 188395,
+      "recordCount": 130
+    },
+    {
+      "id": 140,
+      "url": "OxfordVocabulary_juniorMiddleSH.json",
+      "localPath": "public/dicts/en/word/OxfordVocabulary_juniorMiddleSH.json",
+      "status": "success",
+      "fileSize": 1821116,
+      "recordCount": 1270
+    },
+    {
+      "id": 146,
+      "url": "PEPXiaoXue5_2_T.json",
+      "localPath": "public/dicts/en/word/PEPXiaoXue5_2_T.json",
+      "status": "success",
+      "fileSize": 223473,
+      "recordCount": 156
+    },
+    {
+      "id": 144,
+      "url": "PEPXiaoXue4_2_T.json",
+      "localPath": "public/dicts/en/word/PEPXiaoXue4_2_T.json",
+      "status": "success",
+      "fileSize": 136624,
+      "recordCount": 104
+    },
+    {
+      "id": 145,
+      "url": "PEPXiaoXue5_1_T.json",
+      "localPath": "public/dicts/en/word/PEPXiaoXue5_1_T.json",
+      "status": "success",
+      "fileSize": 186775,
+      "recordCount": 131
+    },
+    {
+      "id": 149,
+      "url": "PEP_SL_XiaoXue1_1_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue1_1_t.json",
+      "status": "success",
+      "fileSize": 77860,
+      "recordCount": 52
+    },
+    {
+      "id": 148,
+      "url": "PEPXiaoXue6_2_T.json",
+      "localPath": "public/dicts/en/word/PEPXiaoXue6_2_T.json",
+      "status": "success",
+      "fileSize": 146453,
+      "recordCount": 108
+    },
+    {
+      "id": 151,
+      "url": "PEP_SL_XiaoXue2_1_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue2_1_t.json",
+      "status": "success",
+      "fileSize": 92266,
+      "recordCount": 54
+    },
+    {
+      "id": 154,
+      "url": "PEP_SL_XiaoXue3_2_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue3_2_t.json",
+      "status": "success",
+      "fileSize": 104598,
+      "recordCount": 84
+    },
+    {
+      "id": 153,
+      "url": "PEP_SL_XiaoXue3_1_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue3_1_t.json",
+      "status": "success",
+      "fileSize": 154834,
+      "recordCount": 103
+    },
+    {
+      "id": 155,
+      "url": "PEP_SL_XiaoXue4_1_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue4_1_t.json",
+      "status": "success",
+      "fileSize": 152588,
+      "recordCount": 115
+    },
+    {
+      "id": 150,
+      "url": "PEP_SL_XiaoXue1_2_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue1_2_t.json",
+      "status": "success",
+      "fileSize": 70641,
+      "recordCount": 45
+    },
+    {
+      "id": 156,
+      "url": "PEP_SL_XiaoXue4_2_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue4_2_t.json",
+      "status": "success",
+      "fileSize": 116665,
+      "recordCount": 87
+    },
+    {
+      "id": 157,
+      "url": "PEP_SL_XiaoXue5_1_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue5_1_t.json",
+      "status": "success",
+      "fileSize": 86707,
+      "recordCount": 66
+    },
+    {
+      "id": 152,
+      "url": "PEP_SL_XiaoXue2_2_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue2_2_t.json",
+      "status": "success",
+      "fileSize": 68966,
+      "recordCount": 55
+    },
+    {
+      "id": 158,
+      "url": "PEP_SL_XiaoXue5_2_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue5_2_t.json",
+      "status": "success",
+      "fileSize": 96773,
+      "recordCount": 96
+    },
+    {
+      "id": 159,
+      "url": "PEP_SL_XiaoXue6_1_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue6_1_t.json",
+      "status": "success",
+      "fileSize": 144728,
+      "recordCount": 102
+    },
+    {
+      "id": 160,
+      "url": "PEP_SL_XiaoXue6_2_t.json",
+      "localPath": "public/dicts/en/word/PEP_SL_XiaoXue6_2_t.json",
+      "status": "success",
+      "fileSize": 57191,
+      "recordCount": 41
+    },
+    {
+      "id": 161,
+      "url": "PEPChuZhong7_1_T.json",
+      "localPath": "public/dicts/en/word/PEPChuZhong7_1_T.json",
+      "status": "success",
+      "fileSize": 578114,
+      "recordCount": 392
+    },
+    {
+      "id": 163,
+      "url": "PEPChuZhong8_1_T.json",
+      "localPath": "public/dicts/en/word/PEPChuZhong8_1_T.json",
+      "status": "success",
+      "fileSize": 610325,
+      "recordCount": 419
+    },
+    {
+      "id": 162,
+      "url": "PEPChuZhong7_2_T.json",
+      "localPath": "public/dicts/en/word/PEPChuZhong7_2_T.json",
+      "status": "success",
+      "fileSize": 745538,
+      "recordCount": 492
+    },
+    {
+      "id": 164,
+      "url": "PEPChuZhong8_2_T.json",
+      "localPath": "public/dicts/en/word/PEPChuZhong8_2_T.json",
+      "status": "success",
+      "fileSize": 706579,
+      "recordCount": 466
+    },
+    {
+      "id": 166,
+      "url": "PEPGaoZhong_1_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_1_T.json",
+      "status": "success",
+      "fileSize": 429303,
+      "recordCount": 311
+    },
+    {
+      "id": 165,
+      "url": "PEPChuZhong9_1_T.json",
+      "localPath": "public/dicts/en/word/PEPChuZhong9_1_T.json",
+      "status": "success",
+      "fileSize": 821239,
+      "recordCount": 551
+    },
+    {
+      "id": 168,
+      "url": "PEPGaoZhong_3_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_3_T.json",
+      "status": "success",
+      "fileSize": 509284,
+      "recordCount": 366
+    },
+    {
+      "id": 167,
+      "url": "PEPGaoZhong_2_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_2_T.json",
+      "status": "success",
+      "fileSize": 453737,
+      "recordCount": 319
+    },
+    {
+      "id": 169,
+      "url": "PEPGaoZhong_4_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_4_T.json",
+      "status": "success",
+      "fileSize": 428449,
+      "recordCount": 307
+    },
+    {
+      "id": 172,
+      "url": "PEPGaoZhong_7_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_7_T.json",
+      "status": "success",
+      "fileSize": 551915,
+      "recordCount": 384
+    },
+    {
+      "id": 170,
+      "url": "PEPGaoZhong_5_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_5_T.json",
+      "status": "success",
+      "fileSize": 518079,
+      "recordCount": 357
+    },
+    {
+      "id": 173,
+      "url": "PEPGaoZhong_8_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_8_T.json",
+      "status": "success",
+      "fileSize": 579394,
+      "recordCount": 420
+    },
+    {
+      "id": 171,
+      "url": "PEPGaoZhong_6_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_6_T.json",
+      "status": "success",
+      "fileSize": 558424,
+      "recordCount": 391
+    },
+    {
+      "id": 175,
+      "url": "PEPGaoZhong_10_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_10_T.json",
+      "status": "success",
+      "fileSize": 485743,
+      "recordCount": 361
+    },
+    {
+      "id": 178,
+      "url": "Newwaiyan7-1.json",
+      "localPath": "public/dicts/en/word/Newwaiyan7-1.json",
+      "status": "success",
+      "fileSize": 508285,
+      "recordCount": 294
+    },
+    {
+      "id": 174,
+      "url": "PEPGaoZhong_9_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_9_T.json",
+      "status": "success",
+      "fileSize": 507734,
+      "recordCount": 352
+    },
+    {
+      "id": 179,
+      "url": "Newwaiyan7-2.json",
+      "localPath": "public/dicts/en/word/Newwaiyan7-2.json",
+      "status": "success",
+      "fileSize": 528588,
+      "recordCount": 305
+    },
+    {
+      "id": 177,
+      "url": "WaiYanSheChuZhong_1_T.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_1_T.json",
+      "status": "success",
+      "fileSize": 978798,
+      "recordCount": 629
+    },
+    {
+      "id": 180,
+      "url": "WaiYanSheChuZhong_2_T.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_2_T.json",
+      "status": "success",
+      "fileSize": 688573,
+      "recordCount": 438
+    },
+    {
+      "id": 176,
+      "url": "PEPGaoZhong_11_T.json",
+      "localPath": "public/dicts/en/word/PEPGaoZhong_11_T.json",
+      "status": "success",
+      "fileSize": 428962,
+      "recordCount": 309
+    },
+    {
+      "id": 183,
+      "url": "WaiYanSheChuZhong_5_T.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_5_T.json",
+      "status": "success",
+      "fileSize": 548475,
+      "recordCount": 381
+    },
+    {
+      "id": 181,
+      "url": "WaiYanSheChuZhong_3_T.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_3_T.json",
+      "status": "success",
+      "fileSize": 505846,
+      "recordCount": 320
+    },
+    {
+      "id": 182,
+      "url": "WaiYanSheChuZhong_4_T.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_4_T.json",
+      "status": "success",
+      "fileSize": 408413,
+      "recordCount": 266
+    },
+    {
+      "id": 184,
+      "url": "WaiYanSheChuZhong_6_T.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_6_T.json",
+      "status": "success",
+      "fileSize": 200731,
+      "recordCount": 128
+    },
+    {
+      "id": 187,
+      "url": "WaiYanSheChuZhong_1-Volume-up.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_1-Volume-up.json",
+      "status": "success",
+      "fileSize": 190456,
+      "recordCount": 138
+    },
+    {
+      "id": 185,
+      "url": "WaiYanSheGaoZhong_1_T.json",
+      "localPath": "public/dicts/en/word/WaiYanSheGaoZhong_1_T.json",
+      "status": "success",
+      "fileSize": 662181,
+      "recordCount": 411
+    },
+    {
+      "id": 186,
+      "url": "WaiYanSheGaoZhong_2_T.json",
+      "localPath": "public/dicts/en/word/WaiYanSheGaoZhong_2_T.json",
+      "status": "success",
+      "fileSize": 421912,
+      "recordCount": 272
+    },
+    {
+      "id": 188,
+      "url": "WaiYanSheChuZhong_1-Volume-down.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_1-Volume-down.json",
+      "status": "success",
+      "fileSize": 167191,
+      "recordCount": 118
+    },
+    {
+      "id": 189,
+      "url": "WaiYanSheChuZhong_2-Volume-top.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_2-Volume-top.json",
+      "status": "success",
+      "fileSize": 167960,
+      "recordCount": 118
+    },
+    {
+      "id": 190,
+      "url": "WaiYanSheChuZhong_2-Volume-down.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_2-Volume-down.json",
+      "status": "success",
+      "fileSize": 172783,
+      "recordCount": 110
+    },
+    {
+      "id": 195,
+      "url": "WaiYanSheChuZhong_5-Volume-top.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_5-Volume-top.json",
+      "status": "success",
+      "fileSize": 129256,
+      "recordCount": 80
+    },
+    {
+      "id": 194,
+      "url": "WaiYanSheChuZhong_4-Volume-down.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_4-Volume-down.json",
+      "status": "success",
+      "fileSize": 121817,
+      "recordCount": 78
+    },
+    {
+      "id": 192,
+      "url": "WaiYanSheChuZhong_3-Volume-down.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_3-Volume-down.json",
+      "status": "success",
+      "fileSize": 152548,
+      "recordCount": 106
+    },
+    {
+      "id": 196,
+      "url": "WaiYanSheChuZhong_5-Volume-down.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_5-Volume-down.json",
+      "status": "success",
+      "fileSize": 120826,
+      "recordCount": 72
+    },
+    {
+      "id": 197,
+      "url": "WaiYanSheChuZhong_6-Volume-top.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_6-Volume-top.json",
+      "status": "success",
+      "fileSize": 85675,
+      "recordCount": 61
+    },
+    {
+      "id": 191,
+      "url": "WaiYanSheChuZhong_3-Volume-top.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_3-Volume-top.json",
+      "status": "success",
+      "fileSize": 129602,
+      "recordCount": 82
+    },
+    {
+      "id": 193,
+      "url": "WaiYanSheChuZhong_4-Volume-top.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_4-Volume-top.json",
+      "status": "success",
+      "fileSize": 170002,
+      "recordCount": 116
+    },
+    {
+      "id": 200,
+      "url": "waiyan-xin-3-2.json",
+      "localPath": "public/dicts/en/word/waiyan-xin-3-2.json",
+      "status": "success",
+      "fileSize": 229152,
+      "recordCount": 154
+    },
+    {
+      "id": 201,
+      "url": "waiyan-xin-4-1.json",
+      "localPath": "public/dicts/en/word/waiyan-xin-4-1.json",
+      "status": "success",
+      "fileSize": 205787,
+      "recordCount": 144
+    },
+    {
+      "id": 198,
+      "url": "WaiYanSheChuZhong_6-Volume-down.json",
+      "localPath": "public/dicts/en/word/WaiYanSheChuZhong_6-Volume-down.json",
+      "status": "success",
+      "fileSize": 134956,
+      "recordCount": 91
+    },
+    {
+      "id": 199,
+      "url": "waiyan-xin-3-1.json",
+      "localPath": "public/dicts/en/word/waiyan-xin-3-1.json",
+      "status": "success",
+      "fileSize": 206728,
+      "recordCount": 134
+    },
+    {
+      "id": 203,
+      "url": "waiyan-xin-5-1.json",
+      "localPath": "public/dicts/en/word/waiyan-xin-5-1.json",
+      "status": "success",
+      "fileSize": 224468,
+      "recordCount": 150
+    },
+    {
+      "id": 202,
+      "url": "waiyan-xin-4-2.json",
+      "localPath": "public/dicts/en/word/waiyan-xin-4-2.json",
+      "status": "success",
+      "fileSize": 206173,
+      "recordCount": 130
+    },
+    {
+      "id": 206,
+      "url": "waiyan-xin-6-2.json",
+      "localPath": "public/dicts/en/word/waiyan-xin-6-2.json",
+      "status": "success",
+      "fileSize": 169761,
+      "recordCount": 105
+    },
+    {
+      "id": 204,
+      "url": "waiyan-xin-5-2.json",
+      "localPath": "public/dicts/en/word/waiyan-xin-5-2.json",
+      "status": "success",
+      "fileSize": 241901,
+      "recordCount": 144
+    },
+    {
+      "id": 208,
+      "url": "YiLin_1.json",
+      "localPath": "public/dicts/en/word/YiLin_1.json",
+      "status": "success",
+      "fileSize": 451098,
+      "recordCount": 275
+    },
+    {
+      "id": 207,
+      "url": "shanghai-6-2-word.json",
+      "localPath": "public/dicts/en/word/shanghai-6-2-word.json",
+      "status": "success",
+      "fileSize": 477111,
+      "recordCount": 274
+    },
+    {
+      "id": 205,
+      "url": "waiyan-xin-6-1.json",
+      "localPath": "public/dicts/en/word/waiyan-xin-6-1.json",
+      "status": "success",
+      "fileSize": 136488,
+      "recordCount": 83
+    },
+    {
+      "id": 212,
+      "url": "BeiShiGaoZhong_2_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_2_T.json",
+      "status": "success",
+      "fileSize": 363268,
+      "recordCount": 244
+    },
+    {
+      "id": 211,
+      "url": "BeiShiGaoZhong_1_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_1_T.json",
+      "status": "success",
+      "fileSize": 353469,
+      "recordCount": 226
+    },
+    {
+      "id": 213,
+      "url": "BeiShiGaoZhong_3_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_3_T.json",
+      "status": "success",
+      "fileSize": 431480,
+      "recordCount": 295
+    },
+    {
+      "id": 210,
+      "url": "YiLin_3.json",
+      "localPath": "public/dicts/en/word/YiLin_3.json",
+      "status": "success",
+      "fileSize": 460616,
+      "recordCount": 295
+    },
+    {
+      "id": 215,
+      "url": "BeiShiGaoZhong_5_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_5_T.json",
+      "status": "success",
+      "fileSize": 513052,
+      "recordCount": 327
+    },
+    {
+      "id": 216,
+      "url": "BeiShiGaoZhong_6_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_6_T.json",
+      "status": "success",
+      "fileSize": 401585,
+      "recordCount": 271
+    },
+    {
+      "id": 209,
+      "url": "YiLin_2.json",
+      "localPath": "public/dicts/en/word/YiLin_2.json",
+      "status": "success",
+      "fileSize": 483759,
+      "recordCount": 294
+    },
+    {
+      "id": 214,
+      "url": "BeiShiGaoZhong_4_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_4_T.json",
+      "status": "success",
+      "fileSize": 519460,
+      "recordCount": 336
+    },
+    {
+      "id": 218,
+      "url": "BeiShiGaoZhong_8_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_8_T.json",
+      "status": "success",
+      "fileSize": 518213,
+      "recordCount": 364
+    },
+    {
+      "id": 219,
+      "url": "BeiShiGaoZhong_9_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_9_T.json",
+      "status": "success",
+      "fileSize": 402303,
+      "recordCount": 299
+    },
+    {
+      "id": 220,
+      "url": "BeiShiGaoZhong_10_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_10_T.json",
+      "status": "success",
+      "fileSize": 349585,
+      "recordCount": 267
+    },
+    {
+      "id": 221,
+      "url": "BeiShiGaoZhong_11_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_11_T.json",
+      "status": "success",
+      "fileSize": 460286,
+      "recordCount": 330
+    },
+    {
+      "id": 222,
+      "url": "jiJiao3-1.json",
+      "localPath": "public/dicts/en/word/jiJiao3-1.json",
+      "status": "success",
+      "fileSize": 129150,
+      "recordCount": 74
+    },
+    {
+      "id": 225,
+      "url": "jiJiao4-2.json",
+      "localPath": "public/dicts/en/word/jiJiao4-2.json",
+      "status": "success",
+      "fileSize": 112900,
+      "recordCount": 83
+    },
+    {
+      "id": 224,
+      "url": "jiJiao4-1.json",
+      "localPath": "public/dicts/en/word/jiJiao4-1.json",
+      "status": "success",
+      "fileSize": 122316,
+      "recordCount": 78
+    },
+    {
+      "id": 217,
+      "url": "BeiShiGaoZhong_7_T.json",
+      "localPath": "public/dicts/en/word/BeiShiGaoZhong_7_T.json",
+      "status": "success",
+      "fileSize": 529112,
+      "recordCount": 334
+    },
+    {
+      "id": 227,
+      "url": "jiJiao5-2.json",
+      "localPath": "public/dicts/en/word/jiJiao5-2.json",
+      "status": "success",
+      "fileSize": 147530,
+      "recordCount": 89
+    },
+    {
+      "id": 226,
+      "url": "jiJiao5-1.json",
+      "localPath": "public/dicts/en/word/jiJiao5-1.json",
+      "status": "success",
+      "fileSize": 130267,
+      "recordCount": 78
+    },
+    {
+      "id": 229,
+      "url": "jiJiao6-2.json",
+      "localPath": "public/dicts/en/word/jiJiao6-2.json",
+      "status": "success",
+      "fileSize": 85015,
+      "recordCount": 51
+    },
+    {
+      "id": 228,
+      "url": "jiJiao6-1.json",
+      "localPath": "public/dicts/en/word/jiJiao6-1.json",
+      "status": "success",
+      "fileSize": 109937,
+      "recordCount": 66
+    },
+    {
+      "id": 223,
+      "url": "jiJiao3-2.json",
+      "localPath": "public/dicts/en/word/jiJiao3-2.json",
+      "status": "success",
+      "fileSize": 122621,
+      "recordCount": 76
+    },
+    {
+      "id": 230,
+      "url": "jiJiao7-1.json",
+      "localPath": "public/dicts/en/word/jiJiao7-1.json",
+      "status": "success",
+      "fileSize": 697053,
+      "recordCount": 557
+    },
+    {
+      "id": 231,
+      "url": "jiJiao7-2.json",
+      "localPath": "public/dicts/en/word/jiJiao7-2.json",
+      "status": "success",
+      "fileSize": 697517,
+      "recordCount": 513
+    },
+    {
+      "id": 232,
+      "url": "jiJiao8-1.json",
+      "localPath": "public/dicts/en/word/jiJiao8-1.json",
+      "status": "success",
+      "fileSize": 597639,
+      "recordCount": 420
+    },
+    {
+      "id": 234,
+      "url": "jiJiao9.json",
+      "localPath": "public/dicts/en/word/jiJiao9.json",
+      "status": "success",
+      "fileSize": 872622,
+      "recordCount": 636
+    },
+    {
+      "id": 233,
+      "url": "jiJiao8-2.json",
+      "localPath": "public/dicts/en/word/jiJiao8-2.json",
+      "status": "success",
+      "fileSize": 678680,
+      "recordCount": 487
+    },
+    {
+      "id": 236,
+      "url": "ReadingExplorer3.json",
+      "localPath": "public/dicts/en/word/ReadingExplorer3.json",
+      "status": "success",
+      "fileSize": 399486,
+      "recordCount": 239
+    },
+    {
+      "id": 237,
+      "url": "Cambridge_JOIN_IN.json",
+      "localPath": "public/dicts/en/word/Cambridge_JOIN_IN.json",
+      "status": "success",
+      "fileSize": 2135072,
+      "recordCount": 1350
+    },
+    {
+      "id": 251,
+      "url": "it-words.json",
+      "localPath": "public/dicts/en/word/it-words.json",
+      "status": "success",
+      "fileSize": 591274,
+      "recordCount": 1700
+    },
+    {
+      "id": 250,
+      "url": "itVocabulary.json",
+      "localPath": "public/dicts/en/word/itVocabulary.json",
+      "status": "success",
+      "fileSize": 580713,
+      "recordCount": 1665
+    },
+    {
+      "id": 235,
+      "url": "beijing_junior_high_school.json",
+      "localPath": "public/dicts/en/word/beijing_junior_high_school.json",
+      "status": "success",
+      "fileSize": 3114226,
+      "recordCount": 1844
+    }
+  ]
+}

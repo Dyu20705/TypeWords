@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-09-09T01:30:24.554Z",
+  "dictionariesOnDisk": 194,
+  "totalExpectedWords": 273628,
+  "totalActualWords": 277529,
+  "jsonErrors": 0,
+  "sampleRecordPassed": 970,
+  "sampleRecordChecks": 970
+}

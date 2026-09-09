@@ -45,7 +45,7 @@ assert.strictEqual(getBookName({ id: 'my-custom-1', name: 'Từ vựng IELTS' },
 // Legacy Chinese name fallback
 assert.strictEqual(getBookName({ id: 'wordCollect', name: '收藏' }, mockT_VI), 'Yêu thích')
 assert.strictEqual(getBookName({ id: 'wordWrong', name: '错词' }, mockT_EN), 'Wrong Words')
-console.log('  ✅ Test 1 passed')
+console.log('  [PASS] Test 1 passed')
 
 // Test 2: normalizeLegacySystemBook with Chinese legacy records
 console.log('Test 2: Normalizing legacy Chinese system book records')
@@ -84,7 +84,7 @@ assert.strictEqual(normChineseKnown.enName, DictId.wordKnown)
 assert.strictEqual(normChineseKnown.name, '')
 assert.strictEqual(normChineseKnown.description, '')
 assert.strictEqual(normChineseKnown.system, true)
-console.log('  ✅ Test 2 passed')
+console.log('  [PASS] Test 2 passed')
 
 // Test 3: normalizeLegacySystemBook with English legacy records
 console.log('Test 3: Normalizing legacy English system book records')
@@ -97,7 +97,7 @@ const normEnglishCollect = normalizeLegacySystemBook(legacyEnglishCollect, 'word
 assert.strictEqual(normEnglishCollect.id, DictId.wordCollect)
 assert.strictEqual(normEnglishCollect.name, '')
 assert.strictEqual(normEnglishCollect.system, true)
-console.log('  ✅ Test 3 passed')
+console.log('  [PASS] Test 3 passed')
 
 // Test 4: Custom books preserved
 console.log('Test 4: Preserving custom books and words')
@@ -112,7 +112,7 @@ assert.strictEqual(normCustom.id, 'custom_ielts_3000')
 assert.strictEqual(normCustom.name, 'IELTS Academic 3000')
 assert.strictEqual(normCustom.custom, true)
 assert.strictEqual(normCustom.words.length, 2)
-console.log('  ✅ Test 4 passed')
+console.log('  [PASS] Test 4 passed')
 
 // Test 5: normalizeWordBookList merges words and guarantees all 3 system books
 console.log('Test 5: normalizeWordBookList guarantees system books and merges words')
@@ -135,7 +135,7 @@ assert.strictEqual(wrongBook.words.length, 0) // created empty by default
 const customRes = normalizedBooks.find((b) => b.id === 'custom-1')!
 assert.ok(customRes)
 assert.strictEqual(customRes.name, 'My List')
-console.log('  ✅ Test 5 passed')
+console.log('  [PASS] Test 5 passed')
 
 // Test 6: checkAndUpgradeSaveDict full upgrade with FSRS and Note data preservation
 console.log('Test 6: checkAndUpgradeSaveDict with full state, FSRS and Note data')
@@ -215,9 +215,9 @@ async function runAsyncTests() {
   assert.strictEqual(reMigrated.word.bookList[0].words.length, migratedState.word.bookList[0].words.length)
   assert.strictEqual(reMigrated.article.bookList[0].articles.length, migratedState.article.bookList[0].articles.length)
   assert.strictEqual(reMigrated.noteData.serendipity, 'Tình cờ bắt gặp điều thú vị')
-  console.log('  ✅ Test 7 passed')
+  console.log('  [PASS] Test 7 passed')
 
-  console.log('🎉 All DB migration and normalization tests passed successfully!')
+  console.log('[SUCCESS] All DB migration and normalization tests passed successfully.')
 }
 
 runAsyncTests().catch((err) => {

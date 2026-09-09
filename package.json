@@ -10,7 +10,13 @@
     "lint:i18n": "node --strip-types scripts/lint-i18n.ts",
     "test:db": "node --strip-types scripts/test-db-migration.ts",
     "test:zh": "node --strip-types scripts/check-hardcoded-zh.ts",
-    "test": "node --strip-types scripts/lint-i18n.ts && node --strip-types scripts/test-db-migration.ts && node --strip-types scripts/check-hardcoded-zh.ts"
+    "test": "node --strip-types scripts/lint-i18n.ts && node --strip-types scripts/test-db-migration.ts && node --strip-types scripts/check-hardcoded-zh.ts",
+    "vocab:discover": "node --strip-types scripts/vocabulary/discover-source.ts",
+    "vocab:fetch": "node --strip-types scripts/vocabulary/fetch-dictionaries.ts",
+    "vocab:validate": "node --strip-types scripts/vocabulary/validate-dictionaries.ts",
+    "vocab:localize": "node --strip-types scripts/vocabulary/localize-catalog.ts",
+    "vocab:verify": "node --strip-types scripts/vocabulary/verify-integrity.ts",
+    "vocab:translate": "python3 scripts/vocabulary/translate-zh-to-vi.py"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.7.4",
