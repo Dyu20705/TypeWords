@@ -169,6 +169,14 @@ function main() {
       'Publish atomicity uses snapshot backup and rollback. Cross-filesystem atomic directory swap is planned for future runtime redesign.',
     ],
   }
+  if (fs.existsSync(PUBLISH_REPORT_PATH)) {
+    try {
+      const existing = JSON.parse(fs.readFileSync(PUBLISH_REPORT_PATH, 'utf-8'))
+      if (JSON.stringify(existing.gates) === JSON.stringify(publishReport.gates)) {
+        publishReport.timestamp = existing.timestamp
+      }
+    } catch {}
+  }
   fs.writeFileSync(PUBLISH_REPORT_PATH, JSON.stringify(publishReport, null, 2), 'utf-8')
 
   console.log(`[OK] QG-015 Checksum Manifest: 100% verified (${files.length} SHA-256 hashes matched)`)

@@ -606,11 +606,20 @@ export function runValidationGates(config: ValidationConfig = {}): { results: Ga
 
   if (reportPath) {
     fs.mkdirSync(path.dirname(reportPath), { recursive: true })
-    fs.writeFileSync(reportPath, JSON.stringify({
+    const reportData = {
       timestamp: new Date().toISOString(),
       executionModel: 'ValidationGatesOnly (PublishGates QG-015/017 run in data:publish)',
       results,
-    }, null, 2), 'utf-8')
+    }
+    if (fs.existsSync(reportPath)) {
+      try {
+        const existing = JSON.parse(fs.readFileSync(reportPath, 'utf-8'))
+        if (JSON.stringify(existing.results) === JSON.stringify(results)) {
+          reportData.timestamp = existing.timestamp
+        }
+      } catch {}
+    }
+    fs.writeFileSync(reportPath, JSON.stringify(reportData, null, 2), 'utf-8')
   }
 
   let allPassed = true
