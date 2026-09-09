@@ -3,22 +3,76 @@
     "id": 246,
     "enName": "nce1",
     "name": "New Concept English 1",
-    "description": "First Things First - Practice fundamental English pronunciation, grammar, and basic sentence structures.",
+    "description": "Quyển 1: First Things First - Bước đầu làm quen với ngữ âm, ngữ điệu, ngữ pháp căn bản và cấu trúc câu thông dụng.",
     "categoryId": 4,
     "url": "NCE_1.json",
     "length": 72,
     "language": "en",
-    "translateLanguage": "zh_CN",
+    "translateLanguage": "vi",
     "version": 1,
     "type": "article",
     "isDefault": false,
     "recommended": true,
-    "userId": "00000000-0000-0000-0000-000000000001",
-    "createdAt": "2026-05-12 02:04:50.831091",
-    "updatedAt": "2026-06-03 15:27:15.113708",
-    "cover": "/imgs/covers/nce-1.png",
-    "hidden": false,
-    "category": "Reading Practice",
-    "tags": ["New Concept English"]
+    "category": "Luyện đọc bài văn",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 247,
+    "enName": "nce2",
+    "name": "New Concept English 2",
+    "description": "Quyển 2: Practice and Progress - Thực hành và tiến bộ qua các đoạn văn ngắn hài hước, rèn luyện tư duy ngữ pháp và viết thư.",
+    "categoryId": 4,
+    "url": "NCE_2.json",
+    "length": 96,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "article",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện đọc bài văn",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 248,
+    "enName": "nce3",
+    "name": "New Concept English 3",
+    "description": "Quyển 3: Developing Skills - Phát triển kỹ năng tư duy ngôn ngữ, phân tích cấu trúc quan hệ logic phức tạp giữa các câu.",
+    "categoryId": 4,
+    "url": "NCE_3.json",
+    "length": 60,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "article",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện đọc bài văn",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 249,
+    "enName": "nce4",
+    "name": "New Concept English 4",
+    "description": "Quyển 4: Fluency in English - Tiếng Anh lưu loát qua các bài viết văn hóa, kinh tế, triết học và chính trị đa dạng.",
+    "categoryId": 4,
+    "url": "NCE_4.json",
+    "length": 48,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "article",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện đọc bài văn",
+    "tags": [
+      "New Concept English"
+    ]
   }
 ]

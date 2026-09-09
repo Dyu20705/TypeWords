@@ -1,24 +1,439 @@
 [
   {
     "id": 1,
-    "enName": "cet4",
+    "enName": "cet4_t",
     "name": "CET-4",
-    "description": "CET-4 Core Vocabulary",
+    "description": "Từ vựng tiếng Anh đại học CET-4 cốt lõi",
     "categoryId": 1,
     "url": "CET4_T.json",
     "length": 2607,
     "language": "en",
-    "translateLanguage": "zh_CN",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": true,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 252,
+    "enName": "cet-4-frequency",
+    "name": "CET-4 (Hiển thị từ tần)",
+    "description": "Từ vựng tiếng Anh đại học CET-4 (Kèm tần suất xuất hiện)",
+    "categoryId": 1,
+    "url": "CET-4-frequency.json",
+    "length": 2607,
+    "language": "en",
+    "translateLanguage": "vi",
     "version": 1,
     "type": "word",
     "isDefault": false,
     "recommended": true,
-    "userId": "00000000-0000-0000-0000-000000000001",
-    "createdAt": "2026-05-10 03:10:19.294875",
-    "updatedAt": "2026-06-03 15:27:15.113708",
-    "cover": null,
-    "hidden": false,
-    "category": "Exam Preparation",
-    "tags": ["English"]
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 2,
+    "enName": "cet6_t",
+    "name": "CET-6",
+    "description": "Từ vựng tiếng Anh đại học CET-6 cốt lõi",
+    "categoryId": 1,
+    "url": "CET6_T.json",
+    "length": 2345,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 7,
+    "enName": "kaoyan_3_t",
+    "name": "Từ vựng thi Cao học (KaoYan)",
+    "description": "Từ vựng thi tuyển sinh sau đại học / Cao học",
+    "categoryId": 1,
+    "url": "KaoYan_3_T.json",
+    "length": 3727,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 18,
+    "enName": "level4luan_2_t",
+    "name": "Chuyên ngành Anh cấp 4 (TEM-4)",
+    "description": "Từ vựng chuyên ngành tiếng Anh cấp 4 (TEM-4)",
+    "categoryId": 1,
+    "url": "Level4luan_2_T.json",
+    "length": 4025,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 19,
+    "enName": "level8luan_2_t",
+    "name": "Chuyên ngành Anh cấp 8 (TEM-8)",
+    "description": "Từ vựng chuyên ngành tiếng Anh cấp 8 (TEM-8)",
+    "categoryId": 1,
+    "url": "Level8luan_2_T.json",
+    "length": 12197,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 57,
+    "enName": "ielts_3_t",
+    "name": "IELTS Cốt lõi",
+    "description": "Từ vựng trọng tâm kỳ thi IELTS",
+    "categoryId": 2,
+    "url": "IELTS_3_T.json",
+    "length": 3575,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 113,
+    "enName": "toefl_3_t",
+    "name": "TOEFL Cốt lõi",
+    "description": "Từ vựng thường gặp trong kỳ thi TOEFL",
+    "categoryId": 2,
+    "url": "TOEFL_3_T.json",
+    "length": 4263,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "TOEFL"
+    ]
+  },
+  {
+    "id": 132,
+    "enName": "gaokao_3500",
+    "name": "3500 từ vựng thi Tốt nghiệp THPT / Đại học",
+    "description": "3500 từ vựng cốt lõi chuẩn bị kỳ thi Tốt nghiệp THPT và Đại học",
+    "categoryId": 3,
+    "url": "GaoKao_3500.json",
+    "length": 3875,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Thông dụng"
+    ]
+  },
+  {
+    "id": 136,
+    "enName": "nce-new-1",
+    "name": "New Concept English - Quyển 1",
+    "description": "New Concept English Quyển 1 - First Things First (Căn bản)",
+    "categoryId": 3,
+    "url": "nce-new-1.json",
+    "length": 867,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 137,
+    "enName": "nce-new-2",
+    "name": "New Concept English - Quyển 2",
+    "description": "New Concept English Quyển 2 - Practice and Progress (Thực hành)",
+    "categoryId": 3,
+    "url": "nce-new-2.json",
+    "length": 839,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 138,
+    "enName": "nce-new-3",
+    "name": "New Concept English - Quyển 3",
+    "description": "New Concept English Quyển 3 - Developing Skills (Phát triển kỹ năng)",
+    "categoryId": 3,
+    "url": "nce-new-3.json",
+    "length": 1050,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 139,
+    "enName": "nce-new-4",
+    "name": "New Concept English - Quyển 4",
+    "description": "New Concept English Quyển 4 - Fluency in English (Lưu loát)",
+    "categoryId": 3,
+    "url": "nce-new-4.json",
+    "length": 784,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 25,
+    "enName": "4000_essential_english_words-meaning",
+    "name": "4000 Từ vựng tiếng Anh thiết yếu (4000 Essential English Words)",
+    "description": "4000 Từ vựng tiếng Anh thiết yếu (4000 Essential English Words)",
+    "categoryId": 1,
+    "url": "4000_Essential_English_Words-meaning.json",
+    "length": 3592,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 26,
+    "enName": "longman_communication_3000",
+    "name": "Longman Giao tiếp 3000 từ",
+    "description": "Longman Giao tiếp 3000 từ",
+    "categoryId": 1,
+    "url": "Longman_Communication_3000.json",
+    "length": 3156,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 27,
+    "enName": "top2000words",
+    "name": "Top 2000 từ thông dụng nhất",
+    "description": "Top 2000 từ thông dụng nhất",
+    "categoryId": 1,
+    "url": "top2000words.json",
+    "length": 1865,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 48,
+    "enName": "gre_3_t",
+    "name": "GRE Cốt lõi",
+    "description": "Bộ từ vựng chuẩn bị cho kỳ thi GRE",
+    "categoryId": 2,
+    "url": "GRE_3_T.json",
+    "length": 6514,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 50,
+    "enName": "gre3000_3_t",
+    "name": "GRE 3000",
+    "description": "GRE 3000",
+    "categoryId": 2,
+    "url": "GRE3000_3_T.json",
+    "length": 3036,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 51,
+    "enName": "gre-computer-based-test",
+    "name": "GRE Từ vựng thực chiến phòng thi",
+    "description": "GRE Từ vựng thực chiến phòng thi",
+    "categoryId": 2,
+    "url": "GRE-computer-based-test.json",
+    "length": 1451,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 192,
+    "enName": "waiyanshechuzhong_3-volume-down",
+    "name": "Ngoại nghiên (FLTRP) 三年级下册",
+    "description": "外研Lớp 3 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_3-Volume-down.json",
+    "length": 104,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 193,
+    "enName": "waiyanshechuzhong_4-volume-top",
+    "name": "Ngoại nghiên (FLTRP) 四年级上册",
+    "description": "外研Lớp 4 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_4-Volume-top.json",
+    "length": 111,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 250,
+    "enName": "itvocabulary",
+    "name": "Tiếng Anh chuyên ngành CNTT & Khoa học Máy tính",
+    "description": "Từ vựng tiếng Anh chuyên ngành Khoa học Máy tính & CNTT",
+    "categoryId": 5,
+    "url": "itVocabulary.json",
+    "length": 1665,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện tập lập trình",
+    "tags": [
+      "Thông dụng"
+    ]
+  },
+  {
+    "id": 251,
+    "enName": "it-words",
+    "name": "Từ vựng thông dụng cho Lập trình viên",
+    "description": "Từ vựng tiếng Anh thông dụng dành cho lập trình viên",
+    "categoryId": 5,
+    "url": "it-words.json",
+    "length": 1700,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện tập lập trình",
+    "tags": [
+      "Thông dụng"
+    ]
   }
 ]

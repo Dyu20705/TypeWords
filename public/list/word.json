@@ -1,24 +1,3688 @@
 [
   {
     "id": 1,
-    "enName": "cet4",
+    "enName": "cet4_t",
     "name": "CET-4",
-    "description": "CET-4 Core Vocabulary",
+    "description": "Từ vựng tiếng Anh đại học CET-4 cốt lõi",
     "categoryId": 1,
     "url": "CET4_T.json",
     "length": 2607,
     "language": "en",
-    "translateLanguage": "zh_CN",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": true,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 252,
+    "enName": "cet-4-frequency",
+    "name": "CET-4 (Hiển thị từ tần)",
+    "description": "Từ vựng tiếng Anh đại học CET-4 (Kèm tần suất xuất hiện)",
+    "categoryId": 1,
+    "url": "CET-4-frequency.json",
+    "length": 2607,
+    "language": "en",
+    "translateLanguage": "vi",
     "version": 1,
     "type": "word",
     "isDefault": false,
     "recommended": true,
-    "userId": "00000000-0000-0000-0000-000000000001",
-    "createdAt": "2026-05-10 03:10:19.294875",
-    "updatedAt": "2026-06-03 15:27:15.113708",
-    "cover": null,
-    "hidden": false,
-    "category": "Exam Preparation",
-    "tags": ["English"]
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 2,
+    "enName": "cet6_t",
+    "name": "CET-6",
+    "description": "Từ vựng tiếng Anh đại học CET-6 cốt lõi",
+    "categoryId": 1,
+    "url": "CET6_T.json",
+    "length": 2345,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 7,
+    "enName": "kaoyan_3_t",
+    "name": "Từ vựng thi Cao học (KaoYan)",
+    "description": "Từ vựng thi tuyển sinh sau đại học / Cao học",
+    "categoryId": 1,
+    "url": "KaoYan_3_T.json",
+    "length": 3727,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 18,
+    "enName": "level4luan_2_t",
+    "name": "Chuyên ngành Anh cấp 4 (TEM-4)",
+    "description": "Từ vựng chuyên ngành tiếng Anh cấp 4 (TEM-4)",
+    "categoryId": 1,
+    "url": "Level4luan_2_T.json",
+    "length": 4025,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 19,
+    "enName": "level8luan_2_t",
+    "name": "Chuyên ngành Anh cấp 8 (TEM-8)",
+    "description": "Từ vựng chuyên ngành tiếng Anh cấp 8 (TEM-8)",
+    "categoryId": 1,
+    "url": "Level8luan_2_T.json",
+    "length": 12197,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 57,
+    "enName": "ielts_3_t",
+    "name": "IELTS Cốt lõi",
+    "description": "Từ vựng trọng tâm kỳ thi IELTS",
+    "categoryId": 2,
+    "url": "IELTS_3_T.json",
+    "length": 3575,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 113,
+    "enName": "toefl_3_t",
+    "name": "TOEFL Cốt lõi",
+    "description": "Từ vựng thường gặp trong kỳ thi TOEFL",
+    "categoryId": 2,
+    "url": "TOEFL_3_T.json",
+    "length": 4263,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "TOEFL"
+    ]
+  },
+  {
+    "id": 132,
+    "enName": "gaokao_3500",
+    "name": "3500 từ vựng thi Tốt nghiệp THPT / Đại học",
+    "description": "3500 từ vựng cốt lõi chuẩn bị kỳ thi Tốt nghiệp THPT và Đại học",
+    "categoryId": 3,
+    "url": "GaoKao_3500.json",
+    "length": 3875,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Thông dụng"
+    ]
+  },
+  {
+    "id": 136,
+    "enName": "nce-new-1",
+    "name": "New Concept English - Quyển 1",
+    "description": "New Concept English Quyển 1 - First Things First (Căn bản)",
+    "categoryId": 3,
+    "url": "nce-new-1.json",
+    "length": 867,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 137,
+    "enName": "nce-new-2",
+    "name": "New Concept English - Quyển 2",
+    "description": "New Concept English Quyển 2 - Practice and Progress (Thực hành)",
+    "categoryId": 3,
+    "url": "nce-new-2.json",
+    "length": 839,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 138,
+    "enName": "nce-new-3",
+    "name": "New Concept English - Quyển 3",
+    "description": "New Concept English Quyển 3 - Developing Skills (Phát triển kỹ năng)",
+    "categoryId": 3,
+    "url": "nce-new-3.json",
+    "length": 1050,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 139,
+    "enName": "nce-new-4",
+    "name": "New Concept English - Quyển 4",
+    "description": "New Concept English Quyển 4 - Fluency in English (Lưu loát)",
+    "categoryId": 3,
+    "url": "nce-new-4.json",
+    "length": 784,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "New Concept English"
+    ]
+  },
+  {
+    "id": 3,
+    "enName": "xinghuoqiaoji_4",
+    "name": "CET-4 Mẹo nhớ nhanh",
+    "description": "CET-4 Mẹo nhớ nhanh",
+    "categoryId": 1,
+    "url": "xinghuoqiaoji_4.json",
+    "length": 2422,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 4,
+    "enName": "xinghuoqiaoji_6",
+    "name": "CET-6 Mẹo nhớ nhanh",
+    "description": "CET-6 Mẹo nhớ nhanh",
+    "categoryId": 1,
+    "url": "xinghuoqiaoji_6.json",
+    "length": 6005,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 5,
+    "enName": "dancidejianfa_4",
+    "name": "CET-4 Cốt lõi rút gọn",
+    "description": "CET-4 Cốt lõi rút gọn",
+    "categoryId": 1,
+    "url": "DanCiDeJianFa_4.json",
+    "length": 1679,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 6,
+    "enName": "dancidejianfa_6",
+    "name": "CET-6 Cốt lõi rút gọn",
+    "description": "CET-6 Cốt lõi rút gọn",
+    "categoryId": 1,
+    "url": "DanCiDeJianFa_6.json",
+    "length": 1748,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 8,
+    "enName": "kaoyan_2024",
+    "name": "Từ vựng thi Cao học 2024",
+    "description": "Từ vựng thi Cao học 2024",
+    "categoryId": 1,
+    "url": "KaoYan_2024.json",
+    "length": 3731,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 9,
+    "enName": "kaoyanshanguo_2023",
+    "name": "Cao học cấp tốc 2023 (Tần suất cao/vừa/thấp)",
+    "description": "Cao học cấp tốc 2023 (Tần suất cao/vừa/thấp)",
+    "categoryId": 1,
+    "url": "KaoYanShanGuo_2023.json",
+    "length": 1771,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 10,
+    "enName": "926",
+    "name": "Cao học 926 từ vựng cốt lõi",
+    "description": "Cao học 926 từ vựng cốt lõi",
+    "categoryId": 1,
+    "url": "926.json",
+    "length": 926,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 11,
+    "enName": "dancidemimi_1",
+    "name": "Bí mật từ vựng - Tiếng Anh 1 (Cao học)",
+    "description": "Bí mật từ vựng - Tiếng Anh 1 (Cao học)",
+    "categoryId": 1,
+    "url": "DanCiDeMimi_1.json",
+    "length": 4264,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 12,
+    "enName": "dancidemimi_2",
+    "name": "Bí mật từ vựng - Tiếng Anh 2 (Cao học)",
+    "description": "Bí mật từ vựng - Tiếng Anh 2 (Cao học)",
+    "categoryId": 1,
+    "url": "DanCiDeMimi_2.json",
+    "length": 2854,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 13,
+    "enName": "2024hongbao_t1",
+    "name": "2024 Sách Đỏ Cao học (Phần trên)",
+    "description": "2024考研英语hongbaoshu必考词（HK1）",
+    "categoryId": 1,
+    "url": "2024HongBao_T1.json",
+    "length": 997,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 14,
+    "enName": "2024hongbao_t2",
+    "name": "2024 Sách Đỏ Cao học (Phần dưới)",
+    "description": "2024考研英语hongbaoshu必考词（HK2）",
+    "categoryId": 1,
+    "url": "2024HongBao_T2.json",
+    "length": 854,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 15,
+    "enName": "hongbaoshu-2026",
+    "name": "2026 Sách Đỏ Cao học (Bắt buộc + Căn bản + Nâng cao)",
+    "description": "2026 Sách Đỏ Cao học (Bắt buộc + Căn bản + Nâng cao)",
+    "categoryId": 1,
+    "url": "hongbaoshu-2026.json",
+    "length": 4768,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 16,
+    "enName": "english_ii",
+    "name": "Sổ từ Tiếng Anh 2 (Cao học)",
+    "description": "Sổ từ Tiếng Anh 2 (Cao học)",
+    "categoryId": 1,
+    "url": "English_II.json",
+    "length": 4549,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 17,
+    "enName": "kaoyanshanguo2025",
+    "name": "Cao học Shanguo 2025",
+    "description": "Cao học Shanguo 2025",
+    "categoryId": 1,
+    "url": "kaoyanshanguo2025.json",
+    "length": 2253,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 20,
+    "enName": "pets_3",
+    "name": "PETS (Thi chứng chỉ tiếng Anh quốc gia TQ)",
+    "description": "PETS (Thi chứng chỉ tiếng Anh quốc gia TQ)",
+    "categoryId": 1,
+    "url": "PETS_3.json",
+    "length": 1940,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "PET"
+    ]
+  },
+  {
+    "id": 21,
+    "enName": "pets3-2023",
+    "name": "PETS 2023",
+    "description": "PETS 2023",
+    "categoryId": 1,
+    "url": "PETS3-2023.json",
+    "length": 4439,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "PET"
+    ]
+  },
+  {
+    "id": 22,
+    "enName": "self-study_english1",
+    "name": "Tự học 1800 từ tần suất cao",
+    "description": "Tự học 1800 từ tần suất cao",
+    "categoryId": 1,
+    "url": "self-study_English1.json",
+    "length": 1797,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tự học tiếng Anh 2"
+    ]
+  },
+  {
+    "id": 23,
+    "enName": "self-study_english2",
+    "name": "Tự học Tiếng Anh 2 - Từ vựng tần suất cao",
+    "description": "Tự học Tiếng Anh 2 - Từ vựng tần suất cao",
+    "categoryId": 1,
+    "url": "self-study_English2.json",
+    "length": 2171,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tự học tiếng Anh 2"
+    ]
+  },
+  {
+    "id": 24,
+    "enName": "self-study_english3",
+    "name": "Tự học Tiếng Anh 2 - Trọn bộ từ vựng",
+    "description": "Tự học Tiếng Anh 2 - Trọn bộ từ vựng",
+    "categoryId": 1,
+    "url": "self-study_English3.json",
+    "length": 4167,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tự học tiếng Anh 2"
+    ]
+  },
+  {
+    "id": 25,
+    "enName": "4000_essential_english_words-meaning",
+    "name": "4000 Từ vựng tiếng Anh thiết yếu (4000 Essential English Words)",
+    "description": "4000 Từ vựng tiếng Anh thiết yếu (4000 Essential English Words)",
+    "categoryId": 1,
+    "url": "4000_Essential_English_Words-meaning.json",
+    "length": 3592,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 26,
+    "enName": "longman_communication_3000",
+    "name": "Longman Giao tiếp 3000 từ",
+    "description": "Longman Giao tiếp 3000 từ",
+    "categoryId": 1,
+    "url": "Longman_Communication_3000.json",
+    "length": 3156,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 27,
+    "enName": "top2000words",
+    "name": "Top 2000 từ thông dụng nhất",
+    "description": "Top 2000 từ thông dụng nhất",
+    "categoryId": 1,
+    "url": "top2000words.json",
+    "length": 1865,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 28,
+    "enName": "top1500nounwords",
+    "name": "Top 1500 Danh từ thông dụng nhất",
+    "description": "Top 1500 Danh từ thông dụng nhất",
+    "categoryId": 1,
+    "url": "Top1500NounWords.json",
+    "length": 1524,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 29,
+    "enName": "top1000verbwords",
+    "name": "Top 1000 Động từ thông dụng nhất",
+    "description": "Top 1000 Động từ thông dụng nhất",
+    "categoryId": 1,
+    "url": "Top1000VerbWords.json",
+    "length": 1010,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 30,
+    "enName": "top500adjectivewords",
+    "name": "Top 500 Tính từ thông dụng nhất",
+    "description": "Top 500 Tính từ thông dụng nhất",
+    "categoryId": 1,
+    "url": "Top500AdjectiveWords.json",
+    "length": 527,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 31,
+    "enName": "top250adverbwords",
+    "name": "Top 250 Trạng từ thông dụng nhất",
+    "description": "Top 250 Trạng từ thông dụng nhất",
+    "categoryId": 1,
+    "url": "Top250AdverbWords.json",
+    "length": 255,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 32,
+    "enName": "top60pronouns",
+    "name": "Top 60 Đại từ thông dụng nhất",
+    "description": "Top 60 Đại từ thông dụng nhất",
+    "categoryId": 1,
+    "url": "Top60Pronouns.json",
+    "length": 59,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 33,
+    "enName": "top50prepositions",
+    "name": "Top 50 Giới từ thông dụng nhất",
+    "description": "Top 50 Giới từ thông dụng nhất",
+    "categoryId": 1,
+    "url": "Top50Prepositions.json",
+    "length": 46,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 34,
+    "enName": "adult-self-study-examination",
+    "name": "Từ vựng Liên thông Đại học",
+    "description": "Từ vựng Liên thông Đại học",
+    "categoryId": 1,
+    "url": "adult-self-study-examination.json",
+    "length": 3690,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 35,
+    "enName": "zhuan-cha-ben",
+    "name": "Từ vựng Chuyên tiếp Đại học",
+    "description": "Từ vựng Chuyên tiếp Đại học",
+    "categoryId": 1,
+    "url": "zhuan-cha-ben.json",
+    "length": 3214,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 36,
+    "enName": "xueshiyingyu",
+    "name": "Tiếng Anh Cử nhân Liên thông",
+    "description": "Tiếng Anh Cử nhân Liên thông",
+    "categoryId": 1,
+    "url": "xueshiyingyu.json",
+    "length": 896,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 37,
+    "enName": "oxford5000",
+    "name": "Oxford 5000 từ",
+    "description": "Oxford 5000 từ",
+    "categoryId": 1,
+    "url": "Oxford5000.json",
+    "length": 5497,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 38,
+    "enName": "merriam_webster_svocabularybuilder",
+    "name": "Từ điển Gốc từ Merriam-Webster",
+    "description": "Từ điển Gốc từ Merriam-Webster",
+    "categoryId": 1,
+    "url": "Merriam_Webster_sVocabularyBuilder.json",
+    "length": 1191,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 39,
+    "enName": "tingshuokaoshi",
+    "name": "Từ vựng thường gặp bài thi Nghe - Nói",
+    "description": "Từ vựng thường gặp bài thi Nghe - Nói",
+    "categoryId": 1,
+    "url": "tingshuokaoshi.json",
+    "length": 539,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 40,
+    "enName": "toefl_zhanghongyan",
+    "name": "TOEFL Trương Hồng Nham - Phân loại theo chủ đề",
+    "description": "TOEFL Trương Hồng Nham - Phân loại theo chủ đề",
+    "categoryId": 2,
+    "url": "TOEFL_ZhangHongYan.json",
+    "length": 3560,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "TOEFL"
+    ]
+  },
+  {
+    "id": 41,
+    "enName": "2025kaoyanhongbaoshu",
+    "name": "2025 Sách Đỏ từ vựng Cao học",
+    "description": "2025 Sách Đỏ từ vựng Cao học",
+    "categoryId": 1,
+    "url": "2025KaoYanHongBaoShu.json",
+    "length": 6702,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Cao học"
+    ]
+  },
+  {
+    "id": 42,
+    "enName": "3000_classroom_english_words",
+    "name": "Liên thông Đại học 3000 từ",
+    "description": "Liên thông Đại học 3000 từ",
+    "categoryId": 1,
+    "url": "3000_ClassRoom_English_Words.json",
+    "length": 2985,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Đại học"
+    ]
+  },
+  {
+    "id": 43,
+    "enName": "frequently_used_word01",
+    "name": "Từ vựng tần suất siêu cao - Level 1",
+    "description": "Từ vựng tần suất siêu cao - Level 1",
+    "categoryId": 1,
+    "url": "frequently_used_word01.json",
+    "length": 678,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 44,
+    "enName": "frequently_used_word02",
+    "name": "Từ vựng tần suất siêu cao - Level 2",
+    "description": "Từ vựng tần suất siêu cao - Level 2",
+    "categoryId": 1,
+    "url": "frequently_used_word02.json",
+    "length": 1040,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 45,
+    "enName": "macmillan7000",
+    "name": "Macmillan 7000 từ vựng",
+    "description": "Macmillan 7000 từ vựng",
+    "categoryId": 1,
+    "url": "Macmillan7000.json",
+    "length": 6265,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi Trung Quốc",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 46,
+    "enName": "pet-vacabulary-list-2024",
+    "name": "Cambridge PET - 2024",
+    "description": "Cambridge PET - 2024",
+    "categoryId": 2,
+    "url": "pet-vacabulary-list-2024.json",
+    "length": 1537,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PET"
+    ]
+  },
+  {
+    "id": 47,
+    "enName": "gmat_3_t",
+    "name": "GMAT Cốt lõi",
+    "description": "Bộ từ vựng chuẩn bị cho kỳ thi GMAT",
+    "categoryId": 2,
+    "url": "GMAT_3_T.json",
+    "length": 3047,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GMAT"
+    ]
+  },
+  {
+    "id": 48,
+    "enName": "gre_3_t",
+    "name": "GRE Cốt lõi",
+    "description": "Bộ từ vựng chuẩn bị cho kỳ thi GRE",
+    "categoryId": 2,
+    "url": "GRE_3_T.json",
+    "length": 6514,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 49,
+    "enName": "gre_1500",
+    "name": "GRE 1500 từ trọng tâm (Trùng lặp TEM-8)",
+    "description": "GRE 1500 từ trọng tâm (Trùng lặp TEM-8)",
+    "categoryId": 2,
+    "url": "GRE_1500.json",
+    "length": 1532,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 50,
+    "enName": "gre3000_3_t",
+    "name": "GRE 3000",
+    "description": "GRE 3000",
+    "categoryId": 2,
+    "url": "GRE3000_3_T.json",
+    "length": 3036,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 51,
+    "enName": "gre-computer-based-test",
+    "name": "GRE Từ vựng thực chiến phòng thi",
+    "description": "GRE Từ vựng thực chiến phòng thi",
+    "categoryId": 2,
+    "url": "GRE-computer-based-test.json",
+    "length": 1451,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 52,
+    "enName": "zaiyaoniming_gre3000",
+    "name": "GRE 3000 Cốt lõi (Bản kèm từ tính mới)",
+    "description": "GRE 3000 Cốt lõi (Bản kèm từ tính mới)",
+    "categoryId": 2,
+    "url": "ZaiYaoNiMing_GRE3000.json",
+    "length": 3034,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 53,
+    "enName": "gre_equivalent",
+    "name": "GRE Từ vựng tương đương (Sentence Equivalence)",
+    "description": "GRE Từ vựng tương đương (Sentence Equivalence)",
+    "categoryId": 2,
+    "url": "GRE_equivalent.json",
+    "length": 827,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 54,
+    "enName": "gre-ciyileiji",
+    "name": "GRE Từ vựng phân loại theo chủ đề",
+    "description": "GRE Từ vựng phân loại theo chủ đề",
+    "categoryId": 2,
+    "url": "gre-ciyileiji.json",
+    "length": 8384,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "GRE"
+    ]
+  },
+  {
+    "id": 55,
+    "enName": "ielts_tinglichangjing",
+    "name": "IELTS Từ vựng theo ngữ cảnh bài Nghe",
+    "description": "IELTS Từ vựng theo ngữ cảnh bài Nghe",
+    "categoryId": 2,
+    "url": "IELTS_tinglichangjing.json",
+    "length": 1171,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 56,
+    "enName": "ielts_disorder",
+    "name": "IELTS Trọn bộ (Đảo trật tự ngẫu nhiên)",
+    "description": "IELTS Trọn bộ (Đảo trật tự ngẫu nhiên)",
+    "categoryId": 2,
+    "url": "IELTS_disorder.json",
+    "length": 9387,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 58,
+    "enName": "heqiong_ielts",
+    "name": "IELTS He Qiong - Từ vựng bài thi Nghe bắt buộc",
+    "description": "IELTS He Qiong - Từ vựng bài thi Nghe bắt buộc",
+    "categoryId": 2,
+    "url": "HeQiong_IELTS.json",
+    "length": 2470,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 63,
+    "enName": "duckcircle_ielts",
+    "name": "IELTS Yaquan - Từ vựng trọng tâm",
+    "description": "IELTS Yaquan - Từ vựng trọng tâm",
+    "categoryId": 2,
+    "url": "DuckCircle_IELTS.json",
+    "length": 2607,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 64,
+    "enName": "ieltsvocabularybible",
+    "name": "IELTS Chân Kinh Từ Vựng",
+    "description": "IELTS Chân Kinh Từ Vựng",
+    "categoryId": 2,
+    "url": "IELTSVocabularyBible.json",
+    "length": 3630,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 65,
+    "enName": "ielts-807",
+    "name": "IELTS Wang Lu 807 Từ vựng bài Nghe",
+    "description": "IELTS Wang Lu 807 Từ vựng bài Nghe",
+    "categoryId": 2,
+    "url": "ielts-807.json",
+    "length": 4113,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 66,
+    "enName": "ielts-real-high",
+    "name": "IELTS Real - Từ vựng tần suất cao",
+    "description": "IELTS Real - Từ vựng tần suất cao",
+    "categoryId": 2,
+    "url": "ielts-real-high.json",
+    "length": 524,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 72,
+    "enName": "ieltskinglu807",
+    "name": "IELTS Wang Lu 807 Bài Nghe (Tái bản lần 2)",
+    "description": "IELTS Wang Lu 807 Bài Nghe (Tái bản lần 2)",
+    "categoryId": 2,
+    "url": "IELTSKingLu807.json",
+    "length": 1852,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 73,
+    "enName": "ielts_xdf_7000",
+    "name": "100 câu nhớ 7000 từ vựng IELTS (Tân Đông Phương)",
+    "description": "100 câu nhớ 7000 từ vựng IELTS (Tân Đông Phương)",
+    "categoryId": 2,
+    "url": "IELTS_XDF_7000.json",
+    "length": 5474,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "IELTS"
+    ]
+  },
+  {
+    "id": 111,
+    "enName": "ket2021",
+    "name": "Cambridge KET",
+    "description": "Cambridge KET",
+    "categoryId": 2,
+    "url": "ket2021.json",
+    "length": 892,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "KET"
+    ]
+  },
+  {
+    "id": 112,
+    "enName": "sat_3_t",
+    "name": "SAT Cốt lõi (Hoa Kỳ)",
+    "description": "Bộ từ vựng chuẩn bị cho kỳ thi SAT tại Hoa Kỳ",
+    "categoryId": 2,
+    "url": "SAT_3_T.json",
+    "length": 4463,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "SAT"
+    ]
+  },
+  {
+    "id": 114,
+    "enName": "bec_2_t",
+    "name": "Tiếng Anh Thương Mại thông dụng",
+    "description": "Từ vựng tiếng Anh thương mại và giao tiếp công sở",
+    "categoryId": 2,
+    "url": "BEC_2_T.json",
+    "length": 2752,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "BEC"
+    ]
+  },
+  {
+    "id": 115,
+    "enName": "bec_3_t",
+    "name": "BEC Tiếng Anh Thương Mại",
+    "description": "Từ vựng thường gặp trong kỳ thi chứng chỉ tiếng Anh thương mại BEC",
+    "categoryId": 2,
+    "url": "BEC_3_T.json",
+    "length": 2824,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "BEC"
+    ]
+  },
+  {
+    "id": 116,
+    "enName": "pte_junior",
+    "name": "PTE Từ vựng căn bản",
+    "description": "PTE Từ vựng căn bản",
+    "categoryId": 2,
+    "url": "PTE_junior.json",
+    "length": 2651,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 117,
+    "enName": "pte_senior",
+    "name": "PTE Từ vựng nâng cao",
+    "description": "PTE Từ vựng nâng cao",
+    "categoryId": 2,
+    "url": "PTE_senior.json",
+    "length": 3170,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 118,
+    "enName": "pte_fib_r_junior",
+    "name": "PTE Reading FIB - Căn bản",
+    "description": "PTE Reading FIB - Căn bản",
+    "categoryId": 2,
+    "url": "PTE_FIB_R_junior.json",
+    "length": 941,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 119,
+    "enName": "pte_fib_r_senior",
+    "name": "PTE Reading FIB - Nâng cao",
+    "description": "PTE Reading FIB - Nâng cao",
+    "categoryId": 2,
+    "url": "PTE_FIB_R_senior.json",
+    "length": 1272,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 120,
+    "enName": "pte_wfd",
+    "name": "PTE Write From Dictation (WFD)",
+    "description": "PTE Write From Dictation (WFD)",
+    "categoryId": 2,
+    "url": "PTE_WFD.json",
+    "length": 1212,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 121,
+    "enName": "pte_fib_l",
+    "name": "PTE Listening FIB",
+    "description": "PTE Listening FIB",
+    "categoryId": 2,
+    "url": "PTE_FIB_L.json",
+    "length": 646,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 122,
+    "enName": "pte_basic_apeuni",
+    "name": "PTE Tinh Cơ - Căn bản",
+    "description": "PTE Tinh Cơ - Căn bản",
+    "categoryId": 2,
+    "url": "PTE_Basic_apeuni.json",
+    "length": 2651,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 123,
+    "enName": "pte_advanced_apeuni",
+    "name": "PTE Tinh Cơ - Nâng cao",
+    "description": "PTE Tinh Cơ - Nâng cao",
+    "categoryId": 2,
+    "url": "PTE_Advanced_apeuni.json",
+    "length": 3169,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 124,
+    "enName": "pte_read_apeuni",
+    "name": "PTE Reading FIB Tinh Cơ",
+    "description": "PTE Reading FIB Tinh Cơ",
+    "categoryId": 2,
+    "url": "PTE_Read_apeuni.json",
+    "length": 630,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 125,
+    "enName": "pte_listening_apeuni",
+    "name": "PTE Listening FIB Tinh Cơ",
+    "description": "PTE Listening FIB Tinh Cơ",
+    "categoryId": 2,
+    "url": "PTE_Listening_apeuni.json",
+    "length": 674,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "PTE"
+    ]
+  },
+  {
+    "id": 126,
+    "enName": "toeic",
+    "name": "Từ vựng TOEIC",
+    "description": "Từ vựng TOEIC",
+    "categoryId": 2,
+    "url": "TOEIC.json",
+    "length": 1694,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "TOEIC"
+    ]
+  },
+  {
+    "id": 127,
+    "enName": "duolingo_vocabulary_b1",
+    "name": "Duolingo Phân cấp B1",
+    "description": "Duolingo Phân cấp B1",
+    "categoryId": 2,
+    "url": "Duolingo_Vocabulary_B1.json",
+    "length": 801,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "CEFR"
+    ]
+  },
+  {
+    "id": 128,
+    "enName": "duolingo_vocabulary_b2",
+    "name": "Duolingo Phân cấp B2",
+    "description": "Duolingo Phân cấp B2",
+    "categoryId": 2,
+    "url": "Duolingo_Vocabulary_B2.json",
+    "length": 1423,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "CEFR"
+    ]
+  },
+  {
+    "id": 129,
+    "enName": "duolingo_vocabulary_c1",
+    "name": "Duolingo Phân cấp C1",
+    "description": "Duolingo Phân cấp C1",
+    "categoryId": 2,
+    "url": "Duolingo_Vocabulary_C1.json",
+    "length": 1313,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "CEFR"
+    ]
+  },
+  {
+    "id": 130,
+    "enName": "oxford3000",
+    "name": "Oxford 3000 từ cốt lõi",
+    "description": "Oxford 3000 từ cốt lõi",
+    "categoryId": 2,
+    "url": "Oxford3000.json",
+    "length": 1339,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "Oxford"
+    ]
+  },
+  {
+    "id": 131,
+    "enName": "voa",
+    "name": "VOA Từ vựng căn bản",
+    "description": "VOA Từ vựng căn bản",
+    "categoryId": 2,
+    "url": "voa.json",
+    "length": 1503,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Luyện thi quốc tế",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 133,
+    "enName": "gaokaozhentihexingaopin",
+    "name": "Từ vựng cốt lõi tần suất cao đề thi Đại học các năm",
+    "description": "Từ vựng cốt lõi tần suất cao đề thi Đại học các năm",
+    "categoryId": 3,
+    "url": "GaoKaoZhenTiHeXinGaoPin.json",
+    "length": 689,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Thông dụng"
+    ]
+  },
+  {
+    "id": 134,
+    "enName": "gaokao-yuedu-gaopin",
+    "name": "Từ vựng bài Đọc hiểu thi Đại học tần suất cao",
+    "description": "Từ vựng bài Đọc hiểu thi Đại học tần suất cao",
+    "categoryId": 3,
+    "url": "gaokao-yuedu-gaopin.json",
+    "length": 681,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Thông dụng"
+    ]
+  },
+  {
+    "id": 135,
+    "enName": "zhongkaohexin",
+    "name": "Từ vựng cốt lõi thi Vào Lớp 10 (Trung khảo)",
+    "description": "Từ vựng cốt lõi thi Vào Lớp 10 (Trung khảo)",
+    "categoryId": 3,
+    "url": "ZhongKaoHeXin.json",
+    "length": 2135,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Thông dụng"
+    ]
+  },
+  {
+    "id": 140,
+    "enName": "oxfordvocabulary_juniormiddlesh",
+    "name": "Oxford THCS Thượng Hải",
+    "description": "HK1海初中牛津词汇",
+    "categoryId": 3,
+    "url": "OxfordVocabulary_juniorMiddleSH.json",
+    "length": 1258,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Oxford"
+    ]
+  },
+  {
+    "id": 141,
+    "enName": "pepxiaoxue3_1_t",
+    "name": "Tiểu học Lớp 3 (Học kỳ 1)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 3 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEPXiaoXue3_1_T.json",
+    "length": 64,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 142,
+    "enName": "pepxiaoxue3_2_t",
+    "name": "Tiểu học Lớp 3 (Học kỳ 2)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 3 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEPXiaoXue3_2_T.json",
+    "length": 72,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 143,
+    "enName": "pepxiaoxue4_1_t",
+    "name": "Tiểu học Lớp 4 (Học kỳ 1)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 4 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEPXiaoXue4_1_T.json",
+    "length": 84,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 144,
+    "enName": "pepxiaoxue4_2_t",
+    "name": "Tiểu học Lớp 4 (Học kỳ 2)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 4 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEPXiaoXue4_2_T.json",
+    "length": 104,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 145,
+    "enName": "pepxiaoxue5_1_t",
+    "name": "Tiểu học Lớp 5 (Học kỳ 1)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 5 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEPXiaoXue5_1_T.json",
+    "length": 131,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 146,
+    "enName": "pepxiaoxue5_2_t",
+    "name": "Tiểu học Lớp 5 (Học kỳ 2)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 5 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEPXiaoXue5_2_T.json",
+    "length": 156,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 147,
+    "enName": "pepxiaoxue6_1_t",
+    "name": "Tiểu học Lớp 6 (Học kỳ 1)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 6 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEPXiaoXue6_1_T.json",
+    "length": 130,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 148,
+    "enName": "pepxiaoxue6_2_t",
+    "name": "Tiểu học Lớp 6 (Học kỳ 2)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 6 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEPXiaoXue6_2_T.json",
+    "length": 108,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 149,
+    "enName": "pep_sl_xiaoxue1_1_t",
+    "name": "Nhân giáo (PEP Điểm mới) 一年级上",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 1 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue1_1_t.json",
+    "length": 52,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 150,
+    "enName": "pep_sl_xiaoxue1_2_t",
+    "name": "Nhân giáo (PEP Điểm mới) 一年级下",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 1 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue1_2_t.json",
+    "length": 45,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 151,
+    "enName": "pep_sl_xiaoxue2_1_t",
+    "name": "Nhân giáo (PEP Điểm mới) 二年级上",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 2 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue2_1_t.json",
+    "length": 54,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 152,
+    "enName": "pep_sl_xiaoxue2_2_t",
+    "name": "Nhân giáo (PEP Điểm mới) 二年级下",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 2 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue2_2_t.json",
+    "length": 55,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 153,
+    "enName": "pep_sl_xiaoxue3_1_t",
+    "name": "Nhân giáo (PEP Điểm mới) 三年级上",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 3 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue3_1_t.json",
+    "length": 101,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 154,
+    "enName": "pep_sl_xiaoxue3_2_t",
+    "name": "Nhân giáo (PEP Điểm mới) 三年级下",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 3 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue3_2_t.json",
+    "length": 84,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 155,
+    "enName": "pep_sl_xiaoxue4_1_t",
+    "name": "Nhân giáo (PEP Điểm mới) 四年级上",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 4 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue4_1_t.json",
+    "length": 116,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 156,
+    "enName": "pep_sl_xiaoxue4_2_t",
+    "name": "Nhân giáo (PEP Điểm mới) 四年级下",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 4 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue4_2_t.json",
+    "length": 86,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 157,
+    "enName": "pep_sl_xiaoxue5_1_t",
+    "name": "Nhân giáo (PEP Điểm mới) 五年级上",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 5 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue5_1_t.json",
+    "length": 66,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 158,
+    "enName": "pep_sl_xiaoxue5_2_t",
+    "name": "Nhân giáo (PEP Điểm mới) 五年级下",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 5 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue5_2_t.json",
+    "length": 96,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 159,
+    "enName": "pep_sl_xiaoxue6_1_t",
+    "name": "Nhân giáo (PEP Điểm mới) 六年级上",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 6 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue6_1_t.json",
+    "length": 100,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 160,
+    "enName": "pep_sl_xiaoxue6_2_t",
+    "name": "Nhân giáo (PEP Điểm mới) 六年级下",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 6 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEP_SL_XiaoXue6_2_t.json",
+    "length": 41,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 161,
+    "enName": "pepchuzhong7_1_t",
+    "name": "THCS Lớp 7 (Học kỳ 1)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 7 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEPChuZhong7_1_T.json",
+    "length": 392,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 162,
+    "enName": "pepchuzhong7_2_t",
+    "name": "THCS Lớp 7 (Học kỳ 2)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 7 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEPChuZhong7_2_T.json",
+    "length": 492,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 163,
+    "enName": "pepchuzhong8_1_t",
+    "name": "THCS Lớp 8 (Học kỳ 1)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 8 (Học kỳ 1)",
+    "categoryId": 3,
+    "url": "PEPChuZhong8_1_T.json",
+    "length": 418,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 164,
+    "enName": "pepchuzhong8_2_t",
+    "name": "THCS Lớp 8 (Học kỳ 2)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 8 (Học kỳ 2)",
+    "categoryId": 3,
+    "url": "PEPChuZhong8_2_T.json",
+    "length": 463,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 165,
+    "enName": "pepchuzhong9_1_t",
+    "name": "THCS Lớp 9 (Cả năm)",
+    "description": "Sách giáo khoa Nhân giáo (PEP) Lớp 9 (Cả năm)",
+    "categoryId": 3,
+    "url": "PEPChuZhong9_1_T.json",
+    "length": 551,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 166,
+    "enName": "pepgaozhong_1_t",
+    "name": "THPT Bắt buộc 1",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Bắt buộc 1",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_1_T.json",
+    "length": 311,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 167,
+    "enName": "pepgaozhong_2_t",
+    "name": "THPT Bắt buộc 2",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Bắt buộc 2",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_2_T.json",
+    "length": 319,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 168,
+    "enName": "pepgaozhong_3_t",
+    "name": "THPT Bắt buộc 3",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Bắt buộc 3",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_3_T.json",
+    "length": 366,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 169,
+    "enName": "pepgaozhong_4_t",
+    "name": "THPT Bắt buộc 4",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Bắt buộc 4",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_4_T.json",
+    "length": 307,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 170,
+    "enName": "pepgaozhong_5_t",
+    "name": "THPT Bắt buộc 5",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Bắt buộc 5",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_5_T.json",
+    "length": 357,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 171,
+    "enName": "pepgaozhong_6_t",
+    "name": "THPT Tự chọn 6",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Tự chọn 6",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_6_T.json",
+    "length": 391,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 172,
+    "enName": "pepgaozhong_7_t",
+    "name": "THPT Tự chọn 7",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Tự chọn 7",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_7_T.json",
+    "length": 384,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 173,
+    "enName": "pepgaozhong_8_t",
+    "name": "THPT Tự chọn 8",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Tự chọn 8",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_8_T.json",
+    "length": 419,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 174,
+    "enName": "pepgaozhong_9_t",
+    "name": "THPT Tự chọn 9",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Tự chọn 9",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_9_T.json",
+    "length": 352,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 175,
+    "enName": "pepgaozhong_10_t",
+    "name": "THPT Tự chọn 10",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Tự chọn 10",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_10_T.json",
+    "length": 360,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 176,
+    "enName": "pepgaozhong_11_t",
+    "name": "THPT Tự chọn 11",
+    "description": "Sách giáo khoa Nhân giáo (PEP) THPT Tự chọn 11",
+    "categoryId": 3,
+    "url": "PEPGaoZhong_11_T.json",
+    "length": 309,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Nhân giáo (PEP)"
+    ]
+  },
+  {
+    "id": 177,
+    "enName": "waiyanshechuzhong_1_t",
+    "name": "Ngoại nghiên (FLTRP) 七年级上册",
+    "description": "Ngoại nghiên (FLTRP) Lớp 7 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_1_T.json",
+    "length": 619,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 178,
+    "enName": "newwaiyan7-1",
+    "name": "新外研七年级上册",
+    "description": "新Ngoại nghiên (FLTRP) Lớp 7 Học kỳ 1",
+    "categoryId": 3,
+    "url": "Newwaiyan7-1.json",
+    "length": 294,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 179,
+    "enName": "newwaiyan7-2",
+    "name": "新外研七年级下册",
+    "description": "新Ngoại nghiên (FLTRP) Lớp 7 Học kỳ 2",
+    "categoryId": 3,
+    "url": "Newwaiyan7-2.json",
+    "length": 305,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 180,
+    "enName": "waiyanshechuzhong_2_t",
+    "name": "Ngoại nghiên (FLTRP) 七年级下册",
+    "description": "Ngoại nghiên (FLTRP) Lớp 7 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_2_T.json",
+    "length": 430,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 181,
+    "enName": "waiyanshechuzhong_3_t",
+    "name": "Ngoại nghiên (FLTRP) 八年级上册",
+    "description": "Ngoại nghiên (FLTRP) Lớp 8 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_3_T.json",
+    "length": 317,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 182,
+    "enName": "waiyanshechuzhong_4_t",
+    "name": "Ngoại nghiên (FLTRP) 八年级下册",
+    "description": "Ngoại nghiên (FLTRP) Lớp 8 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_4_T.json",
+    "length": 263,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 183,
+    "enName": "waiyanshechuzhong_5_t",
+    "name": "Ngoại nghiên (FLTRP) 九年级上册",
+    "description": "Ngoại nghiên (FLTRP) Lớp 9 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_5_T.json",
+    "length": 378,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 184,
+    "enName": "waiyanshechuzhong_6_t",
+    "name": "Ngoại nghiên (FLTRP) 九年级下册",
+    "description": "Ngoại nghiên (FLTRP) Lớp 9 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_6_T.json",
+    "length": 127,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 185,
+    "enName": "waiyanshegaozhong_1_t",
+    "name": "Ngoại nghiên (FLTRP) 高中必修1",
+    "description": "Ngoại nghiên (FLTRP) THPT Bắt buộc 1",
+    "categoryId": 3,
+    "url": "WaiYanSheGaoZhong_1_T.json",
+    "length": 410,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 186,
+    "enName": "waiyanshegaozhong_2_t",
+    "name": "Ngoại nghiên (FLTRP) 高中必修2",
+    "description": "Ngoại nghiên (FLTRP) THPT Bắt buộc 2",
+    "categoryId": 3,
+    "url": "WaiYanSheGaoZhong_2_T.json",
+    "length": 272,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 187,
+    "enName": "waiyanshechuzhong_1-volume-up",
+    "name": "Ngoại nghiên (FLTRP) 一年级上册",
+    "description": "外研Lớp 1 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_1-Volume-up.json",
+    "length": 138,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 188,
+    "enName": "waiyanshechuzhong_1-volume-down",
+    "name": "Ngoại nghiên (FLTRP) 一年级下册",
+    "description": "外研Lớp 1 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_1-Volume-down.json",
+    "length": 118,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 189,
+    "enName": "waiyanshechuzhong_2-volume-top",
+    "name": "Ngoại nghiên (FLTRP) 二年级上册",
+    "description": "外研Lớp 2 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_2-Volume-top.json",
+    "length": 117,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 190,
+    "enName": "waiyanshechuzhong_2-volume-down",
+    "name": "Ngoại nghiên (FLTRP) 二年级下册",
+    "description": "外研Lớp 2 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_2-Volume-down.json",
+    "length": 109,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 191,
+    "enName": "waiyanshechuzhong_3-volume-top",
+    "name": "Ngoại nghiên (FLTRP) 三年级上册",
+    "description": "外研Lớp 3 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_3-Volume-top.json",
+    "length": 82,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 192,
+    "enName": "waiyanshechuzhong_3-volume-down",
+    "name": "Ngoại nghiên (FLTRP) 三年级下册",
+    "description": "外研Lớp 3 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_3-Volume-down.json",
+    "length": 104,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 193,
+    "enName": "waiyanshechuzhong_4-volume-top",
+    "name": "Ngoại nghiên (FLTRP) 四年级上册",
+    "description": "外研Lớp 4 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_4-Volume-top.json",
+    "length": 111,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 194,
+    "enName": "waiyanshechuzhong_4-volume-down",
+    "name": "Ngoại nghiên (FLTRP) 四年级下册",
+    "description": "外研Lớp 4 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_4-Volume-down.json",
+    "length": 78,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 195,
+    "enName": "waiyanshechuzhong_5-volume-top",
+    "name": "Ngoại nghiên (FLTRP) 五年级上册",
+    "description": "外研Lớp 5 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_5-Volume-top.json",
+    "length": 80,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 196,
+    "enName": "waiyanshechuzhong_5-volume-down",
+    "name": "Ngoại nghiên (FLTRP) 五年级下册",
+    "description": "外研Lớp 5 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_5-Volume-down.json",
+    "length": 71,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 197,
+    "enName": "waiyanshechuzhong_6-volume-top",
+    "name": "Ngoại nghiên (FLTRP) 六年级上册",
+    "description": "外研Lớp 6 Học kỳ 1",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_6-Volume-top.json",
+    "length": 61,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 198,
+    "enName": "waiyanshechuzhong_6-volume-down",
+    "name": "Ngoại nghiên (FLTRP) 六年级下册",
+    "description": "外研Lớp 6 Học kỳ 2",
+    "categoryId": 3,
+    "url": "WaiYanSheChuZhong_6-Volume-down.json",
+    "length": 91,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 199,
+    "enName": "waiyan-xin-3-1",
+    "name": "Ngoại nghiên (FLTRP) 新起点三年级上册",
+    "description": "外研新起点Lớp 3 Học kỳ 1",
+    "categoryId": 3,
+    "url": "waiyan-xin-3-1.json",
+    "length": 134,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 200,
+    "enName": "waiyan-xin-3-2",
+    "name": "Ngoại nghiên (FLTRP) 新起点三年级下册",
+    "description": "外研新起点Lớp 3 Học kỳ 2",
+    "categoryId": 3,
+    "url": "waiyan-xin-3-2.json",
+    "length": 154,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 201,
+    "enName": "waiyan-xin-4-1",
+    "name": "Ngoại nghiên (FLTRP) 新起点四年级上册",
+    "description": "外研新起点Lớp 4 Học kỳ 1",
+    "categoryId": 3,
+    "url": "waiyan-xin-4-1.json",
+    "length": 144,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 202,
+    "enName": "waiyan-xin-4-2",
+    "name": "Ngoại nghiên (FLTRP) 新起点四年级下册",
+    "description": "外研新起点Lớp 4 Học kỳ 2",
+    "categoryId": 3,
+    "url": "waiyan-xin-4-2.json",
+    "length": 130,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 203,
+    "enName": "waiyan-xin-5-1",
+    "name": "Ngoại nghiên (FLTRP) 新起点五年级上册",
+    "description": "外研新起点Lớp 5 Học kỳ 1",
+    "categoryId": 3,
+    "url": "waiyan-xin-5-1.json",
+    "length": 150,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 204,
+    "enName": "waiyan-xin-5-2",
+    "name": "Ngoại nghiên (FLTRP) 新起点五年级下册",
+    "description": "外研新起点Lớp 5 Học kỳ 2",
+    "categoryId": 3,
+    "url": "waiyan-xin-5-2.json",
+    "length": 144,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 205,
+    "enName": "waiyan-xin-6-1",
+    "name": "Ngoại nghiên (FLTRP) 新起点六年级上册",
+    "description": "外研新起点Lớp 6 Học kỳ 1",
+    "categoryId": 3,
+    "url": "waiyan-xin-6-1.json",
+    "length": 83,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 206,
+    "enName": "waiyan-xin-6-2",
+    "name": "Ngoại nghiên (FLTRP) 新起点六年级下册",
+    "description": "外研新起点Lớp 6 Học kỳ 2",
+    "categoryId": 3,
+    "url": "waiyan-xin-6-2.json",
+    "length": 105,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ngoại nghiên (FLTRP)"
+    ]
+  },
+  {
+    "id": 207,
+    "enName": "shanghai-6-2-word",
+    "name": "Sách giáo khoa Thượng Hải Lớp 6 (Học kỳ 2)",
+    "description": "HK1海新教材Lớp 6 HK2",
+    "categoryId": 3,
+    "url": "shanghai-6-2-word.json",
+    "length": 274,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Thượng Hải"
+    ]
+  },
+  {
+    "id": 208,
+    "enName": "yilin_1",
+    "name": "THPT Bắt buộc 1",
+    "description": "Dịch Lâm (Yilin) THPT Bắt buộc 1",
+    "categoryId": 3,
+    "url": "YiLin_1.json",
+    "length": 275,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Dịch Lâm (Yilin)"
+    ]
+  },
+  {
+    "id": 209,
+    "enName": "yilin_2",
+    "name": "THPT Bắt buộc 2",
+    "description": "Dịch Lâm (Yilin) THPT Bắt buộc 2",
+    "categoryId": 3,
+    "url": "YiLin_2.json",
+    "length": 294,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Dịch Lâm (Yilin)"
+    ]
+  },
+  {
+    "id": 210,
+    "enName": "yilin_3",
+    "name": "THPT Bắt buộc 3",
+    "description": "Dịch Lâm (Yilin) THPT Bắt buộc 3",
+    "categoryId": 3,
+    "url": "YiLin_3.json",
+    "length": 295,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Dịch Lâm (Yilin)"
+    ]
+  },
+  {
+    "id": 211,
+    "enName": "beishigaozhong_1_t",
+    "name": "THPT Bắt buộc 1",
+    "description": "Bắc Sư Đại (BNU) THPT Bắt buộc 1",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_1_T.json",
+    "length": 225,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 212,
+    "enName": "beishigaozhong_2_t",
+    "name": "THPT Bắt buộc 2",
+    "description": "Bắc Sư Đại (BNU) THPT Bắt buộc 2",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_2_T.json",
+    "length": 244,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 213,
+    "enName": "beishigaozhong_3_t",
+    "name": "THPT Bắt buộc 3",
+    "description": "Bắc Sư Đại (BNU) THPT Bắt buộc 3",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_3_T.json",
+    "length": 295,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 214,
+    "enName": "beishigaozhong_4_t",
+    "name": "THPT Bắt buộc 4",
+    "description": "Bắc Sư Đại (BNU) THPT Bắt buộc 4",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_4_T.json",
+    "length": 336,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 215,
+    "enName": "beishigaozhong_5_t",
+    "name": "THPT Bắt buộc 5",
+    "description": "Bắc Sư Đại (BNU) THPT Bắt buộc 5",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_5_T.json",
+    "length": 327,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 216,
+    "enName": "beishigaozhong_6_t",
+    "name": "THPT Tự chọn 6",
+    "description": "Bắc Sư Đại (BNU) THPT Tự chọn 6",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_6_T.json",
+    "length": 271,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 217,
+    "enName": "beishigaozhong_7_t",
+    "name": "THPT Tự chọn 7",
+    "description": "Bắc Sư Đại (BNU) THPT Tự chọn 7",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_7_T.json",
+    "length": 334,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 218,
+    "enName": "beishigaozhong_8_t",
+    "name": "THPT Tự chọn 8",
+    "description": "Bắc Sư Đại (BNU) THPT Tự chọn 8",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_8_T.json",
+    "length": 364,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 219,
+    "enName": "beishigaozhong_9_t",
+    "name": "THPT Tự chọn 9",
+    "description": "Bắc Sư Đại (BNU) THPT Tự chọn 9",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_9_T.json",
+    "length": 299,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 220,
+    "enName": "beishigaozhong_10_t",
+    "name": "THPT Tự chọn 10",
+    "description": "Bắc Sư Đại (BNU) THPT Tự chọn 10",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_10_T.json",
+    "length": 267,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 221,
+    "enName": "beishigaozhong_11_t",
+    "name": "THPT Tự chọn 11",
+    "description": "Bắc Sư Đại (BNU) THPT Tự chọn 11",
+    "categoryId": 3,
+    "url": "BeiShiGaoZhong_11_T.json",
+    "length": 330,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Bắc Sư Đại (BNU)"
+    ]
+  },
+  {
+    "id": 222,
+    "enName": "jijiao3-1",
+    "name": "Ký giáo (Hebei)  3 上",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 3 HK1",
+    "categoryId": 3,
+    "url": "jiJiao3-1.json",
+    "length": 74,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 223,
+    "enName": "jijiao3-2",
+    "name": "Ký giáo (Hebei)  3 下",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 3 HK2",
+    "categoryId": 3,
+    "url": "jiJiao3-2.json",
+    "length": 76,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 224,
+    "enName": "jijiao4-1",
+    "name": "Ký giáo (Hebei)  4 上",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 4 HK1",
+    "categoryId": 3,
+    "url": "jiJiao4-1.json",
+    "length": 78,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 225,
+    "enName": "jijiao4-2",
+    "name": "Ký giáo (Hebei)  4 下",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 4 HK2",
+    "categoryId": 3,
+    "url": "jiJiao4-2.json",
+    "length": 83,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 226,
+    "enName": "jijiao5-1",
+    "name": "Ký giáo (Hebei)  5 上",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 5 HK1",
+    "categoryId": 3,
+    "url": "jiJiao5-1.json",
+    "length": 78,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 227,
+    "enName": "jijiao5-2",
+    "name": "Ký giáo (Hebei)  5 下",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 5 HK2",
+    "categoryId": 3,
+    "url": "jiJiao5-2.json",
+    "length": 89,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 228,
+    "enName": "jijiao6-1",
+    "name": "Ký giáo (Hebei)  6 上",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 6 HK1",
+    "categoryId": 3,
+    "url": "jiJiao6-1.json",
+    "length": 66,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 229,
+    "enName": "jijiao6-2",
+    "name": "Ký giáo (Hebei)  6 下",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 6 HK2",
+    "categoryId": 3,
+    "url": "jiJiao6-2.json",
+    "length": 51,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 230,
+    "enName": "jijiao7-1",
+    "name": "Ký giáo (Hebei)  7 上",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 7 HK1",
+    "categoryId": 3,
+    "url": "jiJiao7-1.json",
+    "length": 557,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 231,
+    "enName": "jijiao7-2",
+    "name": "Ký giáo (Hebei)  7 下",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 7 HK2",
+    "categoryId": 3,
+    "url": "jiJiao7-2.json",
+    "length": 513,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 232,
+    "enName": "jijiao8-1",
+    "name": "Ký giáo (Hebei)  8 上",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 8 HK1",
+    "categoryId": 3,
+    "url": "jiJiao8-1.json",
+    "length": 420,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 233,
+    "enName": "jijiao8-2",
+    "name": "Ký giáo (Hebei)  8 下",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 8 HK2",
+    "categoryId": 3,
+    "url": "jiJiao8-2.json",
+    "length": 487,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 234,
+    "enName": "jijiao9",
+    "name": "Ký giáo (Hebei)  9 上",
+    "description": "Ký giáo (Hebei) Lớp 3 起点Lớp 9 全册",
+    "categoryId": 3,
+    "url": "jiJiao9.json",
+    "length": 636,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Ký giáo (Hebei)"
+    ]
+  },
+  {
+    "id": 235,
+    "enName": "beijing_junior_high_school",
+    "name": "THCS Bắc Kinh",
+    "description": "THCS Bắc Kinh",
+    "categoryId": 3,
+    "url": "beijing_junior_high_school.json",
+    "length": 1839,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 236,
+    "enName": "readingexplorer3",
+    "name": "Reading Explorer 3 (Third Edition)",
+    "description": "Reading Explorer 3 (Third Edition)",
+    "categoryId": 3,
+    "url": "ReadingExplorer3.json",
+    "length": 239,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 237,
+    "enName": "cambridge_join_in",
+    "name": "Tiếng Anh Tiểu học Cambridge JOIN IN",
+    "description": "Tiếng Anh Tiểu học Cambridge JOIN IN",
+    "categoryId": 3,
+    "url": "Cambridge_JOIN_IN.json",
+    "length": 1232,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "category": "Tiếng Anh cho học sinh",
+    "tags": [
+      "Tổng hợp"
+    ]
+  },
+  {
+    "id": 250,
+    "enName": "itvocabulary",
+    "name": "Tiếng Anh chuyên ngành CNTT & Khoa học Máy tính",
+    "description": "Từ vựng tiếng Anh chuyên ngành Khoa học Máy tính & CNTT",
+    "categoryId": 5,
+    "url": "itVocabulary.json",
+    "length": 1665,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện tập lập trình",
+    "tags": [
+      "Thông dụng"
+    ]
+  },
+  {
+    "id": 251,
+    "enName": "it-words",
+    "name": "Từ vựng thông dụng cho Lập trình viên",
+    "description": "Từ vựng tiếng Anh thông dụng dành cho lập trình viên",
+    "categoryId": 5,
+    "url": "it-words.json",
+    "length": 1700,
+    "language": "en",
+    "translateLanguage": "vi",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "category": "Luyện tập lập trình",
+    "tags": [
+      "Thông dụng"
+    ]
   }
 ]
