@@ -1,50 +1,57 @@
 {
-  "timestamp": "2026-09-09T02:04:14.051Z",
+  "timestamp": "2026-09-09T02:53:02.750Z",
+  "executionModel": "ValidationGatesOnly (PublishGates QG-015/017 run in data:publish)",
   "results": [
     {
       "code": "QG-001",
-      "name": "Schema Validation",
+      "name": "JSON Schema Validation (All Constraints)",
       "tier": "Structural",
+      "gateType": "Validation",
       "passed": true,
-      "details": "All entries adhere to VocabularyEntry schema",
-      "metric": "194 files checked"
+      "details": "100% entries strictly adhere to vocabulary-entry.schema.json",
+      "metric": "0 violations"
     },
     {
       "code": "QG-002",
       "name": "Required Fields (id, word, normalizedWord, definitions)",
       "tier": "Structural",
+      "gateType": "Validation",
       "passed": true,
-      "details": "Phonetic is optional; required fields present",
-      "metric": "272,278 entries verified"
+      "details": "0 missing required fields (phonetic is optional per canonical schema)",
+      "metric": "1 entries verified"
     },
     {
       "code": "QG-003",
       "name": "Unique Word IDs Per Dictionary",
       "tier": "Structural",
+      "gateType": "Validation",
       "passed": true,
       "details": "0 duplicate headwords within files",
       "metric": 0
     },
     {
       "code": "QG-004",
-      "name": "Source Accounting (source = accepted + rejected + deduplicated)",
+      "name": "Recomputed Source Accounting Integrity",
       "tier": "Structural",
-      "passed": true,
-      "details": "194/194 dictionaries balanced",
-      "metric": "194/194 dictionaries balanced"
+      "gateType": "Validation",
+      "passed": false,
+      "details": "Source accounting manifest missing",
+      "metric": "0 discrepancies"
     },
     {
       "code": "QG-005",
-      "name": "Translation Coverage",
+      "name": "Translation Coverage (Presence & Non-Emptiness)",
       "tier": "Linguistic",
+      "gateType": "Validation",
       "passed": true,
-      "details": "Coverage rate: 100.00% (Target >= 99.8%)",
+      "details": "Coverage rate: 100.00% (Target >= 99.8%; measures translation presence, not correctness)",
       "metric": "100.00%"
     },
     {
       "code": "QG-006",
       "name": "No Empty Definitions",
       "tier": "Linguistic",
+      "gateType": "Validation",
       "passed": true,
       "details": "0 empty or whitespace-only definitions",
       "metric": 0
@@ -53,41 +60,64 @@
       "code": "QG-007",
       "name": "No Chinese Character Leakage in Vietnamese Fields",
       "tier": "Linguistic",
+      "gateType": "Validation",
       "passed": true,
-      "details": "115,480 residual characters tracked against baseline audit (77.4% reduction via TM; reviewStatus: pending)",
-      "metric": "115,480 characters"
+      "details": "0 Chinese characters found in Vietnamese fields (def.zh preserved separately)",
+      "metric": 0
     },
     {
       "code": "QG-010",
       "name": "Glossary Compliance & Forbidden Term Detection",
       "tier": "Linguistic",
+      "gateType": "Validation",
       "passed": true,
       "details": "0 forbidden translations found in glossary terms",
       "metric": 0
     },
     {
       "code": "QG-011",
-      "name": "Translation Anomaly Detection (Length > 250 chars)",
+      "name": "Translation Anomaly Detection (Length <= 250 chars)",
       "tier": "Linguistic",
+      "gateType": "Validation",
       "passed": true,
-      "details": "0 length anomalies detected",
+      "details": "0 length anomalies detected (>250 chars)",
       "metric": 0
     },
     {
-      "code": "QG-014",
-      "name": "Translation Provenance Tagging",
+      "code": "QG-012",
+      "name": "Part-of-Speech (POS) Consistency",
       "tier": "Linguistic",
+      "gateType": "Validation",
       "passed": true,
-      "details": "100% definitions contain provenance metadata",
+      "details": "POS consistency rate: 100.00% (Target >= 95.0%)",
+      "metric": "100.00%"
+    },
+    {
+      "code": "QG-013",
+      "name": "Sense Disambiguation & Domain Context Audit",
+      "tier": "Linguistic",
+      "gateType": "Audit",
+      "passed": true,
+      "details": "1 definitions tagged with specialized domain context",
+      "metric": 1
+    },
+    {
+      "code": "QG-014",
+      "name": "Translation Provenance & Review Status Tagging",
+      "tier": "Linguistic",
+      "gateType": "Validation",
+      "passed": true,
+      "details": "100% definitions contain provenance metadata (method & reviewStatus)",
       "metric": 0
     },
     {
       "code": "QG-016",
-      "name": "Manifest Parity (Catalog matches localized files)",
-      "tier": "Build",
-      "passed": true,
-      "details": "194/194 dictionaries available for publication",
-      "metric": "194/194"
+      "name": "Exact Manifest Parity (Catalog vs Localized Dataset)",
+      "tier": "Catalog",
+      "gateType": "Validation",
+      "passed": false,
+      "details": "Parity mismatch: 0 missing, 0 unexpected, 1 catalog duplicates",
+      "metric": "0 missing, 0 unexpected"
     }
   ]
 }

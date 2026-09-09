@@ -130,9 +130,19 @@ function main() {
           def.provenance = {
             method: 'tm',
             source: '.translation-cache.json',
-            reviewStatus: 'approved',
+            reviewStatus: 'pending',
           }
           cacheApplications++
+        } else if (def.zh && CHINESE_REGEX.test(def.zh) && translationCache[def.zh]) {
+          if (!def.vi || CHINESE_REGEX.test(def.vi)) {
+            def.vi = translationCache[def.zh]
+            def.provenance = {
+              method: 'tm',
+              source: '.translation-cache.json',
+              reviewStatus: 'pending',
+            }
+            cacheApplications++
+          }
         }
 
         // 2. Apply Glossary rules for matching headwords

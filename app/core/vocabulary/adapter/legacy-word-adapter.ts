@@ -95,6 +95,22 @@ export interface LegacyWord {
   }
 }
 
+const CHINESE_REGEX = /[\u4e00-\u9fff\u3400-\u4dbf]/
+
+export function normalizePosTag(pos: string): string {
+  const p = pos.trim().toLowerCase()
+  if (!p) return ''
+  if (p === 'a.' || p === 'a') return 'adj.'
+  if (p === 'ad.' || p === 'ad') return 'adv.'
+  if (p === 'n' || p === 'noun') return 'n.'
+  if (p === 'v' || p === 'verb') return 'v.'
+  if (p === 'phrase.') return 'phrase'
+  if (p === 'phr.') return 'phrase'
+  if (p === 'pronoun.') return 'pron.'
+  if (p === 'contr.') return 'abbr.'
+  return p
+}
+
 /**
  * Converts modern canonical VocabularyEntry to legacy Word structure for UI consumption.
  */
@@ -111,12 +127,12 @@ export function adaptVocabularyEntryToLegacyWord(entry: VocabularyEntry): Legacy
     })),
     sentences: (entry.examples || []).map(ex => ({
       c: ex.en || '',
-      cn: ex.vi || '',
+      cn: ex.vi || ex.zh || '',
       cn_source: ex.zh || '',
     })),
     phrases: (entry.phrases || []).map(ph => ({
       c: ph.phrase || '',
-      cn: ph.vi || '',
+      cn: ph.vi || ph.zh || '',
     })),
     synos: (entry.synonyms || []).map(syn => ({
       pos: syn.pos || '',
@@ -130,40 +146,117 @@ export function adaptVocabularyEntryToLegacyWord(entry: VocabularyEntry): Legacy
  * Converts legacy Word structure to modern canonical VocabularyEntry.
  */
 export function adaptLegacyWordToVocabularyEntry(legacy: LegacyWord, sourceName?: string): VocabularyEntry {
-  const normalized = String(legacy.word || '').trim().toLowerCase()
+  const wordStr = String(legacy.word || '').trim()
+  const normalized = wordStr.toLowerCase()
   const hasValidId = legacy.id !== undefined && legacy.id !== null && legacy.id !== ''
+
+  let lastPos = ''
+  const definitions: VocabularyMeaning[] = (legacy.trans || []).map(t => {
+    const isChinese = CHINESE_REGEX.test(t.cn || '')
+    let pos = normalizePosTag(t.pos || '')
+    if (!pos) {
+      const text = (t.cn || t.cn_source || '').trim()
+      if (text.startsWith('\u3010\u540d\u3011')) {
+        pos = 'n.'
+      } else if (text.startsWith('\u3010\u52a8\u3011')) {
+        pos = 'v.'
+      } else if (text.startsWith('\u3010\u5f62\u3011')) {
+        pos = 'adj.'
+      } else if (text.startsWith('\u3010\u526f\u3011')) {
+        pos = 'adv.'
+      } else {
+        const match = text.match(/^[-\s]*(n|v|vt|vi|adj|a|adv|ad|prep|conj|pron|num|int|abbr)[\.．]/i)
+        if (match) {
+          let m = match[1].toLowerCase()
+          if (m === 'a') m = 'adj'
+          if (m === 'ad') m = 'adv'
+          pos = m + '.'
+        } else if (lastPos) {
+          pos = lastPos
+        } else if (wordStr.includes(' ')) {
+          pos = 'phrase'
+        } else if (sourceName?.toLowerCase().includes('807')) {
+          pos = 'n.'
+        } else if (text.endsWith('\u7684')) {
+          pos = 'adj.'
+        } else if (text.endsWith('\u5730')) {
+          pos = 'adv.'
+        }
+      }
+    }
+    if (pos) lastPos = pos
+
+    return {
+      pos: pos || '',
+      vi: t.cn || '',
+      zh: isChinese ? (t.cn || '') : (t.cn_source || ''),
+      provenance: {
+        method: 'manual',
+        source: sourceName || 'legacy-runtime',
+        reviewStatus: isChinese ? 'pending' : 'approved',
+      },
+    }
+  })
+
+  const examples: VocabularyExample[] = (legacy.sentences || [])
+    .filter(s => s && typeof s.c === 'string' && s.c.trim().length > 0)
+    .map(s => {
+      const isChinese = CHINESE_REGEX.test(s.cn || '')
+      const ex: VocabularyExample = {
+        en: s.c.trim(),
+      }
+      if (isChinese) {
+        ex.zh = (s.cn || '').trim()
+      } else if (s.cn && s.cn.trim().length > 0) {
+        ex.vi = s.cn.trim()
+      }
+      if (s.cn_source && s.cn_source.trim().length > 0 && !ex.zh) {
+        ex.zh = s.cn_source.trim()
+      }
+      return ex
+    })
+
+  const phrases: VocabularyPhrase[] = (legacy.phrases || [])
+    .filter(p => p && typeof p.c === 'string' && p.c.trim().length > 0)
+    .map(p => {
+      const isChinese = CHINESE_REGEX.test(p.cn || '')
+      const ph: VocabularyPhrase = {
+        phrase: p.c.trim(),
+      }
+      if (isChinese) {
+        ph.zh = (p.cn || '').trim()
+      } else if (p.cn && p.cn.trim().length > 0) {
+        ph.vi = p.cn.trim()
+      }
+      return ph
+    })
+
+  const synonyms = (legacy.synos || [])
+    .filter(s => s && Array.isArray(s.ws) && s.ws.length > 0)
+    .map(s => {
+      const isChinese = CHINESE_REGEX.test(s.cn || '')
+      const syn: { pos: string; words: string[]; vi?: string } = {
+        pos: normalizePosTag(s.pos || '') || (s.pos || '').trim(),
+        words: s.ws.map((w: any) => String(w).trim()).filter(Boolean),
+      }
+      if (!isChinese && s.cn && s.cn.trim().length > 0) {
+        syn.vi = s.cn.trim()
+      }
+      return syn
+    })
+
   return {
     id: hasValidId ? legacy.id! : normalized,
-    word: String(legacy.word || '').trim(),
+    word: wordStr,
     normalizedWord: normalized,
     phonetic: {
       uk: legacy.phonetic0 || '',
       us: legacy.phonetic1 || '',
     },
-    definitions: (legacy.trans || []).map(t => ({
-      pos: t.pos || '',
-      vi: t.cn || '',
-      zh: t.cn_source || '',
-      provenance: {
-        method: 'manual',
-        source: sourceName || 'legacy-runtime',
-        reviewStatus: 'approved',
-      },
-    })),
-    examples: (legacy.sentences || []).map(s => ({
-      en: s.c || '',
-      vi: s.cn || '',
-      zh: s.cn_source || '',
-    })),
-    phrases: (legacy.phrases || []).map(p => ({
-      phrase: p.c || '',
-      vi: p.cn || '',
-    })),
-    synonyms: (legacy.synos || []).map(s => ({
-      pos: s.pos || '',
-      words: s.ws || [],
-      vi: s.cn || '',
-    })),
+    definitions,
+    ...(examples.length > 0 ? { examples } : {}),
+    ...(phrases.length > 0 ? { phrases } : {}),
+    ...(synonyms.length > 0 ? { synonyms } : {}),
     metadata: {
       source: sourceName || '',
       updatedAt: new Date().toISOString(),
