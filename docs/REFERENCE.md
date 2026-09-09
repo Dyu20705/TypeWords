@@ -26,13 +26,67 @@ export interface WordBook {
 
 ## 2. Đặc Tả Dữ Liệu Từ Vựng (Vocabulary Entry Schema)
 
-Mỗi tệp từ điển trong `public/dicts/en/word/*.json` là một mảng chứa các đối tượng `Word` với cấu trúc đầy đủ:
+Hệ thống quản lý dữ liệu từ vựng theo mô hình 2 tầng:
+1. **Canonical Schema (`VocabularyEntry`)**: Được định nghĩa tại `data/schemas/vocabulary-entry.schema.json` dùng trong pipeline kỹ nghệ dữ liệu (`data/normalized/`, `data/localized/`).
+2. **Runtime Legacy Schema (`Word`)**: Định dạng tương thích hiển thị cho UI hiện hành tại `public/dicts/en/word/*.json`.
+
+Lớp chuyển tiếp `LegacyWordAdapter` (`app/core/vocabulary/adapter/legacy-word-adapter.ts`) đảm nhiệm chuyển đổi 2 chiều giữa 2 định dạng này.
+
+### 2.1 Canonical Schema (`VocabularyEntry`)
+```typescript
+export interface VocabularyEntry {
+  id: string | number           // Định danh duy nhất (bất biến)
+  word: string                  // Từ vựng tiếng Anh gốc
+  normalizedWord: string        // Dạng chữ thường đã trim để đánh chỉ mục
+  phonetic?: {                  // Phiên âm IPA (tùy chọn)
+    uk?: string
+    us?: string
+  }
+  definitions: VocabularyMeaning[] // Danh sách định nghĩa
+  examples?: Array<{            // Câu ví dụ (tùy chọn)
+    en: string
+    vi?: string
+    zh?: string
+  }>
+  phrases?: Array<{             // Cụm từ liên kết (tùy chọn)
+    phrase: string
+    vi?: string
+    zh?: string
+  }>
+  synonyms?: Array<{            // Từ đồng nghĩa (tùy chọn)
+    pos: string
+    words: string[]
+    vi?: string
+  }>
+  metadata?: {                  // Metadata bổ sung (tùy chọn)
+    source?: string
+    updatedAt?: string
+  }
+}
+
+export interface VocabularyMeaning {
+  pos: string                   // Từ loại chuẩn (n., v., adj., adv., ...)
+  vi: string                    // Định nghĩa tiếng Việt
+  en?: string                   // Định nghĩa tiếng Anh
+  zh?: string                   // Nghĩa gốc tiếng Trung (lưu vết xuất xứ)
+  context?: string              // Ngữ cảnh chuyên ngành (IT, kinh tế...)
+  provenance?: {                // Metadata xuất xứ và kiểm duyệt
+    method?: 'tm' | 'glossary' | 'llm' | 'manual'
+    source?: string
+    reviewStatus?: 'approved' | 'pending' | 'rejected'
+  }
+}
+```
+
+### 2.2 Runtime Legacy Schema (`Word`)
+Mỗi tệp từ điển trong `public/dicts/en/word/*.json` là một mảng chứa các đối tượng `Word` với cấu trúc:
 
 ```typescript
 export interface Word {
+  id?: string | number
   word: string                  // Từ vựng tiếng Anh (bảo toàn 100%)
-  phonetic?: string             // Phiên âm quốc tế IPA (ví dụ: "/əˈbaʊt/")
-  sound?: string                // Tên tệp âm thanh bổ sung (nếu có)
+  phonetic0?: string            // Phiên âm UK
+  phonetic1?: string            // Phiên âm US
   trans: WordTranslation[]      // Danh sách định nghĩa theo từng từ loại
   sentences?: WordSubContent[]  // Danh sách câu ví dụ ngữ cảnh song ngữ
   phrases?: WordSubContent[]    // Các cụm từ hoặc thành ngữ liên quan

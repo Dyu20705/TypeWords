@@ -53,7 +53,7 @@ Dự án thiết lập quy trình kiểm thử nghiêm ngặt trước khi hợp
 pnpm test
 ```
 
-Lệnh trên sẽ tự động thực thi 3 kịch bản kiểm định độc lập:
+Lệnh trên sẽ tự động thực thi 4 bộ kiểm tra độc lập:
 
 ### 3.1 Kiểm định ngôn ngữ đa phương tiện (`scripts/lint-i18n.ts`)
 * Kiểm tra tính đối xứng 100% về số lượng và cấu trúc khóa (1.091 khóa) giữa `i18n/locales/vi.json` và `i18n/locales/en.json`.
@@ -73,14 +73,44 @@ Lệnh trên sẽ tự động thực thi 3 kịch bản kiểm định độc l
 ### 3.3 Quét chuỗi tiếng Trung cứng (`scripts/check-hardcoded-zh.ts`)
 * Quét toàn bộ hơn 200 tệp mã nguồn (`.vue`, `.ts`, `.js`, `.json`) trong thư mục `app/` để phát hiện và ngăn chặn mọi chuỗi ký tự tiếng Trung hardcode chưa được chuyển ngữ sang i18n.
 
-### 3.4 Kiểm định tính toàn vẹn kho từ vựng (`pnpm vocab:verify`)
-* Kiểm tra cấu trúc mảng và tính hợp lệ của toàn bộ 194 bộ từ điển trong `public/dicts/en/word/`.
-* Xác nhận 970/970 bài test kiểm tra trường dữ liệu bắt buộc (`word`, `trans`, `phonetic`, `sentences`) đều đạt 100%.
-* Xuất báo cáo đối chuẩn trực quan tại `scripts/vocabulary/benchmark-report.md`.
+### 3.4 Kiểm thử phủ định Quality Gates (`scripts/data/test-quality-gates-negative.ts`)
+* Thực thi độc lập qua lệnh `pnpm test:gates`.
+* Gồm 14 kịch bản tiêm dữ liệu lỗi để xác minh các cổng kiểm định chất lượng (QG-001 đến QG-016) từ chối chính xác dữ liệu sai (lỗi schema, rò rỉ tiếng Trung, sai lệch kế toán nguồn, trùng lặp headword, vượt độ dài).
 
 ---
 
-## 4. Quy Chuẩn Lập Trình (Coding Standards)
+## 4. Đường Ống Dữ Liệu Từ Vựng (Data Pipeline CLI)
+
+Đường ống dữ liệu được quản lý qua bộ lệnh canonical `data:*`:
+
+```bash
+# 1. Quét catalog và lập danh mục nguồn
+pnpm data:discover
+
+# 2. Xác minh và tải dữ liệu nguồn thô
+pnpm data:fetch
+
+# 3. Chuẩn hóa schema VocabularyEntry và cân đối kế toán nguồn
+pnpm data:normalize
+
+# 4. Dịch ngữ cảnh qua Translation Memory và Glossary
+pnpm data:translate
+
+# 5. Kiểm định chất lượng 3 tầng Quality Gates
+pnpm data:validate
+
+# 6. Xuất bản qua staging buffer, kiểm tra SHA-256 và snapshot rollback
+pnpm data:publish
+
+# Hoặc chạy toàn bộ quy trình tự động:
+pnpm data:all
+```
+
+*Lưu ý: Các lệnh tiền tố `vocab:*` (`vocab:discover`, `vocab:validate`, ...) được giữ làm alias tương thích ngược.*
+
+---
+
+## 5. Quy Chuẩn Lập Trình (Coding Standards)
 
 1. **Cú pháp Vue 3**:
    - Bắt buộc sử dụng `<script setup lang="ts">`.
@@ -98,7 +128,7 @@ Lệnh trên sẽ tự động thực thi 3 kịch bản kiểm định độc l
 
 ---
 
-## 5. Ranh Giới Fork & Quản Trị Git (Git Hygiene)
+## 6. Ranh Giới Fork & Quản Trị Git (Git Hygiene)
 
 * **Ranh giới fork sở hữu riêng**: Dự án này phục vụ cộng đồng người học tiếng Anh tại Việt Nam. Không tạo Pull Request hoặc gửi Issue gây rác sang kho lưu trữ upstream của tác giả gốc (`zyronon/TypeWords`).
 * **Đóng góp và báo lỗi**: Mọi commit, tạo nhánh tính năng và báo cáo sự cố vui lòng thực hiện trực tiếp tại:

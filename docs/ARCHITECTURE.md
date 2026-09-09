@@ -73,6 +73,11 @@ TypeWords/
 │   │   ├── (words)/                 # Luồng luyện từ vựng (words.vue, dict-list.vue)
 │   │   └── (articles)/              # Luồng luyện bài đọc (articles.vue)
 │   └── stores/                      # Pinia Stores quản lý dữ liệu toàn cục
+├── data/                            # Tầng kỹ nghệ dữ liệu (Data Engineering)
+│   ├── schemas/                     # JSON Schemas (VocabularyEntry, Catalog, Accounting)
+│   ├── sources/                     # Metadata catalog & nguồn từ điển thô
+│   ├── translation-memory/          # Glossary thuật ngữ & bộ nhớ dịch đã duyệt
+│   └── manifests/                   # Bảng cân đối nguồn, báo cáo chất lượng & SHA-256
 ├── docs/                            # Tài liệu kỹ thuật dự án
 │   ├── ARCHITECTURE.md              # Tài liệu kiến trúc
 │   ├── PRODUCT.md                   # Tài liệu sản phẩm
@@ -93,9 +98,16 @@ TypeWords/
 │   ├── lint-i18n.ts                 # Kiểm tra đối xứng i18n
 │   ├── test-db-migration.ts         # Kiểm thử di trú IndexedDB
 │   ├── check-hardcoded-zh.ts        # Quét và ngăn chặn chuỗi tiếng Trung
-│   └── vocabulary/                  # Đường ống quản lý dữ liệu từ vựng
+│   ├── data/                        # Đường ống dữ liệu canonical (01-discover -> 06-publish)
+│   └── vocabulary/                  # Bộ nhớ đệm dịch thuật & công cụ phụ trợ
 └── README.md                        # Tài liệu tổng quan gốc
 ```
+
+### 2.1 Phân định Ranh giới Dữ liệu (Data & Runtime Boundary)
+Hệ thống phân lập rõ ràng giữa hai tầng:
+1. **Tầng Kỹ nghệ Dữ liệu (`data/` & `scripts/data/`)**: Vận hành độc lập để xử lý nguồn thô, chuẩn hóa canonical `VocabularyEntry`, thực thi dịch thuật kiểm soát qua TM/Glossary, và kiểm định qua 3 tầng Quality Gates.
+2. **Tầng Ứng dụng Runtime (`app/`)**: Giao diện người dùng Nuxt 4, quản lý trạng thái Pinia và lưu trữ IndexedDB.
+3. **Lớp chuyển tiếp tương thích (`LegacyWordAdapter`)**: Đặt tại `app/core/vocabulary/adapter/legacy-word-adapter.ts`, đảm nhiệm chuyển đổi hai chiều giữa canonical `VocabularyEntry` và định dạng `Word` runtime hiện hành.
 
 ---
 

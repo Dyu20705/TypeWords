@@ -6,92 +6,102 @@ Tài liệu này cung cấp quy trình vận hành chi tiết về đường ố
 
 ## 1. Đường Ống Dữ Liệu Từ Vựng (Vocabulary Pipeline)
 
-Dự án trang bị một hệ sinh thái kịch bản tự động hóa hoàn chỉnh tại `scripts/vocabulary/` để quản lý, cập nhật và chuyển ngữ toàn bộ 194 bộ từ điển (277.529 từ).
+Dự án trang bị đường ống dữ liệu tại `scripts/data/` để quản lý, chuẩn hóa, dịch thuật và xuất bản an toàn toàn bộ 194 bộ từ điển (277.529 từ).
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
 │                        VOCABULARY PIPELINE FLOW                        │
 │                                                                        │
-│   [ 1. vocab:discover ] ───► Quét & phân tích catalog gốc             │
+│   [ 1. data:discover ]  ───► Quét catalog 194 bộ từ điển               │
 │            │                                                           │
 │            ▼                                                           │
-│   [ 2. vocab:fetch ]    ───► Tải 194 bộ từ điển về public/dicts/       │
+│   [ 2. data:fetch ]     ───► Kiểm tra & tải nguồn thô vào data/sources │
 │            │                                                           │
 │            ▼                                                           │
-│   [ 3. vocab:validate ] ───► Kiểm định cú pháp & schema dữ liệu        │
+│   [ 3. data:normalize ] ───► Chuẩn hóa VocabularyEntry & cân đối QG-004│
 │            │                                                           │
 │            ▼                                                           │
-│   [ 4. vocab:localize ] ───► Tạo catalog tiếng Việt public/list/       │
+│   [ 4. data:translate ] ───► Dịch ngữ cảnh, áp dụng TM & Glossary      │
 │            │                                                           │
 │            ▼                                                           │
-│   [ 5. vocab:translate] ───► Dịch tự động Trung -> Việt (đa luồng)    │
+│   [ 5. data:validate ]  ───► Chạy 3 Tầng Quality Gates (13 cổng)       │
 │            │                                                           │
 │            ▼                                                           │
-│   [ 6. vocab:verify ]   ───► Đối chuẩn benchmark & kiểm định 100%      │
+│   [ 6. data:publish ]   ───► Xuất bản staging, SHA-256 & rollback safe │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 1.1 Khám phá danh mục (`pnpm vocab:discover`)
+### 1.1 Khám phá danh mục (`pnpm data:discover`)
 * **Lệnh thực thi**:
   ```bash
-  pnpm vocab:discover
+  pnpm data:discover
   ```
-* **Chức năng**: Quét danh mục từ điển gốc từ nguồn tài nguyên production (`https://files.typewords.cc/list/word.json`), phân loại theo chuyên mục và xuất bảng dữ liệu máy đọc `scripts/vocabulary/inventory.json`.
+* **Chức năng**: Quét danh mục từ điển production (`data/sources/catalogs/production-catalog.json`), phân loại theo chuyên mục và tạo bảng kê tồn kho `data/manifests/inventory.json`.
 
-### 1.2 Tải và lưu trữ cục bộ (`pnpm vocab:fetch`)
+### 1.2 Kiểm tra nguồn dữ liệu (`pnpm data:fetch`)
 * **Lệnh thực thi**:
   ```bash
-  pnpm vocab:fetch
+  pnpm data:fetch
   ```
-* **Chức năng**:
-  - Tải toàn bộ 194 tệp từ điển JSON về thư mục cục bộ `public/dicts/en/word/`.
-  - Tải trọn bộ 4 tập giáo trình New Concept English về `public/dicts/en/article/`.
-  - Hỗ trợ tải song song (concurrency = 8), tự động thử lại khi mất mạng (exponential backoff) và bỏ qua các tệp đã tải hợp lệ.
+* **Chức năng**: Kiểm tra tính sẵn sàng của 194 tệp từ điển nguồn thô trên đĩa cục bộ (`data/sources/raw/` hoặc `public/dicts/en/word/`).
 
-### 1.3 Kiểm định tính toàn vẹn cú pháp (`pnpm vocab:validate`)
+### 1.3 Chuẩn hóa Schema & Cân đối kế toán nguồn (`pnpm data:normalize`)
 * **Lệnh thực thi**:
   ```bash
-  pnpm vocab:validate
-  ```
-* **Chức năng**: Kiểm tra tính toàn vẹn của từng tệp JSON trên đĩa: định dạng mảng (Array), kích thước > 0, không rỗng và kiểm tra ngẫu nhiên các trường bắt buộc của từ vựng.
-
-### 1.4 Bản địa hóa danh mục từ điển (`pnpm vocab:localize`)
-* **Lệnh thực thi**:
-  ```bash
-  pnpm vocab:localize
+  pnpm data:normalize
   ```
 * **Chức năng**:
-  - Chuyển ngữ toàn bộ tiêu đề, mô tả ngắn, danh mục cha và các nhãn thẻ (tags) của 194 bộ từ điển sang tiếng Việt tự nhiên.
-  - Cập nhật tự động tệp danh mục chính `public/list/word.json` và danh mục khuyến nghị `public/list/recommend_word.json`.
-  - Cập nhật danh mục bài đọc New Concept English tại `public/list/article.json` và `recommend_article.json`.
+  - Chuyển đổi bản ghi từ dạng legacy sang canonical `VocabularyEntry`.
+  - Thực hiện cân đối kế toán nguồn (QG-004): $\text{sourceCount} = \text{acceptedCount} + \text{rejectedCount} + \text{deduplicatedCount}$.
+  - Ghi nhận chi tiết từng từ bị loại trừ/trùng lặp vào `data/manifests/source-accounting.json`.
+  - Xuất dữ liệu đã chuẩn hóa vào `data/normalized/`.
 
-### 1.5 Dịch thuật ngữ nghĩa song ngữ (`pnpm vocab:translate`)
+### 1.4 Dịch thuật ngữ cảnh & Gắn thẻ xuất xứ (`pnpm data:translate`)
 * **Lệnh thực thi**:
   ```bash
-  # Dịch một bộ từ điển cụ thể:
-  pnpm vocab:translate --file <tên_tệp.json>
-
-  # Ví dụ dịch bộ từ vựng Lập trình viên:
-  pnpm vocab:translate --file it-words.json
-
-  # Dịch các bộ từ vựng cốt lõi ưu tiên:
-  pnpm vocab:translate --priority
-
-  # Dịch toàn bộ các bộ từ điển trong kho:
-  pnpm vocab:translate --all
+  pnpm data:translate
   ```
-* **Đặc tính kỹ thuật**:
-  - Xử lý đa luồng (4 workers song song), gom cụm 70 dòng/lượt dịch.
-  - Sử dụng bộ nhớ đệm đĩa cứng liên tục (`scripts/vocabulary/.translation-cache.json`) chứa hơn 116.000 cặp dịch đối sánh, giúp tái sử dụng kết quả dịch và tăng tốc độ cấp số nhân.
-  - Ghi vết tệp theo từng chặng (`.checkpoints/`), cho phép dừng và tiếp tục dịch bất kỳ lúc nào mà không sợ mất dữ liệu.
-  - **Quy tắc bất biến**: Luôn lưu nghĩa tiếng Trung gốc vào trường `cn_source` trước khi ghi đè trường `cn` bằng tiếng Việt.
+* **Chức năng**:
+  - Áp dụng bộ nhớ dịch Translation Memory (`data/translation-memory/approved.jsonl`) và cache dịch thuật (`scripts/vocabulary/.translation-cache.json` với 166.182 mục).
+  - Áp dụng quy tắc thuật ngữ chuẩn `data/translation-memory/glossary.vi.json` (tự động thay thế thuật ngữ cấm).
+  - Gắn metadata xuất xứ (`provenance`) cho từng định nghĩa (`method: 'tm' | 'glossary' | 'manual'`, `reviewStatus: 'approved' | 'pending'`).
+  - Cắt gọt tự nhiên các chuỗi giải nghĩa ngữ pháp dài quá 250 ký tự tại ranh giới dấu câu (QG-011).
+  - Xuất dữ liệu bản địa hóa vào `data/localized/`.
 
-### 1.6 Kiểm định và xuất báo cáo đối chuẩn (`pnpm vocab:verify`)
+### 1.5 Kiểm định chất lượng 3 tầng Quality Gates (`pnpm data:validate`)
 * **Lệnh thực thi**:
   ```bash
-  pnpm vocab:verify
+  pnpm data:validate
   ```
-* **Chức năng**: Quét 100% dữ liệu trên đĩa, đối chiếu số lượng bản ghi thực tế với danh mục catalog và tạo báo cáo chi tiết tại `scripts/vocabulary/benchmark-report.md`.
+* **Chức năng**:
+  - Thực thi kiểm định nghiêm ngặt:
+    - **Tier 1 (Structural)**: QG-001 (Schema validation toàn diện), QG-002 (Required fields), QG-003 (Unique headwords), QG-004 (Tái tính toán độc lập cân đối nguồn thô).
+    - **Tier 2 (Linguistic)**: QG-005 (Độ bao phủ bản dịch), QG-006 (Không rỗng), QG-007 (Không rò rỉ ký tự Trung trong trường tiếng Việt), QG-010 (Glossary compliance), QG-011 (Độ dài $\le$ 250 chars), QG-012 (POS consistency), QG-013 (Audit chuyên ngành), QG-014 (Provenance tagging).
+    - **Tier 3 (Catalog Parity)**: QG-016 (Đối chiếu định danh chính xác 194/194 tệp).
+  - Xuất báo cáo chi tiết vào `data/manifests/quality-report.json`.
+
+### 1.6 Xuất bản an toàn qua Staging & Checksums (`pnpm data:publish`)
+* **Lệnh thực thi**:
+  ```bash
+  pnpm data:publish
+  ```
+* **Chức năng**:
+  - Biên dịch dữ liệu từ `data/localized/` sang định dạng runtime legacy thông qua `LegacyWordAdapter`.
+  - Ghi vào vùng đệm trung gian `data/staging/`.
+  - Sinh mã băm SHA-256 cho từng tệp vào `data/manifests/checksums.sha256` (QG-015).
+  - Tạo snapshot sao lưu `public/dicts/en/word.pre-publish-backup/`.
+  - Sao chép tệp sang `public/dicts/en/word/`.
+  - Kiểm tra đối chiếu mã băm sau khi xuất bản (QG-017). Tự động rollback phục hồi nguyên trạng nếu có lỗi.
+  - Xuất báo cáo tại `data/manifests/publish-report.json`.
+
+### 1.7 Chạy toàn bộ quy trình tự động (`pnpm data:all`)
+* **Lệnh thực thi**:
+  ```bash
+  pnpm data:all
+  ```
+* Thực thi tuần tự từ bước 1 đến bước 6.
+
+*Ghi chú: Các lệnh tiền tố `vocab:*` (`vocab:discover`, `vocab:validate`, ...) được duy trì làm alias tương thích ngược.*
 
 ---
 
