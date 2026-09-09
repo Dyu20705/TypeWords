@@ -122,21 +122,23 @@ export function adaptVocabularyEntryToLegacyWord(entry: VocabularyEntry): Legacy
     phonetic1: entry.phonetic?.us || '',
     trans: (entry.definitions || []).map(def => ({
       pos: def.pos || '',
-      cn: def.vi || '',
+      cn: (def.vi && !CHINESE_REGEX.test(def.vi)) ? def.vi : '',
       cn_source: def.zh || '',
     })),
     sentences: (entry.examples || []).map(ex => ({
       c: ex.en || '',
-      cn: ex.vi || ex.zh || '',
+      cn: (ex.vi && !CHINESE_REGEX.test(ex.vi)) ? ex.vi : '',
       cn_source: ex.zh || '',
     })),
     phrases: (entry.phrases || []).map(ph => ({
       c: ph.phrase || '',
-      cn: ph.vi || ph.zh || '',
+      cn: (ph.vi && !CHINESE_REGEX.test(ph.vi)) ? ph.vi : '',
+      cn_source: ph.zh || '',
     })),
     synos: (entry.synonyms || []).map(syn => ({
       pos: syn.pos || '',
-      cn: syn.vi || '',
+      cn: (syn.vi && !CHINESE_REGEX.test(syn.vi)) ? syn.vi : '',
+      cn_source: syn.zh || '',
       ws: syn.words || [],
     })),
   }
