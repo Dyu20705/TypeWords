@@ -188,7 +188,7 @@ export function runValidationGates(config: ValidationConfig = {}): { results: Ga
   const catalogPath = config.catalogPath || CATALOG_PATH
   const accountingPath = config.accountingPath || ACCOUNTING_PATH
   const glossaryPath = config.glossaryPath || GLOSSARY_PATH
-  const reportPath = config.reportPath !== undefined ? config.reportPath : REPORT_PATH
+  const reportPath = config.reportPath !== undefined ? config.reportPath : (config.localizedDir ? undefined : REPORT_PATH)
   const silent = config.silent ?? false
 
   if (!fs.existsSync(localizedDir)) {
