@@ -6,6 +6,7 @@ import { APP_VERSION } from '../config/env'
 export type WordSubContent = {
   c: string //content
   cn: string
+  cn_source?: string
 }
 export type Word = {
   id?: string
@@ -16,6 +17,7 @@ export type Word = {
   trans: {
     pos: string
     cn: string
+    cn_source?: string
     frequency?: Frequency
   }[]
   sentences: WordSubContent[]
@@ -23,6 +25,7 @@ export type Word = {
   synos: {
     pos: string
     cn: string
+    cn_source?: string
     ws: string[]
   }[]
   relWords: {
@@ -35,9 +38,11 @@ export type Word = {
   etymology: {
     t: string //title
     d: string //desc
+    t_source?: string
+    d_source?: string
   }[]
 }
-export type TranslateLanguageType = 'en' | 'zh-CN' | 'ja' | 'de' | 'common' | ''
+export type TranslateLanguageType = 'en' | 'vi' | 'zh-CN' | 'ja' | 'de' | 'common' | ''
 export type LanguageType = 'en' | 'ja' | 'de' | 'code'
 
 export interface ArticleWord extends Word {
