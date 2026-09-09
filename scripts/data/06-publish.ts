@@ -166,7 +166,7 @@ function main() {
       },
     ],
     limitations: [
-      'Publish atomicity uses snapshot backup and rollback. Cross-filesystem atomic directory swap is pending Phase 3/4 runtime redesign.',
+      'Publish atomicity uses snapshot backup and rollback. Cross-filesystem atomic directory swap is planned for future runtime redesign.',
     ],
   }
   fs.writeFileSync(PUBLISH_REPORT_PATH, JSON.stringify(publishReport, null, 2), 'utf-8')
