@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-09-09T08:50:00.000Z",
+  "terms": {
+    "application form": {
+      "preferred": "đơn đăng ký, đơn xin việc",
+      "forbidden": ["mẫu đơn ứng dụng"],
+      "context": "administration"
+    },
+    "compound interest": {
+      "preferred": "lãi kép",
+      "forbidden": ["lãi suất hợp chất"],
+      "context": "finance"
+    },
+    "part of speech": {
+      "preferred": "từ loại",
+      "forbidden": ["phần của lời nói"],
+      "context": "grammar"
+    },
+    "phrasal verb": {
+      "preferred": "cụm động từ",
+      "forbidden": ["động từ ngữ pháp"],
+      "context": "grammar"
+    },
+    "file": {
+      "preferred": "tập tin, tệp tin, hồ sơ",
+      "forbidden": ["cái giũa", "dũa"],
+      "context": "computer"
+    },
+    "command": {
+      "preferred": "lệnh, mệnh lệnh, chỉ thị",
+      "forbidden": [],
+      "context": "computer"
+    },
+    "cursor": {
+      "preferred": "con trỏ",
+      "forbidden": ["người chạy"],
+      "context": "computer"
+    },
+    "river bank": {
+      "preferred": "bờ sông",
+      "forbidden": ["ngân hàng sông"],
+      "context": "geography"
+    },
+    "commercial bank": {
+      "preferred": "ngân hàng thương mại",
+      "forbidden": [],
+      "context": "finance"
+    },
+    "database": {
+      "preferred": "cơ sở dữ liệu",
+      "forbidden": [],
+      "context": "computer"
+    },
+    "directory": {
+      "preferred": "thư mục, danh bạ",
+      "forbidden": [],
+      "context": "computer"
+    }
+  }
+}

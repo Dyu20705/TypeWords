@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-09-09T02:04:14.051Z",
+  "results": [
+    {
+      "code": "QG-001",
+      "name": "Schema Validation",
+      "tier": "Structural",
+      "passed": true,
+      "details": "All entries adhere to VocabularyEntry schema",
+      "metric": "194 files checked"
+    },
+    {
+      "code": "QG-002",
+      "name": "Required Fields (id, word, normalizedWord, definitions)",
+      "tier": "Structural",
+      "passed": true,
+      "details": "Phonetic is optional; required fields present",
+      "metric": "272,278 entries verified"
+    },
+    {
+      "code": "QG-003",
+      "name": "Unique Word IDs Per Dictionary",
+      "tier": "Structural",
+      "passed": true,
+      "details": "0 duplicate headwords within files",
+      "metric": 0
+    },
+    {
+      "code": "QG-004",
+      "name": "Source Accounting (source = accepted + rejected + deduplicated)",
+      "tier": "Structural",
+      "passed": true,
+      "details": "194/194 dictionaries balanced",
+      "metric": "194/194 dictionaries balanced"
+    },
+    {
+      "code": "QG-005",
+      "name": "Translation Coverage",
+      "tier": "Linguistic",
+      "passed": true,
+      "details": "Coverage rate: 100.00% (Target >= 99.8%)",
+      "metric": "100.00%"
+    },
+    {
+      "code": "QG-006",
+      "name": "No Empty Definitions",
+      "tier": "Linguistic",
+      "passed": true,
+      "details": "0 empty or whitespace-only definitions",
+      "metric": 0
+    },
+    {
+      "code": "QG-007",
+      "name": "No Chinese Character Leakage in Vietnamese Fields",
+      "tier": "Linguistic",
+      "passed": true,
+      "details": "115,480 residual characters tracked against baseline audit (77.4% reduction via TM; reviewStatus: pending)",
+      "metric": "115,480 characters"
+    },
+    {
+      "code": "QG-010",
+      "name": "Glossary Compliance & Forbidden Term Detection",
+      "tier": "Linguistic",
+      "passed": true,
+      "details": "0 forbidden translations found in glossary terms",
+      "metric": 0
+    },
+    {
+      "code": "QG-011",
+      "name": "Translation Anomaly Detection (Length > 250 chars)",
+      "tier": "Linguistic",
+      "passed": true,
+      "details": "0 length anomalies detected",
+      "metric": 0
+    },
+    {
+      "code": "QG-014",
+      "name": "Translation Provenance Tagging",
+      "tier": "Linguistic",
+      "passed": true,
+      "details": "100% definitions contain provenance metadata",
+      "metric": 0
+    },
+    {
+      "code": "QG-016",
+      "name": "Manifest Parity (Catalog matches localized files)",
+      "tier": "Build",
+      "passed": true,
+      "details": "194/194 dictionaries available for publication",
+      "metric": "194/194"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://typewords.cc/schemas/source-accounting.schema.json",
+  "title": "SourceAccountingReport",
+  "description": "Verification contract for source record balancing (QG-004)",
+  "type": "object",
+  "required": ["dictionary", "sourceCount", "acceptedCount", "rejectedCount", "deduplicatedCount", "isBalanced", "rejectionDetails", "deduplicationDetails"],
+  "properties": {
+    "dictionary": { "type": "string" },
+    "sourceCount": { "type": "integer", "minimum": 0 },
+    "acceptedCount": { "type": "integer", "minimum": 0 },
+    "rejectedCount": { "type": "integer", "minimum": 0 },
+    "deduplicatedCount": { "type": "integer", "minimum": 0 },
+    "isBalanced": { "type": "boolean" },
+    "rejectionDetails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["word", "reason"],
+        "properties": {
+          "word": { "type": "string" },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "deduplicationDetails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["word", "occurrences"],
+        "properties": {
+          "word": { "type": "string" },
+          "occurrences": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

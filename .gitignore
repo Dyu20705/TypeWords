@@ -45,3 +45,7 @@ apps/TypeWordsMiniApp
 __pycache__/
 *.pyc
 .checkpoints/
+data/sources/raw/
+data/normalized/
+data/localized/
+data/staging/

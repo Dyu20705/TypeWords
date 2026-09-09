@@ -1,0 +1,1942 @@
+[
+  {
+    "dictionary": "CET4_T.json",
+    "sourceCount": 2607,
+    "acceptedCount": 2607,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "CET-4-frequency.json",
+    "sourceCount": 2607,
+    "acceptedCount": 2607,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "CET6_T.json",
+    "sourceCount": 2345,
+    "acceptedCount": 2345,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "KaoYan_3_T.json",
+    "sourceCount": 3725,
+    "acceptedCount": 3725,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Level4luan_2_T.json",
+    "sourceCount": 3994,
+    "acceptedCount": 3994,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Level8luan_2_T.json",
+    "sourceCount": 12083,
+    "acceptedCount": 12083,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "IELTS_3_T.json",
+    "sourceCount": 3557,
+    "acceptedCount": 3557,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "TOEFL_3_T.json",
+    "sourceCount": 4220,
+    "acceptedCount": 4220,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "GaoKao_3500.json",
+    "sourceCount": 3861,
+    "acceptedCount": 3861,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "nce-new-1.json",
+    "sourceCount": 863,
+    "acceptedCount": 863,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "nce-new-2.json",
+    "sourceCount": 838,
+    "acceptedCount": 838,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "nce-new-3.json",
+    "sourceCount": 1039,
+    "acceptedCount": 1039,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "nce-new-4.json",
+    "sourceCount": 775,
+    "acceptedCount": 775,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "xinghuoqiaoji_4.json",
+    "sourceCount": 2417,
+    "acceptedCount": 2417,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "xinghuoqiaoji_6.json",
+    "sourceCount": 5995,
+    "acceptedCount": 5995,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "DanCiDeJianFa_4.json",
+    "sourceCount": 1679,
+    "acceptedCount": 1679,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "DanCiDeJianFa_6.json",
+    "sourceCount": 1741,
+    "acceptedCount": 1741,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "KaoYan_2024.json",
+    "sourceCount": 3722,
+    "acceptedCount": 3722,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "KaoYanShanGuo_2023.json",
+    "sourceCount": 1771,
+    "acceptedCount": 1771,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "926.json",
+    "sourceCount": 926,
+    "acceptedCount": 926,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "DanCiDeMimi_1.json",
+    "sourceCount": 4251,
+    "acceptedCount": 4251,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "DanCiDeMimi_2.json",
+    "sourceCount": 2848,
+    "acceptedCount": 2848,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "2024HongBao_T1.json",
+    "sourceCount": 997,
+    "acceptedCount": 997,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "2024HongBao_T2.json",
+    "sourceCount": 854,
+    "acceptedCount": 854,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "hongbaoshu-2026.json",
+    "sourceCount": 4770,
+    "acceptedCount": 4770,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "English_II.json",
+    "sourceCount": 4451,
+    "acceptedCount": 4451,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "kaoyanshanguo2025.json",
+    "sourceCount": 2254,
+    "acceptedCount": 2254,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PETS_3.json",
+    "sourceCount": 1940,
+    "acceptedCount": 1940,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PETS3-2023.json",
+    "sourceCount": 4432,
+    "acceptedCount": 4432,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "self-study_English1.json",
+    "sourceCount": 1797,
+    "acceptedCount": 1797,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "self-study_English2.json",
+    "sourceCount": 2170,
+    "acceptedCount": 2170,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "self-study_English3.json",
+    "sourceCount": 4156,
+    "acceptedCount": 4156,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "4000_Essential_English_Words-meaning.json",
+    "sourceCount": 3593,
+    "acceptedCount": 3593,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Longman_Communication_3000.json",
+    "sourceCount": 3157,
+    "acceptedCount": 3157,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "top2000words.json",
+    "sourceCount": 1865,
+    "acceptedCount": 1865,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Top1500NounWords.json",
+    "sourceCount": 1525,
+    "acceptedCount": 1525,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Top1000VerbWords.json",
+    "sourceCount": 1011,
+    "acceptedCount": 1011,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Top500AdjectiveWords.json",
+    "sourceCount": 527,
+    "acceptedCount": 527,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Top250AdverbWords.json",
+    "sourceCount": 255,
+    "acceptedCount": 255,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Top60Pronouns.json",
+    "sourceCount": 59,
+    "acceptedCount": 59,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Top50Prepositions.json",
+    "sourceCount": 46,
+    "acceptedCount": 46,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "adult-self-study-examination.json",
+    "sourceCount": 3690,
+    "acceptedCount": 3690,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "zhuan-cha-ben.json",
+    "sourceCount": 3214,
+    "acceptedCount": 3214,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "xueshiyingyu.json",
+    "sourceCount": 896,
+    "acceptedCount": 896,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Oxford5000.json",
+    "sourceCount": 5448,
+    "acceptedCount": 5448,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Merriam_Webster_sVocabularyBuilder.json",
+    "sourceCount": 1182,
+    "acceptedCount": 1182,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "tingshuokaoshi.json",
+    "sourceCount": 537,
+    "acceptedCount": 537,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "TOEFL_ZhangHongYan.json",
+    "sourceCount": 3527,
+    "acceptedCount": 3527,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "2025KaoYanHongBaoShu.json",
+    "sourceCount": 6702,
+    "acceptedCount": 6702,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "3000_ClassRoom_English_Words.json",
+    "sourceCount": 2986,
+    "acceptedCount": 2986,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "frequently_used_word01.json",
+    "sourceCount": 679,
+    "acceptedCount": 679,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "frequently_used_word02.json",
+    "sourceCount": 1040,
+    "acceptedCount": 1040,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Macmillan7000.json",
+    "sourceCount": 6252,
+    "acceptedCount": 6252,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "pet-vacabulary-list-2024.json",
+    "sourceCount": 1534,
+    "acceptedCount": 1534,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "GMAT_3_T.json",
+    "sourceCount": 3032,
+    "acceptedCount": 3032,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "GRE_3_T.json",
+    "sourceCount": 6451,
+    "acceptedCount": 6451,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "GRE_1500.json",
+    "sourceCount": 1504,
+    "acceptedCount": 1504,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "GRE3000_3_T.json",
+    "sourceCount": 2997,
+    "acceptedCount": 2997,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "GRE-computer-based-test.json",
+    "sourceCount": 1434,
+    "acceptedCount": 1434,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "ZaiYaoNiMing_GRE3000.json",
+    "sourceCount": 2995,
+    "acceptedCount": 2995,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "GRE_equivalent.json",
+    "sourceCount": 817,
+    "acceptedCount": 817,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "gre-ciyileiji.json",
+    "sourceCount": 8298,
+    "acceptedCount": 8298,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "IELTS_tinglichangjing.json",
+    "sourceCount": 1169,
+    "acceptedCount": 1169,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "IELTS_disorder.json",
+    "sourceCount": 9316,
+    "acceptedCount": 9316,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "HeQiong_IELTS.json",
+    "sourceCount": 2463,
+    "acceptedCount": 2463,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "DuckCircle_IELTS.json",
+    "sourceCount": 2604,
+    "acceptedCount": 2604,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "IELTSVocabularyBible.json",
+    "sourceCount": 3618,
+    "acceptedCount": 3618,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "ielts-807.json",
+    "sourceCount": 4109,
+    "acceptedCount": 4109,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "ielts-real-high.json",
+    "sourceCount": 522,
+    "acceptedCount": 522,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "IELTSKingLu807.json",
+    "sourceCount": 1852,
+    "acceptedCount": 1852,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "IELTS_XDF_7000.json",
+    "sourceCount": 5428,
+    "acceptedCount": 5428,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "ket2021.json",
+    "sourceCount": 888,
+    "acceptedCount": 888,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "SAT_3_T.json",
+    "sourceCount": 4426,
+    "acceptedCount": 4426,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BEC_2_T.json",
+    "sourceCount": 2752,
+    "acceptedCount": 2752,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BEC_3_T.json",
+    "sourceCount": 2821,
+    "acceptedCount": 2821,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_junior.json",
+    "sourceCount": 2651,
+    "acceptedCount": 2651,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_senior.json",
+    "sourceCount": 3147,
+    "acceptedCount": 3147,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_FIB_R_junior.json",
+    "sourceCount": 940,
+    "acceptedCount": 940,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_FIB_R_senior.json",
+    "sourceCount": 1259,
+    "acceptedCount": 1259,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_WFD.json",
+    "sourceCount": 1209,
+    "acceptedCount": 1209,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_FIB_L.json",
+    "sourceCount": 643,
+    "acceptedCount": 643,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_Basic_apeuni.json",
+    "sourceCount": 2651,
+    "acceptedCount": 2651,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_Advanced_apeuni.json",
+    "sourceCount": 3146,
+    "acceptedCount": 3146,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_Read_apeuni.json",
+    "sourceCount": 621,
+    "acceptedCount": 621,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PTE_Listening_apeuni.json",
+    "sourceCount": 671,
+    "acceptedCount": 671,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "TOEIC.json",
+    "sourceCount": 1646,
+    "acceptedCount": 1646,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Duolingo_Vocabulary_B1.json",
+    "sourceCount": 801,
+    "acceptedCount": 801,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Duolingo_Vocabulary_B2.json",
+    "sourceCount": 1423,
+    "acceptedCount": 1423,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Duolingo_Vocabulary_C1.json",
+    "sourceCount": 1313,
+    "acceptedCount": 1313,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Oxford3000.json",
+    "sourceCount": 1339,
+    "acceptedCount": 1339,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "voa.json",
+    "sourceCount": 1502,
+    "acceptedCount": 1502,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "GaoKaoZhenTiHeXinGaoPin.json",
+    "sourceCount": 689,
+    "acceptedCount": 689,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "gaokao-yuedu-gaopin.json",
+    "sourceCount": 681,
+    "acceptedCount": 681,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "ZhongKaoHeXin.json",
+    "sourceCount": 2132,
+    "acceptedCount": 2132,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "OxfordVocabulary_juniorMiddleSH.json",
+    "sourceCount": 1257,
+    "acceptedCount": 1257,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPXiaoXue3_1_T.json",
+    "sourceCount": 64,
+    "acceptedCount": 64,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPXiaoXue3_2_T.json",
+    "sourceCount": 72,
+    "acceptedCount": 72,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPXiaoXue4_1_T.json",
+    "sourceCount": 84,
+    "acceptedCount": 84,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPXiaoXue4_2_T.json",
+    "sourceCount": 104,
+    "acceptedCount": 104,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPXiaoXue5_1_T.json",
+    "sourceCount": 130,
+    "acceptedCount": 130,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPXiaoXue5_2_T.json",
+    "sourceCount": 155,
+    "acceptedCount": 155,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPXiaoXue6_1_T.json",
+    "sourceCount": 129,
+    "acceptedCount": 129,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPXiaoXue6_2_T.json",
+    "sourceCount": 108,
+    "acceptedCount": 108,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue1_1_t.json",
+    "sourceCount": 52,
+    "acceptedCount": 52,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue1_2_t.json",
+    "sourceCount": 45,
+    "acceptedCount": 45,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue2_1_t.json",
+    "sourceCount": 54,
+    "acceptedCount": 54,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue2_2_t.json",
+    "sourceCount": 55,
+    "acceptedCount": 55,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue3_1_t.json",
+    "sourceCount": 101,
+    "acceptedCount": 101,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue3_2_t.json",
+    "sourceCount": 84,
+    "acceptedCount": 84,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue4_1_t.json",
+    "sourceCount": 115,
+    "acceptedCount": 115,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue4_2_t.json",
+    "sourceCount": 85,
+    "acceptedCount": 85,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue5_1_t.json",
+    "sourceCount": 66,
+    "acceptedCount": 66,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue5_2_t.json",
+    "sourceCount": 96,
+    "acceptedCount": 96,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue6_1_t.json",
+    "sourceCount": 100,
+    "acceptedCount": 100,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEP_SL_XiaoXue6_2_t.json",
+    "sourceCount": 41,
+    "acceptedCount": 41,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPChuZhong7_1_T.json",
+    "sourceCount": 386,
+    "acceptedCount": 386,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPChuZhong7_2_T.json",
+    "sourceCount": 492,
+    "acceptedCount": 492,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPChuZhong8_1_T.json",
+    "sourceCount": 418,
+    "acceptedCount": 418,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPChuZhong8_2_T.json",
+    "sourceCount": 462,
+    "acceptedCount": 462,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPChuZhong9_1_T.json",
+    "sourceCount": 549,
+    "acceptedCount": 549,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_1_T.json",
+    "sourceCount": 311,
+    "acceptedCount": 311,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_2_T.json",
+    "sourceCount": 319,
+    "acceptedCount": 319,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_3_T.json",
+    "sourceCount": 365,
+    "acceptedCount": 365,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_4_T.json",
+    "sourceCount": 306,
+    "acceptedCount": 306,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_5_T.json",
+    "sourceCount": 356,
+    "acceptedCount": 356,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_6_T.json",
+    "sourceCount": 390,
+    "acceptedCount": 390,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_7_T.json",
+    "sourceCount": 384,
+    "acceptedCount": 384,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_8_T.json",
+    "sourceCount": 420,
+    "acceptedCount": 420,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_9_T.json",
+    "sourceCount": 352,
+    "acceptedCount": 352,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_10_T.json",
+    "sourceCount": 360,
+    "acceptedCount": 360,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "PEPGaoZhong_11_T.json",
+    "sourceCount": 308,
+    "acceptedCount": 308,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_1_T.json",
+    "sourceCount": 619,
+    "acceptedCount": 619,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Newwaiyan7-1.json",
+    "sourceCount": 294,
+    "acceptedCount": 294,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Newwaiyan7-2.json",
+    "sourceCount": 305,
+    "acceptedCount": 305,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_2_T.json",
+    "sourceCount": 430,
+    "acceptedCount": 430,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_3_T.json",
+    "sourceCount": 317,
+    "acceptedCount": 317,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_4_T.json",
+    "sourceCount": 263,
+    "acceptedCount": 263,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_5_T.json",
+    "sourceCount": 377,
+    "acceptedCount": 377,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_6_T.json",
+    "sourceCount": 127,
+    "acceptedCount": 127,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheGaoZhong_1_T.json",
+    "sourceCount": 410,
+    "acceptedCount": 410,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheGaoZhong_2_T.json",
+    "sourceCount": 272,
+    "acceptedCount": 272,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_1-Volume-up.json",
+    "sourceCount": 138,
+    "acceptedCount": 138,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_1-Volume-down.json",
+    "sourceCount": 118,
+    "acceptedCount": 118,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_2-Volume-top.json",
+    "sourceCount": 117,
+    "acceptedCount": 117,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_2-Volume-down.json",
+    "sourceCount": 109,
+    "acceptedCount": 109,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_3-Volume-top.json",
+    "sourceCount": 82,
+    "acceptedCount": 82,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_3-Volume-down.json",
+    "sourceCount": 104,
+    "acceptedCount": 104,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_4-Volume-top.json",
+    "sourceCount": 111,
+    "acceptedCount": 111,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_4-Volume-down.json",
+    "sourceCount": 78,
+    "acceptedCount": 78,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_5-Volume-top.json",
+    "sourceCount": 80,
+    "acceptedCount": 80,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_5-Volume-down.json",
+    "sourceCount": 71,
+    "acceptedCount": 71,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_6-Volume-top.json",
+    "sourceCount": 61,
+    "acceptedCount": 61,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "WaiYanSheChuZhong_6-Volume-down.json",
+    "sourceCount": 91,
+    "acceptedCount": 91,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "waiyan-xin-3-1.json",
+    "sourceCount": 134,
+    "acceptedCount": 134,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "waiyan-xin-3-2.json",
+    "sourceCount": 154,
+    "acceptedCount": 154,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "waiyan-xin-4-1.json",
+    "sourceCount": 142,
+    "acceptedCount": 142,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "waiyan-xin-4-2.json",
+    "sourceCount": 130,
+    "acceptedCount": 130,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "waiyan-xin-5-1.json",
+    "sourceCount": 150,
+    "acceptedCount": 150,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "waiyan-xin-5-2.json",
+    "sourceCount": 144,
+    "acceptedCount": 144,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "waiyan-xin-6-1.json",
+    "sourceCount": 83,
+    "acceptedCount": 83,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "waiyan-xin-6-2.json",
+    "sourceCount": 105,
+    "acceptedCount": 105,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "shanghai-6-2-word.json",
+    "sourceCount": 274,
+    "acceptedCount": 274,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "YiLin_1.json",
+    "sourceCount": 272,
+    "acceptedCount": 272,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "YiLin_2.json",
+    "sourceCount": 294,
+    "acceptedCount": 294,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "YiLin_3.json",
+    "sourceCount": 295,
+    "acceptedCount": 295,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_1_T.json",
+    "sourceCount": 226,
+    "acceptedCount": 226,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_2_T.json",
+    "sourceCount": 243,
+    "acceptedCount": 243,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_3_T.json",
+    "sourceCount": 294,
+    "acceptedCount": 294,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_4_T.json",
+    "sourceCount": 335,
+    "acceptedCount": 335,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_5_T.json",
+    "sourceCount": 327,
+    "acceptedCount": 327,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_6_T.json",
+    "sourceCount": 271,
+    "acceptedCount": 271,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_7_T.json",
+    "sourceCount": 333,
+    "acceptedCount": 333,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_8_T.json",
+    "sourceCount": 364,
+    "acceptedCount": 364,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_9_T.json",
+    "sourceCount": 298,
+    "acceptedCount": 298,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_10_T.json",
+    "sourceCount": 266,
+    "acceptedCount": 266,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "BeiShiGaoZhong_11_T.json",
+    "sourceCount": 330,
+    "acceptedCount": 330,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao3-1.json",
+    "sourceCount": 73,
+    "acceptedCount": 73,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao3-2.json",
+    "sourceCount": 76,
+    "acceptedCount": 76,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao4-1.json",
+    "sourceCount": 78,
+    "acceptedCount": 78,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao4-2.json",
+    "sourceCount": 72,
+    "acceptedCount": 72,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao5-1.json",
+    "sourceCount": 77,
+    "acceptedCount": 77,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao5-2.json",
+    "sourceCount": 89,
+    "acceptedCount": 89,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao6-1.json",
+    "sourceCount": 63,
+    "acceptedCount": 63,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao6-2.json",
+    "sourceCount": 51,
+    "acceptedCount": 51,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao7-1.json",
+    "sourceCount": 506,
+    "acceptedCount": 506,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao7-2.json",
+    "sourceCount": 485,
+    "acceptedCount": 485,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao8-1.json",
+    "sourceCount": 381,
+    "acceptedCount": 381,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao8-2.json",
+    "sourceCount": 467,
+    "acceptedCount": 467,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "jiJiao9.json",
+    "sourceCount": 610,
+    "acceptedCount": 610,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "beijing_junior_high_school.json",
+    "sourceCount": 1832,
+    "acceptedCount": 1832,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "ReadingExplorer3.json",
+    "sourceCount": 239,
+    "acceptedCount": 239,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "Cambridge_JOIN_IN.json",
+    "sourceCount": 1231,
+    "acceptedCount": 1231,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "itVocabulary.json",
+    "sourceCount": 1665,
+    "acceptedCount": 1665,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  },
+  {
+    "dictionary": "it-words.json",
+    "sourceCount": 1700,
+    "acceptedCount": 1700,
+    "rejectedCount": 0,
+    "deduplicatedCount": 0,
+    "isBalanced": true,
+    "rejectionDetails": [],
+    "deduplicationDetails": []
+  }
+]

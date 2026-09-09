@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://typewords.cc/schemas/vocabulary-entry.schema.json",
+  "title": "VocabularyEntry",
+  "description": "Canonical schema contract for TypeWords vocabulary items",
+  "type": "object",
+  "required": ["id", "word", "normalizedWord", "definitions"],
+  "properties": {
+    "id": {
+      "type": ["string", "number"],
+      "description": "Unique immutable identifier of the word entry"
+    },
+    "word": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Original English headword"
+    },
+    "normalizedWord": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Trimmed lowercase form of the word for indexing"
+    },
+    "phonetic": {
+      "type": "object",
+      "description": "Optional IPA phonetics",
+      "properties": {
+        "uk": { "type": "string" },
+        "us": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "definitions": {
+      "type": "array",
+      "minItems": 1,
+      "description": "List of sense-aligned definitions by part of speech",
+      "items": {
+        "type": "object",
+        "required": ["pos", "vi"],
+        "properties": {
+          "pos": {
+            "type": "string",
+            "description": "Part of speech tag (e.g. n., v., adj., adv.)"
+          },
+          "vi": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Vietnamese definition in context"
+          },
+          "en": {
+            "type": "string",
+            "description": "English native definition"
+          },
+          "zh": {
+            "type": "string",
+            "description": "Original Chinese translation for provenance and traceability"
+          },
+          "context": {
+            "type": "string",
+            "description": "Domain context (e.g. IT, finance, medical)"
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "method": { "enum": ["tm", "glossary", "llm", "manual"] },
+              "source": { "type": "string" },
+              "reviewStatus": { "enum": ["approved", "pending", "rejected"] }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "examples": {
+      "type": "array",
+      "description": "Optional example sentences",
+      "items": {
+        "type": "object",
+        "required": ["en"],
+        "properties": {
+          "en": { "type": "string", "minLength": 1 },
+          "vi": { "type": "string" },
+          "zh": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "phrases": {
+      "type": "array",
+      "description": "Optional associated collocations and phrasal verbs",
+      "items": {
+        "type": "object",
+        "required": ["phrase"],
+        "properties": {
+          "phrase": { "type": "string", "minLength": 1 },
+          "vi": { "type": "string" },
+          "zh": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "synonyms": {
+      "type": "array",
+      "description": "Optional synonyms grouped by part of speech",
+      "items": {
+        "type": "object",
+        "required": ["pos", "words"],
+        "properties": {
+          "pos": { "type": "string" },
+          "words": { "type": "array", "items": { "type": "string" } },
+          "vi": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Optional educational and frequency metadata",
+      "properties": {
+        "source": { "type": "string" },
+        "level": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "frequency": { "type": "number" },
+        "updatedAt": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
